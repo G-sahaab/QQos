@@ -76,7 +76,7 @@
 
     <application
         android:backupAgent="com.android.launcher3.LauncherBackupAgent"
-        android:name="app.qqlauncher.QQ LauncherApp"
+        android:name="app.qqlauncher.LawnchairApp"
         android:fullBackupOnly="true"
         android:backupInForeground="true"
         android:fullBackupContent="@xml/backupscheme"
