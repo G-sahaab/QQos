@@ -1,0 +1,2 @@
+rootProject.name="QQLauncher"
+include ':app'
