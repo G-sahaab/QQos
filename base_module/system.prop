@@ -1,0 +1,9 @@
+ro.qqos.name=QQOS
+ro.qqos.version=0.1
+ro.qqos.codename=Aether
+ro.qqos.device=veux
+ro.qqos.maintainer=QQ
+persist.qqos.aether=true
+persist.qqos.blur=true
+persist.qqos.dynamic=true
+persist.qqos.animations=true
