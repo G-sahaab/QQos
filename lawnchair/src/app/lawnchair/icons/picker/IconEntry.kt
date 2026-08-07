@@ -1,4 +1,4 @@
-package app.lawnchair.icons.picker
+package app.qqlauncher.icons.picker
 
 data class IconEntry(
     val packPackageName: String,

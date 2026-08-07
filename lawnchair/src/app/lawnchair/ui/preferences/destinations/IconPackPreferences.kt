@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.destinations
+package app.qqlauncher.ui.preferences.destinations
 
 import android.content.res.Configuration
 import android.graphics.drawable.Drawable
@@ -58,27 +58,27 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import app.lawnchair.preferences.PreferenceAdapter
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.ui.preferences.LocalPreferenceInteractor
-import app.lawnchair.ui.preferences.components.DummyLauncherBox
-import app.lawnchair.ui.preferences.components.DummyLauncherLayout
-import app.lawnchair.ui.preferences.components.WallpaperPreview
-import app.lawnchair.ui.preferences.components.WithWallpaper
-import app.lawnchair.ui.preferences.components.controls.ListPreference
-import app.lawnchair.ui.preferences.components.controls.ListPreferenceEntry
-import app.lawnchair.ui.preferences.components.controls.SwitchPreference
-import app.lawnchair.ui.preferences.components.invariantDeviceProfile
-import app.lawnchair.ui.preferences.components.layout.Chip
-import app.lawnchair.ui.preferences.components.layout.ExpandAndShrink
-import app.lawnchair.ui.preferences.components.layout.NestedScrollStretch
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
-import app.lawnchair.ui.theme.preferenceGroupColor
-import app.lawnchair.util.Constants
-import app.lawnchair.util.getThemedIconPacksInstalled
-import app.lawnchair.util.isPackageInstalled
+import app.qqlauncher.preferences.PreferenceAdapter
+import app.qqlauncher.preferences.getAdapter
+import app.qqlauncher.preferences.preferenceManager
+import app.qqlauncher.ui.preferences.LocalPreferenceInteractor
+import app.qqlauncher.ui.preferences.components.DummyLauncherBox
+import app.qqlauncher.ui.preferences.components.DummyLauncherLayout
+import app.qqlauncher.ui.preferences.components.WallpaperPreview
+import app.qqlauncher.ui.preferences.components.WithWallpaper
+import app.qqlauncher.ui.preferences.components.controls.ListPreference
+import app.qqlauncher.ui.preferences.components.controls.ListPreferenceEntry
+import app.qqlauncher.ui.preferences.components.controls.SwitchPreference
+import app.qqlauncher.ui.preferences.components.invariantDeviceProfile
+import app.qqlauncher.ui.preferences.components.layout.Chip
+import app.qqlauncher.ui.preferences.components.layout.ExpandAndShrink
+import app.qqlauncher.ui.preferences.components.layout.NestedScrollStretch
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroup
+import app.qqlauncher.ui.preferences.components.layout.PreferenceLayout
+import app.qqlauncher.ui.theme.preferenceGroupColor
+import app.qqlauncher.util.Constants
+import app.qqlauncher.util.getThemedIconPacksInstalled
+import app.qqlauncher.util.isPackageInstalled
 import com.android.launcher3.R
 import com.google.accompanist.drawablepainter.rememberDrawablePainter
 import kotlinx.coroutines.launch

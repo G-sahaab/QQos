@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Lawnchair
+ * Copyright 2022, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences
+package app.qqlauncher.ui.preferences
 
 import android.app.Application
 import android.content.Intent
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import app.lawnchair.icons.CustomAdaptiveIconDrawable
-import app.lawnchair.ui.preferences.destinations.IconPackInfo
-import app.lawnchair.util.Constants.LAWNICONS_PACKAGE_NAME
-import app.lawnchair.util.getPackageVersionCode
+import app.qqlauncher.icons.CustomAdaptiveIconDrawable
+import app.qqlauncher.ui.preferences.destinations.IconPackInfo
+import app.qqlauncher.util.Constants.LAWNICONS_PACKAGE_NAME
+import app.qqlauncher.util.getPackageVersionCode
 import com.android.launcher3.R
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.SharingStarted
@@ -56,13 +56,13 @@ class PreferenceViewModel(private val app: Application) :
                     CustomAdaptiveIconDrawable.wrapNonNull(info.loadIcon(pm)),
                 )
             }
-        val lawnchairIcon = CustomAdaptiveIconDrawable.wrapNonNull(
+        val qqlauncherIcon = CustomAdaptiveIconDrawable.wrapNonNull(
             ContextCompat.getDrawable(app, R.drawable.ic_launcher_home)!!,
         )
         val defaultIconPack = IconPackInfo(
             name = app.getString(R.string.system_icons),
             packageName = "",
-            icon = lawnchairIcon,
+            icon = qqlauncherIcon,
         )
         val withSystemIcons = listOf(defaultIconPack) + iconPacks.sortedBy { it.name }
         emit(withSystemIcons)
@@ -82,14 +82,14 @@ class PreferenceViewModel(private val app: Application) :
                     CustomAdaptiveIconDrawable.wrapNonNull(info.loadIcon(pm)),
                 )
             }
-        val lawnchairIcon = CustomAdaptiveIconDrawable.wrapNonNull(
+        val qqlauncherIcon = CustomAdaptiveIconDrawable.wrapNonNull(
             ContextCompat.getDrawable(app, R.drawable.ic_launcher_home)!!,
         )
         var defaultIconPack = listOf(
             IconPackInfo(
                 name = app.getString(R.string.system_icons),
                 packageName = "",
-                icon = lawnchairIcon,
+                icon = qqlauncherIcon,
             ),
         )
         if (app.packageManager.getPackageVersionCode(LAWNICONS_PACKAGE_NAME) in 1..3) {

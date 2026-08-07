@@ -1,4 +1,4 @@
-package app.lawnchair.preferences2
+package app.qqlauncher.preferences2
 
 import androidx.annotation.Discouraged
 import androidx.compose.runtime.Composable
@@ -6,7 +6,7 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.edit
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import app.lawnchair.LawnchairApp
+import app.qqlauncher.QQ LauncherApp
 import com.android.launcher3.InvariantDeviceProfile
 import kotlin.jvm.JvmOverloads
 import kotlinx.coroutines.flow.first
@@ -48,7 +48,7 @@ fun IdpPreference.firstBlocking(gridOption: InvariantDeviceProfile.GridOption) =
 @JvmOverloads
 fun IdpPreference.firstCached(
     gridOption: InvariantDeviceProfile.GridOption,
-    prefs2: PreferenceManager2 = PreferenceManager2.getInstance(LawnchairApp.instance),
+    prefs2: PreferenceManager2 = PreferenceManager2.getInstance(QQ LauncherApp.instance),
 ): Int {
     val cached = prefs2.getCachedPreferences()
     val value = cached[key]

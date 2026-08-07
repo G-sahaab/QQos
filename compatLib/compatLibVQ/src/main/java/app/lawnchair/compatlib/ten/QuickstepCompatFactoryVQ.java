@@ -1,12 +1,12 @@
-package app.lawnchair.compatlib.ten;
+package app.qqlauncher.compatlib.ten;
 
 import android.window.RemoteTransition;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
-import app.lawnchair.compatlib.ActivityManagerCompat;
-import app.lawnchair.compatlib.ActivityOptionsCompat;
-import app.lawnchair.compatlib.QuickstepCompatFactory;
-import app.lawnchair.compatlib.RemoteTransitionCompat;
+import app.qqlauncher.compatlib.ActivityManagerCompat;
+import app.qqlauncher.compatlib.ActivityOptionsCompat;
+import app.qqlauncher.compatlib.QuickstepCompatFactory;
+import app.qqlauncher.compatlib.RemoteTransitionCompat;
 
 @RequiresApi(29)
 public class QuickstepCompatFactoryVQ implements QuickstepCompatFactory {

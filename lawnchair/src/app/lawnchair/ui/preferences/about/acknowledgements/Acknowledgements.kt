@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Lawnchair
+ * Copyright 2022, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.about.acknowledgements
+package app.qqlauncher.ui.preferences.about.acknowledgements
 
 import android.content.Intent
 import androidx.compose.runtime.Composable
@@ -25,9 +25,9 @@ import androidx.compose.ui.res.stringResource
 import androidx.core.net.toUri
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
-import app.lawnchair.ui.preferences.components.controls.ClickablePreference
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayoutLazyColumn
-import app.lawnchair.ui.preferences.components.layout.preferenceGroupItems
+import app.qqlauncher.ui.preferences.components.controls.ClickablePreference
+import app.qqlauncher.ui.preferences.components.layout.PreferenceLayoutLazyColumn
+import app.qqlauncher.ui.preferences.components.layout.preferenceGroupItems
 import com.android.launcher3.R
 
 @Composable

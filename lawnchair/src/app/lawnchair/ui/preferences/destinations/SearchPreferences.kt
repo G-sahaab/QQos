@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.destinations
+package app.qqlauncher.ui.preferences.destinations
 
 import androidx.annotation.Keep
 import androidx.compose.foundation.layout.Spacer
@@ -9,14 +9,14 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.ui.preferences.LocalIsExpandedScreen
-import app.lawnchair.ui.preferences.LocalNavController
-import app.lawnchair.ui.preferences.components.controls.ClickablePreference
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.TwoTabPreferenceLayout
-import app.lawnchair.ui.preferences.components.search.DockSearchPreference
-import app.lawnchair.ui.preferences.components.search.DrawerSearchPreference
-import app.lawnchair.ui.preferences.navigation.Search
+import app.qqlauncher.ui.preferences.LocalIsExpandedScreen
+import app.qqlauncher.ui.preferences.LocalNavController
+import app.qqlauncher.ui.preferences.components.controls.ClickablePreference
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroup
+import app.qqlauncher.ui.preferences.components.layout.TwoTabPreferenceLayout
+import app.qqlauncher.ui.preferences.components.search.DockSearchPreference
+import app.qqlauncher.ui.preferences.components.search.DrawerSearchPreference
+import app.qqlauncher.ui.preferences.navigation.Search
 import com.android.launcher3.R
 
 @Keep // This is refed by a Kotlin serializer, we must keep it's fully qualified name.

@@ -1,4 +1,4 @@
-package app.lawnchair.compatlib.eleven;
+package app.qqlauncher.compatlib.eleven;
 
 import static android.app.ActivityTaskManager.getService;
 import static android.graphics.Bitmap.Config.ARGB_8888;
@@ -21,8 +21,8 @@ import android.view.RemoteAnimationTarget;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
-import app.lawnchair.compatlib.RecentsAnimationRunnerCompat;
-import app.lawnchair.compatlib.ten.ActivityManagerCompatVQ;
+import app.qqlauncher.compatlib.RecentsAnimationRunnerCompat;
+import app.qqlauncher.compatlib.ten.ActivityManagerCompatVQ;
 import java.util.Collections;
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package app.lawnchair.bugreport
+package app.qqlauncher.bugreport
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -9,7 +9,7 @@ import android.os.IBinder
 import android.util.Log
 import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
-import app.lawnchair.util.requireSystemService
+import app.qqlauncher.util.requireSystemService
 import com.android.launcher3.R
 import com.android.launcher3.Utilities
 import java.util.Queue

@@ -1,4 +1,4 @@
-package app.lawnchair.search.algorithms.data.calculator.internal
+package app.qqlauncher.search.algorithms.data.calculator.internal
 
 import java.math.BigDecimal
 

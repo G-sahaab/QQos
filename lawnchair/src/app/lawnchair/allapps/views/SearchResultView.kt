@@ -1,15 +1,15 @@
-package app.lawnchair.allapps.views
+package app.qqlauncher.allapps.views
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
-import app.lawnchair.search.adapter.CONTACT
-import app.lawnchair.search.adapter.FILES
-import app.lawnchair.search.adapter.MARKET_STORE
-import app.lawnchair.search.adapter.START_PAGE
-import app.lawnchair.search.adapter.SearchTargetCompat
-import app.lawnchair.search.adapter.WEB_SUGGESTION
+import app.qqlauncher.search.adapter.CONTACT
+import app.qqlauncher.search.adapter.FILES
+import app.qqlauncher.search.adapter.MARKET_STORE
+import app.qqlauncher.search.adapter.START_PAGE
+import app.qqlauncher.search.adapter.SearchTargetCompat
+import app.qqlauncher.search.adapter.WEB_SUGGESTION
 import com.android.app.search.LayoutType
 
 sealed interface SearchResultView {

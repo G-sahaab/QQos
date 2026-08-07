@@ -72,8 +72,8 @@ import java.util.stream.Collectors;
 
 import javax.inject.Inject;
 
-import app.lawnchair.LawnchairApp;
-import app.lawnchair.LawnchairAppKt;
+import app.qqlauncher.QQ LauncherApp;
+import app.qqlauncher.QQ LauncherAppKt;
 
 /**
  * Utility class which maintains an instance of Launcher database and provides utility methods
@@ -109,7 +109,7 @@ public class ModelDbController {
         mLayoutParserFactory = layoutParserFactory;
     }
 
-    // Lawnchair: ModelDbController
+    // QQ Launcher: ModelDbController
     public ModelDbController(Context context) {
         mContext = context;
         mIdp = InvariantDeviceProfile.INSTANCE.get(context);
@@ -137,7 +137,7 @@ public class ModelDbController {
 
         try {
             if (!forMigration && dbName != null) {
-                LawnchairApp app = LawnchairAppKt.getLawnchairApp(mContext);
+                QQ LauncherApp app = QQ LauncherAppKt.getQQ LauncherApp(mContext);
                 app.renameRestoredDb(dbName);
                 app.migrateDbName(dbName);
             }
@@ -622,7 +622,7 @@ public class ModelDbController {
         createDbIfNotExists();
 
         if (!(mContext instanceof PreviewContext)) {
-            LawnchairAppKt.getLawnchairApp(mContext).cleanUpDatabases();
+            QQ LauncherAppKt.getQQ LauncherApp(mContext).cleanUpDatabases();
         }
 
         if (mPrefs.get(getEmptyDbCreatedKey())) {

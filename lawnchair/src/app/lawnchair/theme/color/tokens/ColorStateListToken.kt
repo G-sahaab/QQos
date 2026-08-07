@@ -1,9 +1,9 @@
-package app.lawnchair.theme.color.tokens
+package app.qqlauncher.theme.color.tokens
 
 import android.content.Context
 import android.content.res.ColorStateList
-import app.lawnchair.theme.ResourceToken
-import app.lawnchair.theme.UiColorMode
+import app.qqlauncher.theme.ResourceToken
+import app.qqlauncher.theme.UiColorMode
 import dev.kdrag0n.monet.theme.ColorScheme
 
 sealed interface ColorStateListToken : ResourceToken<ColorStateList>

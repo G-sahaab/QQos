@@ -1,4 +1,4 @@
-package app.lawnchair.icons.shape
+package app.qqlauncher.icons.shape
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter

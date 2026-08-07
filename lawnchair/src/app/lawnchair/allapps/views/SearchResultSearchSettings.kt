@@ -1,14 +1,14 @@
-package app.lawnchair.allapps.views
+package app.qqlauncher.allapps.views
 
 import android.content.Context
 import android.util.AttributeSet
 import android.widget.ImageButton
 import android.widget.LinearLayout
 import androidx.core.view.ViewCompat
-import app.lawnchair.search.adapter.SearchTargetCompat
-import app.lawnchair.ui.preferences.PreferenceActivity
-import app.lawnchair.ui.preferences.destinations.SearchRoute
-import app.lawnchair.ui.preferences.navigation.Search
+import app.qqlauncher.search.adapter.SearchTargetCompat
+import app.qqlauncher.ui.preferences.PreferenceActivity
+import app.qqlauncher.ui.preferences.destinations.SearchRoute
+import app.qqlauncher.ui.preferences.navigation.Search
 import com.android.launcher3.R
 
 class SearchResultSearchSettings(context: Context, attrs: AttributeSet?) :

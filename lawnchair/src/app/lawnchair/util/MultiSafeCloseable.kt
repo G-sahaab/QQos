@@ -1,4 +1,4 @@
-package app.lawnchair.util
+package app.qqlauncher.util
 
 import com.android.launcher3.util.SafeCloseable
 

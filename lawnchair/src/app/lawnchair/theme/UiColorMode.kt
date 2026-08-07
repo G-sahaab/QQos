@@ -1,4 +1,4 @@
-package app.lawnchair.theme
+package app.qqlauncher.theme
 
 @JvmInline
 value class UiColorMode(val mode: Int) {

@@ -1,10 +1,10 @@
-package app.lawnchair.ui.preferences.about.acknowledgements
+package app.qqlauncher.ui.preferences.about.acknowledgements
 
 import android.app.Application
 import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import app.lawnchair.util.kotlinxJson
+import app.qqlauncher.util.kotlinxJson
 import java.io.IOException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.SharingStarted

@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.components
+package app.qqlauncher.ui.preferences.components
 
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import app.lawnchair.ui.preferences.LocalNavController
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.preferences.navigation.PreferenceRoute
-import app.lawnchair.ui.theme.LawnchairTheme
-import app.lawnchair.ui.util.preview.PreferenceGroupPreviewContainer
-import app.lawnchair.ui.util.preview.PreviewLawnchair
+import app.qqlauncher.ui.preferences.LocalNavController
+import app.qqlauncher.ui.preferences.components.layout.PreferenceTemplate
+import app.qqlauncher.ui.preferences.navigation.PreferenceRoute
+import app.qqlauncher.ui.theme.QQ LauncherTheme
+import app.qqlauncher.ui.util.preview.PreferenceGroupPreviewContainer
+import app.qqlauncher.ui.util.preview.PreviewQQ Launcher
 
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable
@@ -55,10 +55,10 @@ fun NavigationActionPreference(
     )
 }
 
-@PreviewLawnchair
+@PreviewQQ Launcher
 @Composable
 private fun SliderPreferencePreview() {
-    LawnchairTheme {
+    QQ LauncherTheme {
         PreferenceGroupPreviewContainer {
             NavigationActionPreference(
                 label = "Label",

@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components
+package app.qqlauncher.ui.preferences.components
 
 import android.Manifest
 import android.os.Build
@@ -37,9 +37,9 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.ui.util.isPlayStoreFlavor
-import app.lawnchair.util.openAppPermissionSettings
-import app.lawnchair.util.requestManageAllFilesAccessPermission
+import app.qqlauncher.ui.util.isPlayStoreFlavor
+import app.qqlauncher.util.openAppPermissionSettings
+import app.qqlauncher.util.requestManageAllFilesAccessPermission
 import com.android.launcher3.R
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.rememberMultiplePermissionsState

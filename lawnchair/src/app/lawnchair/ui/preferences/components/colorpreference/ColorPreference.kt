@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.components.colorpreference
+package app.qqlauncher.ui.preferences.components.colorpreference
 
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.Text
@@ -23,15 +23,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.datastore.preferences.core.Preferences
-import app.lawnchair.preferences.PreferenceAdapter
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.theme.color.ColorOption
-import app.lawnchair.ui.preferences.LocalNavController
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.preferences.navigation.ColorSelection as ColorSelectionRoute
-import app.lawnchair.ui.theme.LawnchairTheme
-import app.lawnchair.ui.util.preview.PreferenceGroupPreviewContainer
-import app.lawnchair.ui.util.preview.PreviewLawnchair
+import app.qqlauncher.preferences.PreferenceAdapter
+import app.qqlauncher.preferences.getAdapter
+import app.qqlauncher.theme.color.ColorOption
+import app.qqlauncher.ui.preferences.LocalNavController
+import app.qqlauncher.ui.preferences.components.layout.PreferenceTemplate
+import app.qqlauncher.ui.preferences.navigation.ColorSelection as ColorSelectionRoute
+import app.qqlauncher.ui.theme.QQ LauncherTheme
+import app.qqlauncher.ui.util.preview.PreferenceGroupPreviewContainer
+import app.qqlauncher.ui.util.preview.PreviewQQ Launcher
 import com.patrykmichalik.opto.domain.Preference
 
 /**
@@ -77,14 +77,14 @@ fun ColorPreference(
     )
 }
 
-@PreviewLawnchair
+@PreviewQQ Launcher
 @Composable
 private fun ColorPreferencePreview() {
-    LawnchairTheme {
+    QQ LauncherTheme {
         PreferenceGroupPreviewContainer {
             ColorPreference(
                 label = "Accent Color",
-                selectedColor = ColorOption.LawnchairBlue,
+                selectedColor = ColorOption.QQ LauncherBlue,
                 onClick = {},
             )
         }

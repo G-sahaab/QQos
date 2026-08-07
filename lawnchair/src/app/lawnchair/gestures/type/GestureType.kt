@@ -1,4 +1,4 @@
-package app.lawnchair.gestures.type
+package app.qqlauncher.gestures.type
 
 import android.annotation.StringRes
 import android.content.Context

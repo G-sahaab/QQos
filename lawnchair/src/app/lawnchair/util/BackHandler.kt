@@ -1,4 +1,4 @@
-package app.lawnchair.util
+package app.qqlauncher.util
 
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.compose.LocalOnBackPressedDispatcherOwner

@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.about
+package app.qqlauncher.ui.preferences.about
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes

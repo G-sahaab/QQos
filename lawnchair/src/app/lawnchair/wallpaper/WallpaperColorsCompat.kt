@@ -1,4 +1,4 @@
-package app.lawnchair.wallpaper
+package app.qqlauncher.wallpaper
 
 import androidx.annotation.IntDef
 

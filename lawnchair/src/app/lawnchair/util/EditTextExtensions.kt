@@ -1,4 +1,4 @@
-package app.lawnchair.util
+package app.qqlauncher.util
 
 import android.graphics.BlendMode
 import android.graphics.BlendModeColorFilter

@@ -1,4 +1,4 @@
-package app.lawnchair.theme.drawable
+package app.qqlauncher.theme.drawable
 
 import android.content.res.ColorStateList
 import android.graphics.drawable.Drawable
@@ -7,8 +7,8 @@ import android.graphics.drawable.InsetDrawable
 import android.graphics.drawable.RippleDrawable
 import android.graphics.drawable.StateListDrawable
 import androidx.appcompat.content.res.AppCompatResources
-import app.lawnchair.theme.color.tokens.AllAppsTabColors
-import app.lawnchair.theme.color.tokens.ColorTokens
+import app.qqlauncher.theme.color.tokens.AllAppsTabColors
+import app.qqlauncher.theme.color.tokens.ColorTokens
 import com.android.launcher3.R
 
 object DrawableTokens {

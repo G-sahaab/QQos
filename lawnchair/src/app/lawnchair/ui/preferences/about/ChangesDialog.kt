@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.about
+package app.qqlauncher.ui.preferences.about
 
 import android.content.Context
 import android.content.Intent
@@ -30,8 +30,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.core.net.toUri
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroupItem
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroupItem
+import app.qqlauncher.ui.preferences.components.layout.PreferenceTemplate
 import com.android.launcher3.R
 import java.time.Instant
 import java.util.concurrent.TimeUnit
@@ -172,7 +172,7 @@ private fun CommitItem(
 }
 
 private fun openCommitInBrowser(context: Context, commitSha: String) {
-    val commitUrl = "https://github.com/LawnchairLauncher/lawnchair/commit/$commitSha"
+    val commitUrl = "https://github.com/QQ LauncherLauncher/qqlauncher/commit/$commitSha"
     val intent = Intent(Intent.ACTION_VIEW, commitUrl.toUri())
     context.startActivity(intent)
 }

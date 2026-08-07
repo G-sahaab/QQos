@@ -1,13 +1,13 @@
-package app.lawnchair.ui.preferences.components.colorpreference
+package app.qqlauncher.ui.preferences.components.colorpreference
 
-import app.lawnchair.theme.color.ColorOption
+import app.qqlauncher.theme.color.ColorOption
 
 val staticColors: List<ColorPreferenceEntry<ColorOption>> = sequenceOf(
     ColorOption.CustomColor(0xFFF32020),
     ColorOption.CustomColor(0xFFF20D69),
     ColorOption.CustomColor(0xFF7452FF),
     ColorOption.CustomColor(0xFF2C41C9),
-    ColorOption.LawnchairBlue,
+    ColorOption.QQ LauncherBlue,
     ColorOption.CustomColor(0xFF00BAD6),
     ColorOption.CustomColor(0xFF00A399),
     ColorOption.CustomColor(0xFF47B84F),

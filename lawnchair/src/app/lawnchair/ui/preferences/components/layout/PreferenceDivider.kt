@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.layout
+package app.qqlauncher.ui.preferences.components.layout
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.HorizontalDivider
@@ -6,7 +6,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import app.lawnchair.ui.theme.dividerColor
+import app.qqlauncher.ui.theme.dividerColor
 
 @Composable
 fun PreferenceDivider(

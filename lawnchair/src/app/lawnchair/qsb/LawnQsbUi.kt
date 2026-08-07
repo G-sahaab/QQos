@@ -1,4 +1,4 @@
-package app.lawnchair.qsb
+package app.qqlauncher.qsb
 
 import android.content.Context
 import androidx.annotation.ColorInt
@@ -45,13 +45,13 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
-import app.lawnchair.qsb.providers.Google
-import app.lawnchair.qsb.providers.GoogleGo
-import app.lawnchair.qsb.providers.PixelSearch
-import app.lawnchair.qsb.providers.QsbSearchProvider
-import app.lawnchair.ui.theme.LawnchairTheme
-import app.lawnchair.ui.util.addIf
-import app.lawnchair.ui.util.preview.PreviewLawnchair
+import app.qqlauncher.qsb.providers.Google
+import app.qqlauncher.qsb.providers.GoogleGo
+import app.qqlauncher.qsb.providers.PixelSearch
+import app.qqlauncher.qsb.providers.QsbSearchProvider
+import app.qqlauncher.ui.theme.QQ LauncherTheme
+import app.qqlauncher.ui.util.addIf
+import app.qqlauncher.ui.util.preview.PreviewQQ Launcher
 import com.android.launcher3.R
 import com.android.launcher3.util.Themes
 
@@ -475,10 +475,10 @@ private fun Modifier.qsbClickable(
     ),
 )
 
-@PreviewLawnchair
+@PreviewQQ Launcher
 @Composable
 private fun LawnQsbUiPreview() {
-    LawnchairTheme {
+    QQ LauncherTheme {
         LawnQsbUi(
             state = QsbState(
                 contentDescription = "Search",

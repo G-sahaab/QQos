@@ -1,29 +1,29 @@
 /*
- *     This file is part of Lawnchair Launcher.
+ *     This file is part of QQ Launcher Launcher.
  *
- *     Lawnchair Launcher is free software: you can redistribute it and/or modify
+ *     QQ Launcher Launcher is free software: you can redistribute it and/or modify
  *     it under the terms of the GNU General Public License as published by
  *     the Free Software Foundation, either version 3 of the License, or
  *     (at your option) any later version.
  *
- *     Lawnchair Launcher is distributed in the hope that it will be useful,
+ *     QQ Launcher Launcher is distributed in the hope that it will be useful,
  *     but WITHOUT ANY WARRANTY; without even the implied warranty of
  *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  *     GNU General Public License for more details.
  *
  *     You should have received a copy of the GNU General Public License
- *     along with Lawnchair Launcher.  If not, see <https://www.gnu.org/licenses/>.
+ *     along with QQ Launcher Launcher.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package app.lawnchair.flowerpot
+package app.qqlauncher.flowerpot
 
 import android.content.Context
-import app.lawnchair.flowerpot.parser.FlowerpotReader
-import app.lawnchair.flowerpot.rules.Rules
-import app.lawnchair.util.SingletonHolder
-import app.lawnchair.util.ensureOnMainThread
-import app.lawnchair.util.toTitleCase
-import app.lawnchair.util.useApplicationContext
+import app.qqlauncher.flowerpot.parser.FlowerpotReader
+import app.qqlauncher.flowerpot.rules.Rules
+import app.qqlauncher.util.SingletonHolder
+import app.qqlauncher.util.ensureOnMainThread
+import app.qqlauncher.util.toTitleCase
+import app.qqlauncher.util.useApplicationContext
 import com.android.launcher3.model.data.AppInfo
 import java.io.InputStream
 import java.util.Locale

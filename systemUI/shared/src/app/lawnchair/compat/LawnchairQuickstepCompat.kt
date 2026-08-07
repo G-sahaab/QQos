@@ -1,20 +1,20 @@
-package app.lawnchair.compat
+package app.qqlauncher.compat
 
 import android.os.Build
 import androidx.annotation.ChecksSdkIntAtLeast
-import app.lawnchair.compatlib.ActivityManagerCompat
-import app.lawnchair.compatlib.ActivityOptionsCompat
-import app.lawnchair.compatlib.QuickstepCompatFactory
-import app.lawnchair.compatlib.RemoteTransitionCompat
-import app.lawnchair.compatlib.eleven.QuickstepCompatFactoryVR
-import app.lawnchair.compatlib.fifteen.QuickstepCompatFactoryVV
-import app.lawnchair.compatlib.fourteen.QuickstepCompatFactoryVU
-import app.lawnchair.compatlib.sixteen.QuickstepCompatFactoryVBaklava
-import app.lawnchair.compatlib.ten.QuickstepCompatFactoryVQ
-import app.lawnchair.compatlib.thirteen.QuickstepCompatFactoryVT
-import app.lawnchair.compatlib.twelve.QuickstepCompatFactoryVS
+import app.qqlauncher.compatlib.ActivityManagerCompat
+import app.qqlauncher.compatlib.ActivityOptionsCompat
+import app.qqlauncher.compatlib.QuickstepCompatFactory
+import app.qqlauncher.compatlib.RemoteTransitionCompat
+import app.qqlauncher.compatlib.eleven.QuickstepCompatFactoryVR
+import app.qqlauncher.compatlib.fifteen.QuickstepCompatFactoryVV
+import app.qqlauncher.compatlib.fourteen.QuickstepCompatFactoryVU
+import app.qqlauncher.compatlib.sixteen.QuickstepCompatFactoryVBaklava
+import app.qqlauncher.compatlib.ten.QuickstepCompatFactoryVQ
+import app.qqlauncher.compatlib.thirteen.QuickstepCompatFactoryVT
+import app.qqlauncher.compatlib.twelve.QuickstepCompatFactoryVS
 
-object LawnchairQuickstepCompat {
+object QQ LauncherQuickstepCompat {
 
     @ChecksSdkIntAtLeast(api = Build.VERSION_CODES.Q)
     @JvmField

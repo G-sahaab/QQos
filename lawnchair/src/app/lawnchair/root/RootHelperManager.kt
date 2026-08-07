@@ -1,12 +1,12 @@
-package app.lawnchair.root
+package app.qqlauncher.root
 
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.ServiceConnection
 import android.os.IBinder
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.util.MainThreadInitializedObject
+import app.qqlauncher.preferences.PreferenceManager
+import app.qqlauncher.util.MainThreadInitializedObject
 import com.topjohnwu.superuser.Shell
 import com.topjohnwu.superuser.ipc.RootService
 import kotlin.coroutines.resume

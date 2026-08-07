@@ -1,4 +1,4 @@
-package app.lawnchair.qsb
+package app.qqlauncher.qsb
 
 import android.content.Context
 import android.graphics.drawable.Drawable
@@ -9,7 +9,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.platform.LocalContext
 import androidx.core.content.res.ResourcesCompat
-import app.lawnchair.theme.color.tokens.ColorTokens
+import app.qqlauncher.theme.color.tokens.ColorTokens
 import com.android.launcher3.R
 import com.google.accompanist.drawablepainter.rememberDrawablePainter
 

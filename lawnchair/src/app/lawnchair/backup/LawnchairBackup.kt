@@ -1,4 +1,4 @@
-package app.lawnchair.backup
+package app.qqlauncher.backup
 
 import android.annotation.SuppressLint
 import android.app.WallpaperManager
@@ -7,12 +7,12 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
 import androidx.core.graphics.drawable.toBitmap
-import app.lawnchair.LawnchairProto.BackupInfo
-import app.lawnchair.util.hasFlag
-import app.lawnchair.util.scaleDownTo
-import app.lawnchair.util.scaleDownToDisplaySize
-import app.lawnchair.wallpaper.WallpaperColorsCompat
-import app.lawnchair.wallpaper.WallpaperManagerCompat
+import app.qqlauncher.QQ LauncherProto.BackupInfo
+import app.qqlauncher.util.hasFlag
+import app.qqlauncher.util.scaleDownTo
+import app.qqlauncher.util.scaleDownToDisplaySize
+import app.qqlauncher.wallpaper.WallpaperColorsCompat
+import app.qqlauncher.wallpaper.WallpaperManagerCompat
 import com.android.launcher3.BuildConfig
 import com.android.launcher3.LauncherAppState
 import com.android.launcher3.LauncherFiles
@@ -34,7 +34,7 @@ import kotlin.math.max
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
-class LawnchairBackup(
+class QQ LauncherBackup(
     private val context: Context,
     private val uri: Uri,
 ) {
@@ -127,8 +127,8 @@ class LawnchairBackup(
         )
 
         fun generateBackupFileName(): String {
-            val fileName = "Lawnchair_Backup ${SimpleDateFormat.getDateTimeInstance().format(Date())}"
-            return "$fileName.lawnchairbackup"
+            val fileName = "QQ Launcher_Backup ${SimpleDateFormat.getDateTimeInstance().format(Date())}"
+            return "$fileName.qqlauncherbackup"
         }
 
         fun getFiles(context: Context, forRestore: Boolean): Map<String, File> {
@@ -148,7 +148,7 @@ class LawnchairBackup(
             val colorHints = WallpaperManagerCompat.INSTANCE.get(context).wallpaperColors?.colorHints ?: 0
             val wallpaperSupportsDarkText = (colorHints and WallpaperColorsCompat.HINT_SUPPORTS_DARK_TEXT) != 0
             val info = BackupInfo.newBuilder()
-                .setLawnchairVersion(BuildConfig.VERSION_CODE)
+                .setQQ LauncherVersion(BuildConfig.VERSION_CODE)
                 .setBackupVersion(BACKUP_VERSION)
                 .setCreatedAt(createdAt)
                 .setContents(contents)

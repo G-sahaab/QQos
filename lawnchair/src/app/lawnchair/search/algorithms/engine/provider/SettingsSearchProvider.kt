@@ -1,14 +1,14 @@
-package app.lawnchair.search.algorithms.engine.provider
+package app.qqlauncher.search.algorithms.engine.provider
 
 import android.content.Context
 import android.provider.Settings
 import android.util.Log
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.preferences2.firstCached
-import app.lawnchair.search.algorithms.data.SettingInfo
-import app.lawnchair.search.algorithms.engine.SearchProvider
-import app.lawnchair.search.algorithms.engine.SearchResult
+import app.qqlauncher.preferences.PreferenceManager
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.preferences2.firstCached
+import app.qqlauncher.search.algorithms.data.SettingInfo
+import app.qqlauncher.search.algorithms.engine.SearchProvider
+import app.qqlauncher.search.algorithms.engine.SearchResult
 import java.lang.reflect.Modifier
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.Dispatchers

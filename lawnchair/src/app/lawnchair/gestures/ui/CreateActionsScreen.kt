@@ -1,4 +1,4 @@
-package app.lawnchair.gestures.ui
+package app.qqlauncher.gestures.ui
 
 import android.util.Log
 import androidx.compose.runtime.Composable
@@ -6,15 +6,15 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
-import app.lawnchair.gestures.config.GestureHandlerConfig
-import app.lawnchair.gestures.config.GestureHandlerOption
-import app.lawnchair.gestures.config.buildConfigFrom
-import app.lawnchair.gestures.config.filterGestureHandlerOptions
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.ui.preferences.components.controls.ClickablePreference
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayoutLazyColumn
-import app.lawnchair.ui.preferences.components.layout.preferenceGroupItems
+import app.qqlauncher.gestures.config.GestureHandlerConfig
+import app.qqlauncher.gestures.config.GestureHandlerOption
+import app.qqlauncher.gestures.config.buildConfigFrom
+import app.qqlauncher.gestures.config.filterGestureHandlerOptions
+import app.qqlauncher.preferences.getAdapter
+import app.qqlauncher.preferences2.preferenceManager2
+import app.qqlauncher.ui.preferences.components.controls.ClickablePreference
+import app.qqlauncher.ui.preferences.components.layout.PreferenceLayoutLazyColumn
+import app.qqlauncher.ui.preferences.components.layout.preferenceGroupItems
 import com.android.launcher3.R
 import kotlinx.coroutines.launch
 
@@ -38,7 +38,7 @@ fun CreateActionsScreen(
     }
 
     PreferenceLayoutLazyColumn(
-        label = stringResource(id = R.string.lawnchair_actions),
+        label = stringResource(id = R.string.qqlauncher_actions),
         modifier = modifier,
     ) {
         preferenceGroupItems(items = newOptions, isFirstChild = true) { _, it ->

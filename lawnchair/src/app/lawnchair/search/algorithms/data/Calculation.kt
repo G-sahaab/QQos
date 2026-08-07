@@ -1,4 +1,4 @@
-package app.lawnchair.search.algorithms.data
+package app.qqlauncher.search.algorithms.data
 
 data class Calculation(
     val equation: String,

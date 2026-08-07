@@ -1,4 +1,4 @@
-package app.lawnchair.search.adapter
+package app.qqlauncher.search.adapter
 
 import android.content.res.ColorStateList
 import android.graphics.Color
@@ -7,8 +7,8 @@ import android.graphics.drawable.RippleDrawable
 import android.graphics.drawable.ShapeDrawable
 import android.graphics.drawable.shapes.RoundRectShape
 import android.view.View
-import app.lawnchair.allapps.views.SearchItemBackground
-import app.lawnchair.search.LawnchairSearchAdapterProvider
+import app.qqlauncher.allapps.views.SearchItemBackground
+import app.qqlauncher.search.QQ LauncherSearchAdapterProvider
 import com.android.launcher3.R
 import com.android.launcher3.allapps.BaseAllAppsAdapter
 
@@ -45,7 +45,7 @@ data class SearchAdapterItem(
             target: SearchTargetCompat,
             background: SearchItemBackground?,
         ): SearchAdapterItem? {
-            val type = LawnchairSearchAdapterProvider.viewTypeMap[target.layoutType] ?: return null
+            val type = QQ LauncherSearchAdapterProvider.viewTypeMap[target.layoutType] ?: return null
             return SearchAdapterItem(target, background, type)
         }
     }

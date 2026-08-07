@@ -95,8 +95,8 @@ import java.util.stream.Collectors;
 
 import javax.inject.Inject;
 
-import app.lawnchair.DeviceProfileOverrides.DBGridInfo;
-import app.lawnchair.DeviceProfileOverrides;
+import app.qqlauncher.DeviceProfileOverrides.DBGridInfo;
+import app.qqlauncher.DeviceProfileOverrides;
 
 @LauncherAppSingleton
 public class InvariantDeviceProfile {
@@ -536,7 +536,7 @@ public class InvariantDeviceProfile {
         // Supported overrides: numRows, numColumns, iconSize
         applyPartnerDeviceProfileOverrides(context, metrics);
 
-        // Lawnchair ignores partner overrides and allows the user to customize the grid themselves
+        // QQ Launcher ignores partner overrides and allows the user to customize the grid themselves
         overrideOptions.applyUi(this);
 
         float maxIconSize = iconSize[0];

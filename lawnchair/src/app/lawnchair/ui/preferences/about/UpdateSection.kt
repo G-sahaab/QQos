@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.about
+package app.qqlauncher.ui.preferences.about
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -26,7 +26,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import app.lawnchair.util.getApkVersionComparison
+import app.qqlauncher.util.getApkVersionComparison
 import com.android.launcher3.R
 import java.io.File
 

@@ -1,4 +1,4 @@
-package app.lawnchair.bugreport
+package app.qqlauncher.bugreport
 
 object UploaderUtils {
 

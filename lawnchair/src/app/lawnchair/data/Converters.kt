@@ -1,7 +1,7 @@
-package app.lawnchair.data
+package app.qqlauncher.data
 
 import androidx.room.TypeConverter
-import app.lawnchair.data.folder.FolderItemEntity
+import app.qqlauncher.data.folder.FolderItemEntity
 import com.android.launcher3.model.data.AppInfo
 import com.android.launcher3.util.ComponentKey
 

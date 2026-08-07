@@ -1,4 +1,4 @@
-package app.lawnchair.util
+package app.qqlauncher.util
 
 import android.Manifest
 import android.content.Context
@@ -6,7 +6,7 @@ import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Environment
 import androidx.core.content.ContextCompat
-import app.lawnchair.ui.util.isPlayStoreFlavor
+import app.qqlauncher.ui.util.isPlayStoreFlavor
 import com.android.launcher3.util.MainThreadInitializedObject
 import com.android.launcher3.util.SafeCloseable
 import kotlinx.coroutines.flow.MutableStateFlow

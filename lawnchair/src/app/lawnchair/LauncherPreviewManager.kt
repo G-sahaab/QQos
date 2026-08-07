@@ -1,8 +1,8 @@
-package app.lawnchair
+package app.qqlauncher
 
 import android.content.Context
 import androidx.compose.runtime.RememberObserver
-import app.lawnchair.views.LauncherPreviewView
+import app.qqlauncher.views.LauncherPreviewView
 import com.android.launcher3.InvariantDeviceProfile
 
 class LauncherPreviewManager(private val context: Context) : RememberObserver {

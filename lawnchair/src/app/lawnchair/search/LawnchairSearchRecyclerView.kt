@@ -1,11 +1,11 @@
-package app.lawnchair.search
+package app.qqlauncher.search
 
 import android.content.Context
 import android.util.AttributeSet
 import com.android.launcher3.R
 import com.android.launcher3.allapps.SearchRecyclerView
 
-class LawnchairSearchRecyclerView @JvmOverloads constructor(
+class QQ LauncherSearchRecyclerView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0,

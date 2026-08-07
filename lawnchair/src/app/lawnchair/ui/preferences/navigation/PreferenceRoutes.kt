@@ -1,14 +1,14 @@
-package app.lawnchair.ui.preferences.navigation
+package app.qqlauncher.ui.preferences.navigation
 
-import app.lawnchair.ui.preferences.components.search.SearchProviderId
-import app.lawnchair.ui.preferences.destinations.SearchRoute
-import app.lawnchair.ui.preferences.destinations.ShapeRoute
+import app.qqlauncher.ui.preferences.components.search.SearchProviderId
+import app.qqlauncher.ui.preferences.destinations.SearchRoute
+import app.qqlauncher.ui.preferences.destinations.ShapeRoute
 import kotlinx.serialization.Serializable
 
-private const val URI = "lawnchair://settings"
+private const val URI = "qqlauncher://settings"
 
 /**
- * Represents a route in the Lawnchair preferences navigation graph.
+ * Represents a route in the QQ Launcher preferences navigation graph.
  *
  * This sealed interface is the base for all navigation destinations within the preferences.
  * Each implementing object or data class defines a specific screen or action.

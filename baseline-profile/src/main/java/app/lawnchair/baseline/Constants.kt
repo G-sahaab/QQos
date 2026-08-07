@@ -1,4 +1,4 @@
-package app.lawnchair.baseline
+package app.qqlauncher.baseline
 
 import androidx.test.platform.app.InstrumentationRegistry
 

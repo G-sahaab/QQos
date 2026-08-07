@@ -1,12 +1,12 @@
-﻿package app.lawnchair.data.folder.service
+﻿package app.qqlauncher.data.folder.service
 
 import android.content.Context
 import androidx.core.content.edit
-import app.lawnchair.data.AppDatabase
-import app.lawnchair.data.folder.FolderEntry
-import app.lawnchair.data.folder.FolderInfoEntity
-import app.lawnchair.data.folder.FolderItemEntity
-import app.lawnchair.preferences.PreferenceManager
+import app.qqlauncher.data.AppDatabase
+import app.qqlauncher.data.folder.FolderEntry
+import app.qqlauncher.data.folder.FolderInfoEntity
+import app.qqlauncher.data.folder.FolderItemEntity
+import app.qqlauncher.preferences.PreferenceManager
 import com.android.launcher3.dagger.ApplicationContext
 import com.android.launcher3.dagger.LauncherAppComponent
 import com.android.launcher3.dagger.LauncherAppSingleton

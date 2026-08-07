@@ -1,4 +1,4 @@
-package app.lawnchair.qsb.providers
+package app.qqlauncher.qsb.providers
 
 import android.content.ActivityNotFoundException
 import android.content.Context
@@ -7,11 +7,11 @@ import android.net.Uri
 import android.widget.Toast
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.qsb.LawnQsbLayout
-import app.lawnchair.qsb.ThemingMethod
-import app.lawnchair.resolveIntent
-import app.lawnchair.util.isPackageInstalled
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.qsb.LawnQsbLayout
+import app.qqlauncher.qsb.ThemingMethod
+import app.qqlauncher.resolveIntent
+import app.qqlauncher.util.isPackageInstalled
 import com.android.launcher3.Launcher
 import com.android.launcher3.R
 import com.patrykmichalik.opto.core.first

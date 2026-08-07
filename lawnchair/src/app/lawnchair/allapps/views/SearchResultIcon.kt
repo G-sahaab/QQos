@@ -1,4 +1,4 @@
-package app.lawnchair.allapps.views
+package app.qqlauncher.allapps.views
 
 import android.content.ComponentName
 import android.content.Context
@@ -10,9 +10,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
-import app.lawnchair.launcher
-import app.lawnchair.search.adapter.SearchTargetCompat
-import app.lawnchair.util.runOnMainThread
+import app.qqlauncher.launcher
+import app.qqlauncher.search.adapter.SearchTargetCompat
+import app.qqlauncher.util.runOnMainThread
 import com.android.launcher3.BubbleTextView
 import com.android.launcher3.LauncherAppState
 import com.android.launcher3.LauncherSettings
@@ -264,7 +264,7 @@ class SearchResultIcon(context: Context, attrs: AttributeSet?) :
                     val activityIcon = iconProvider.getIcon(activityInfo)
                     val bitmap = li.createIconBitmap(activityIcon, 1f)
                     val bitmapInfo = BitmapInfo.of(bitmap, packageIcon.color)
-                    // Lawnchair-TODO-Postmerge: AOSP removed it -- 393bc59246f0f88f62b9879000d57fde36cdb214
+                    // QQ Launcher-TODO-Postmerge: AOSP removed it -- 393bc59246f0f88f62b9879000d57fde36cdb214
 //                    info.bitmap = li.badgeBitmap(info.bitmap.icon, bitmapInfo)
                 } catch (_: PackageManager.NameNotFoundException) {
                 }

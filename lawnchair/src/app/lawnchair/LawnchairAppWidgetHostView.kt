@@ -1,4 +1,4 @@
-package app.lawnchair
+package app.qqlauncher
 
 import android.appwidget.AppWidgetProviderInfo
 import android.content.Context
@@ -7,12 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.ViewGroup.LayoutParams.MATCH_PARENT
 import android.widget.RemoteViews
-import app.lawnchair.smartspace.SmartspaceAppWidgetProvider
+import app.qqlauncher.smartspace.SmartspaceAppWidgetProvider
 import com.android.launcher3.R
 import com.android.launcher3.util.Themes
 import com.android.launcher3.widget.LauncherAppWidgetHostView
 
-class LawnchairAppWidgetHostView @JvmOverloads constructor(
+class QQ LauncherAppWidgetHostView @JvmOverloads constructor(
     context: Context,
     private var previewMode: Boolean = false,
 ) : LauncherAppWidgetHostView(context) {

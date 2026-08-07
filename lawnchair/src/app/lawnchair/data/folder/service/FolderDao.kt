@@ -1,4 +1,4 @@
-﻿package app.lawnchair.data.folder.service
+﻿package app.qqlauncher.data.folder.service
 
 import androidx.room.Dao
 import androidx.room.Embedded
@@ -9,8 +9,8 @@ import androidx.room.RawQuery
 import androidx.room.Relation
 import androidx.room.Transaction
 import androidx.sqlite.db.SupportSQLiteQuery
-import app.lawnchair.data.folder.FolderInfoEntity
-import app.lawnchair.data.folder.FolderItemEntity
+import app.qqlauncher.data.folder.FolderInfoEntity
+import app.qqlauncher.data.folder.FolderItemEntity
 import kotlinx.coroutines.flow.Flow
 
 @Dao

@@ -1,11 +1,11 @@
-package app.lawnchair.search.algorithms.engine.provider
+package app.qqlauncher.search.algorithms.engine.provider
 
 import android.content.Context
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.search.algorithms.data.Calculation
-import app.lawnchair.search.algorithms.data.calculator.Expressions
-import app.lawnchair.search.algorithms.engine.SearchProvider
-import app.lawnchair.search.algorithms.engine.SearchResult
+import app.qqlauncher.preferences.PreferenceManager
+import app.qqlauncher.search.algorithms.data.Calculation
+import app.qqlauncher.search.algorithms.data.calculator.Expressions
+import app.qqlauncher.search.algorithms.engine.SearchProvider
+import app.qqlauncher.search.algorithms.engine.SearchResult
 import java.math.BigDecimal
 import java.math.MathContext
 import kotlinx.coroutines.flow.Flow

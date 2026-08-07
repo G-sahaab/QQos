@@ -1,4 +1,4 @@
-package app.lawnchair.smartspace.provider
+package app.qqlauncher.smartspace.provider
 
 import android.content.Context
 import android.graphics.drawable.Icon
@@ -9,9 +9,9 @@ import android.os.Handler
 import android.os.Looper
 import android.util.Log
 import androidx.core.content.getSystemService
-import app.lawnchair.smartspace.model.SmartspaceAction
-import app.lawnchair.smartspace.model.SmartspaceScores
-import app.lawnchair.smartspace.model.SmartspaceTarget
+import app.qqlauncher.smartspace.model.SmartspaceAction
+import app.qqlauncher.smartspace.model.SmartspaceScores
+import app.qqlauncher.smartspace.model.SmartspaceTarget
 import com.android.launcher3.R
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow

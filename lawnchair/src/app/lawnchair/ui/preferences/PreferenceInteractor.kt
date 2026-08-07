@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Lawnchair
+ * Copyright 2022, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences
+package app.qqlauncher.ui.preferences
 
-import app.lawnchair.ui.preferences.destinations.IconPackInfo
+import app.qqlauncher.ui.preferences.destinations.IconPackInfo
 import kotlinx.coroutines.flow.StateFlow
 
 sealed interface PreferenceInteractor {

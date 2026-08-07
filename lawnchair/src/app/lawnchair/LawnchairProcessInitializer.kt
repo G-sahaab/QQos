@@ -1,18 +1,18 @@
-package app.lawnchair
+package app.qqlauncher
 
 import android.content.Context
 import androidx.annotation.Keep
-import app.lawnchair.bugreport.LawnchairBugReporter
-import app.lawnchair.theme.color.tokens.ColorTokens
+import app.qqlauncher.bugreport.QQ LauncherBugReporter
+import app.qqlauncher.theme.color.tokens.ColorTokens
 import com.android.launcher3.Utilities
 import com.android.launcher3.icons.mono.ThemedIconDrawable
 import com.android.quickstep.QuickstepProcessInitializer
 
 @Keep
-class LawnchairProcessInitializer(context: Context) : QuickstepProcessInitializer(context) {
+class QQ LauncherProcessInitializer(context: Context) : QuickstepProcessInitializer(context) {
 
     override fun init(context: Context) {
-        LawnchairBugReporter.INSTANCE.get(context)
+        QQ LauncherBugReporter.INSTANCE.get(context)
         ThemedIconDrawable.COLORS_LOADER = {
             if (Utilities.isDarkTheme(it)) {
                 intArrayOf(

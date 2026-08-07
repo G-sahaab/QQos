@@ -1,4 +1,4 @@
-package app.lawnchair.root;
+package app.qqlauncher.root;
 
 import android.content.Context;
 import android.os.PowerManager;

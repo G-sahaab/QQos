@@ -1,10 +1,10 @@
-package app.lawnchair.theme.color.tokens
+package app.qqlauncher.theme.color.tokens
 
 import android.content.Context
 import androidx.core.graphics.luminance
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.preferences2.firstCached
-import app.lawnchair.theme.UiColorMode
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.preferences2.firstCached
+import app.qqlauncher.theme.UiColorMode
 import dev.kdrag0n.monet.theme.ColorScheme
 
 /** Shared colors for Personal/Work tabs in the app drawer. */

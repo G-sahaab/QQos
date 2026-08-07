@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.destinations
+package app.qqlauncher.ui.preferences.destinations
 
 import android.widget.Toast
 import androidx.compose.animation.core.animateFloatAsState
@@ -43,22 +43,22 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import app.lawnchair.icons.shape.IconCornerShape
-import app.lawnchair.icons.shape.IconShape
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.ui.ModalBottomSheetContent
-import app.lawnchair.ui.preferences.components.controls.getSteps
-import app.lawnchair.ui.preferences.components.controls.snapSliderValue
-import app.lawnchair.ui.preferences.components.layout.BottomSpacer
-import app.lawnchair.ui.preferences.components.layout.PreferenceDivider
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.theme.LawnchairTheme
-import app.lawnchair.ui.util.LocalBottomSheetHandler
-import app.lawnchair.util.copyToClipboard
-import app.lawnchair.util.getClipboardContent
+import app.qqlauncher.icons.shape.IconCornerShape
+import app.qqlauncher.icons.shape.IconShape
+import app.qqlauncher.preferences.getAdapter
+import app.qqlauncher.preferences2.preferenceManager2
+import app.qqlauncher.ui.ModalBottomSheetContent
+import app.qqlauncher.ui.preferences.components.controls.getSteps
+import app.qqlauncher.ui.preferences.components.controls.snapSliderValue
+import app.qqlauncher.ui.preferences.components.layout.BottomSpacer
+import app.qqlauncher.ui.preferences.components.layout.PreferenceDivider
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroup
+import app.qqlauncher.ui.preferences.components.layout.PreferenceLayout
+import app.qqlauncher.ui.preferences.components.layout.PreferenceTemplate
+import app.qqlauncher.ui.theme.QQ LauncherTheme
+import app.qqlauncher.ui.util.LocalBottomSheetHandler
+import app.qqlauncher.util.copyToClipboard
+import app.qqlauncher.util.getClipboardContent
 import com.android.launcher3.R
 import kotlin.math.roundToInt
 import kotlin.toString
@@ -414,7 +414,7 @@ private fun CornerSlider(
 @Preview(showBackground = true)
 @Composable
 private fun CornerSliderPreview() {
-    LawnchairTheme {
+    QQ LauncherTheme {
         CornerSlider(
             label = "Top Left",
             value = 0.5f,

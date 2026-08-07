@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components
+package app.qqlauncher.ui.preferences.components
 
 import android.content.Context
 import android.os.Build
@@ -8,9 +8,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.ui.preferences.components.controls.SwitchPreference
+import app.qqlauncher.preferences.getAdapter
+import app.qqlauncher.preferences2.preferenceManager2
+import app.qqlauncher.ui.preferences.components.controls.SwitchPreference
 import com.android.launcher3.Flags
 import com.android.launcher3.R
 

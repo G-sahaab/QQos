@@ -1,4 +1,4 @@
-package app.lawnchair.allapps.views
+package app.qqlauncher.allapps.views
 
 import android.content.Context
 import android.util.AttributeSet
@@ -6,9 +6,9 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.view.ViewCompat
-import app.lawnchair.font.FontManager
-import app.lawnchair.search.adapter.SearchTargetCompat
-import app.lawnchair.theme.color.tokens.ColorTokens
+import app.qqlauncher.font.FontManager
+import app.qqlauncher.search.adapter.SearchTargetCompat
+import app.qqlauncher.theme.color.tokens.ColorTokens
 import com.android.launcher3.R
 import com.android.launcher3.util.Themes
 

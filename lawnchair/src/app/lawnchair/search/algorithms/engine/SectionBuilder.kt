@@ -1,11 +1,11 @@
-package app.lawnchair.search.algorithms.engine
+package app.qqlauncher.search.algorithms.engine
 
 import android.content.Context
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.preferences2.firstCached
-import app.lawnchair.search.adapter.SPACE
-import app.lawnchair.search.adapter.SearchTargetCompat
-import app.lawnchair.search.adapter.SearchTargetFactory
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.preferences2.firstCached
+import app.qqlauncher.search.adapter.SPACE
+import app.qqlauncher.search.adapter.SearchTargetCompat
+import app.qqlauncher.search.adapter.SearchTargetFactory
 import com.android.launcher3.R
 
 sealed interface SectionBuilder {

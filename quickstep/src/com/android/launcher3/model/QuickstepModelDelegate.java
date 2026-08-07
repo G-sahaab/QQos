@@ -79,8 +79,8 @@ import java.util.ArrayList;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import app.lawnchair.LawnchairApp;
-import app.lawnchair.compat.LawnchairQuickstepCompat;
+import app.qqlauncher.QQ LauncherApp;
+import app.qqlauncher.compat.QQ LauncherQuickstepCompat;
 
 /**
  * Model delegate which loads prediction items
@@ -216,7 +216,7 @@ public class QuickstepModelDelegate extends ModelDelegate {
      * Registers a callback to log launcher workspace layout using Statsd pulled atom.
      */
     private void registerSnapshotLoggingCallback() {
-        if (mStatsManager == null || !LawnchairQuickstepCompat.ATLEAST_R) {
+        if (mStatsManager == null || !QQ LauncherQuickstepCompat.ATLEAST_R) {
             Log.d(TAG, "Skipping snapshot logging");
             return;
         }
@@ -287,7 +287,7 @@ public class QuickstepModelDelegate extends ModelDelegate {
         super.destroy();
         mActive = false;
         StatsLogCompatManager.LOGS_CONSUMER.remove(mAppEventProducer);
-        if (mStatsManager != null && LawnchairQuickstepCompat.ATLEAST_R) {
+        if (mStatsManager != null && QQ LauncherQuickstepCompat.ATLEAST_R) {
             try {
                 ((StatsManager) mStatsManager).clearPullAtomCallback(SysUiStatsLog.LAUNCHER_LAYOUT_SNAPSHOT);
             } catch (Throwable e) {

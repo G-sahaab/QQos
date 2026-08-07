@@ -70,8 +70,8 @@ import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-import app.lawnchair.LawnchairApp;
-import app.lawnchair.compat.LawnchairQuickstepCompat;
+import app.qqlauncher.QQ LauncherApp;
+import app.qqlauncher.compat.QQ LauncherQuickstepCompat;
 
 /**
  * Manages the recent task list from the system, caching it as necessary.
@@ -108,8 +108,8 @@ public class RecentTasksList {
         mKeyguardManager = keyguardManager;
         mChangeId = 1;
         mSysUiProxy = sysUiProxy;
-        if (LawnchairApp.isRecentsEnabled()) {
-            if (LawnchairQuickstepCompat.ATLEAST_U) {
+        if (QQ LauncherApp.isRecentsEnabled()) {
+            if (QQ LauncherQuickstepCompat.ATLEAST_U) {
                 final IRecentTasksListener recentTasksListener = new IRecentTasksListener.Stub() {
                     @Override
                     public void onRecentTasksChanged() throws RemoteException {
@@ -161,7 +161,7 @@ public class RecentTasksList {
                 mSysUiProxy.registerRecentTasksListener(recentTasksListener);
                 tracker.addCloseable(
                     () -> mSysUiProxy.unregisterRecentTasksListener(recentTasksListener));
-            } else if (LawnchairQuickstepCompat.ATLEAST_Q) {
+            } else if (QQ LauncherQuickstepCompat.ATLEAST_Q) {
                 TaskStackChangeListeners.getInstance()
                     .registerTaskStackListener(new TaskStackChangeListener() {
                         @Override

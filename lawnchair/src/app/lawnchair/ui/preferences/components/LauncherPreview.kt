@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components
+package app.qqlauncher.ui.preferences.components
 
 import android.view.View
 import androidx.compose.animation.Crossfade
@@ -17,11 +17,11 @@ import androidx.compose.ui.layout.layout
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.lifecycle.Lifecycle
-import app.lawnchair.LauncherPreviewManager
-import app.lawnchair.ui.theme.LawnchairTheme
-import app.lawnchair.util.lifecycleState
-import app.lawnchair.wallpaper.WallpaperColorsCompat
-import app.lawnchair.wallpaper.WallpaperManagerCompat
+import app.qqlauncher.LauncherPreviewManager
+import app.qqlauncher.ui.theme.QQ LauncherTheme
+import app.qqlauncher.util.lifecycleState
+import app.qqlauncher.wallpaper.WallpaperColorsCompat
+import app.qqlauncher.wallpaper.WallpaperManagerCompat
 import com.android.launcher3.InvariantDeviceProfile
 import com.android.launcher3.LauncherAppState
 
@@ -38,7 +38,7 @@ fun DummyLauncherBox(
     val ratio = aspectRatio ?: (dp.deviceProperties.widthPx.toFloat() / dp.deviceProperties.heightPx.toFloat())
 
     Box(modifier = modifier.aspectRatio(ratio, matchHeightConstraintsFirst = true)) {
-        LawnchairTheme(darkTheme = !darkText) {
+        QQ LauncherTheme(darkTheme = !darkText) {
             Spacer(
                 modifier = Modifier
                     .fillMaxSize()

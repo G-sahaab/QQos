@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components
+package app.qqlauncher.ui.preferences.components
 
 import android.R as AndroidR
 import android.content.Intent
@@ -25,19 +25,19 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.gestures.config.GestureHandlerConfig
-import app.lawnchair.gestures.config.GestureHandlerOption
-import app.lawnchair.gestures.config.buildConfigFrom
-import app.lawnchair.gestures.config.filterGestureHandlerOptions
-import app.lawnchair.gestures.type.GestureType
-import app.lawnchair.gestures.ui.LawnchairShortcutActivity
-import app.lawnchair.preferences.PreferenceAdapter
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.ui.ModalBottomSheetContent
-import app.lawnchair.ui.preferences.components.layout.PreferenceDivider
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.util.LocalBottomSheetHandler
+import app.qqlauncher.gestures.config.GestureHandlerConfig
+import app.qqlauncher.gestures.config.GestureHandlerOption
+import app.qqlauncher.gestures.config.buildConfigFrom
+import app.qqlauncher.gestures.config.filterGestureHandlerOptions
+import app.qqlauncher.gestures.type.GestureType
+import app.qqlauncher.gestures.ui.QQ LauncherShortcutActivity
+import app.qqlauncher.preferences.PreferenceAdapter
+import app.qqlauncher.preferences.getAdapter
+import app.qqlauncher.preferences2.preferenceManager2
+import app.qqlauncher.ui.ModalBottomSheetContent
+import app.qqlauncher.ui.preferences.components.layout.PreferenceDivider
+import app.qqlauncher.ui.preferences.components.layout.PreferenceTemplate
+import app.qqlauncher.ui.util.LocalBottomSheetHandler
 import com.android.launcher3.util.ComponentKey
 import kotlinx.coroutines.launch
 
@@ -130,7 +130,7 @@ fun AppGesturePreference(
         object : ResultReceiver(Handler(Looper.getMainLooper())) {
             override fun onReceiveResult(resultCode: Int, resultData: Bundle?) {
                 if (resultCode == android.app.Activity.RESULT_OK) {
-                    val handlerString = resultData?.getString(LawnchairShortcutActivity.EXTRA_HANDLER)
+                    val handlerString = resultData?.getString(QQ LauncherShortcutActivity.EXTRA_HANDLER)
                     if (handlerString != null) {
                         val config = GestureHandlerConfig.fromString(handlerString)
                         scope.launch {
@@ -147,8 +147,8 @@ fun AppGesturePreference(
         description = { Text(text = currentConfig.getLabel(context)) },
         modifier = modifier.fillMaxWidth(),
         onClick = {
-            val intent = Intent(context, LawnchairShortcutActivity::class.java).apply {
-                putExtra(LawnchairShortcutActivity.EXTRA_RESULT_RECEIVER, resultReceiver)
+            val intent = Intent(context, QQ LauncherShortcutActivity::class.java).apply {
+                putExtra(QQ LauncherShortcutActivity.EXTRA_RESULT_RECEIVER, resultReceiver)
             }
             context.startActivity(intent)
         },

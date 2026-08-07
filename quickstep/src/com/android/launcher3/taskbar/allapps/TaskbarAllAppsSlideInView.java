@@ -42,8 +42,8 @@ import android.window.OnBackInvokedDispatcher;
 
 import androidx.annotation.Nullable;
 
-import app.lawnchair.theme.color.tokens.ColorTokens;
-import app.lawnchair.util.LawnchairUtilsKt;
+import app.qqlauncher.theme.color.tokens.ColorTokens;
+import app.qqlauncher.util.QQ LauncherUtilsKt;
 import com.android.app.animation.Interpolators;
 import com.android.launcher3.DeviceProfile;
 import com.android.launcher3.Flags;
@@ -283,7 +283,7 @@ public class TaskbarAllAppsSlideInView extends AbstractSlideInView<TaskbarOverla
             return ColorTokens.AllAppsScrimColor.resolveColor(context);
         } else if (!Flags.allAppsBlur()) {
             // If there's a sheet but no blur, use the old scrim color.
-            return LawnchairUtilsKt.getAllAppsBackgroundColor(context, 
+            return QQ LauncherUtilsKt.getAllAppsBackgroundColor(context, 
                 ColorTokens.WidgetsPickerScrim.resolveColor(context));
         }
         return ColorTokens.AllAppsScrimColor.resolveColor(context);

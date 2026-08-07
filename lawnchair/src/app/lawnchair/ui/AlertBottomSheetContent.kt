@@ -1,4 +1,4 @@
-package app.lawnchair.ui
+package app.qqlauncher.ui
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -13,7 +13,7 @@ import androidx.compose.material3.ProvideTextStyle
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import app.lawnchair.ui.preferences.components.layout.BottomSpacer
+import app.qqlauncher.ui.preferences.components.layout.BottomSpacer
 
 @Composable
 fun ModalBottomSheetContent(

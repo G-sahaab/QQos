@@ -1,8 +1,8 @@
-package app.lawnchair.ui.preferences.components.controls
+package app.qqlauncher.ui.preferences.components.controls
 
 import androidx.compose.runtime.Composable
-import app.lawnchair.util.hasFlag
-import app.lawnchair.util.setFlag
+import app.qqlauncher.util.hasFlag
+import app.qqlauncher.util.setFlag
 
 @Composable
 fun FlagSwitchPreference(

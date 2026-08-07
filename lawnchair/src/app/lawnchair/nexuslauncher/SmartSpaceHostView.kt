@@ -1,4 +1,4 @@
-package app.lawnchair.nexuslauncher
+package app.qqlauncher.nexuslauncher
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -10,8 +10,8 @@ import android.view.View
 import android.view.View.OnLongClickListener
 import android.view.ViewGroup
 import androidx.core.view.HapticFeedbackConstantsCompat
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.util.unsafeLazy
+import app.qqlauncher.QQ LauncherLauncher
+import app.qqlauncher.util.unsafeLazy
 import com.android.launcher3.CheckLongPressHelper
 import com.android.launcher3.Launcher
 import com.android.launcher3.R
@@ -53,7 +53,7 @@ sealed class SmartSpaceHostView(context: Context) :
             R.drawable.ic_smartspace_preferences,
             NexusLauncherEnum.SMARTSPACE_TAP_OR_LONGPRESS,
         ) { v: View -> openSettings(v) }
-        OptionsPopupView.show<LawnchairLauncher>(mLauncher, centerPos, listOf(item), true)
+        OptionsPopupView.show<QQ LauncherLauncher>(mLauncher, centerPos, listOf(item), true)
         return true
     }
 

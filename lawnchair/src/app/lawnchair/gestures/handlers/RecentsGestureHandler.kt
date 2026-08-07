@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package app.lawnchair.gestures.handlers
+package app.qqlauncher.gestures.handlers
 
 import android.accessibilityservice.AccessibilityService
 import android.content.Context
-import app.lawnchair.LawnchairLauncher
+import app.qqlauncher.QQ LauncherLauncher
 import com.android.launcher3.R
 
 class RecentsGestureHandler(context: Context) : GestureHandler(context) {
 
-    override suspend fun onTrigger(launcher: LawnchairLauncher) {
+    override suspend fun onTrigger(launcher: QQ LauncherLauncher) {
         GestureWithAccessibilityHandler.onTrigger(
             launcher,
             R.string.recents_screen_a11y_hint,

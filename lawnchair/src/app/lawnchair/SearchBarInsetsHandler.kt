@@ -1,4 +1,4 @@
-package app.lawnchair
+package app.qqlauncher
 
 import android.graphics.Insets
 import android.os.Build

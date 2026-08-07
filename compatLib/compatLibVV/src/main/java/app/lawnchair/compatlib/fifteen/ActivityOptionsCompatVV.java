@@ -1,4 +1,4 @@
-package app.lawnchair.compatlib.fifteen;
+package app.qqlauncher.compatlib.fifteen;
 
 import android.app.ActivityOptions;
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.os.Handler;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
-import app.lawnchair.compatlib.fourteen.ActivityOptionsCompatVU;
+import app.qqlauncher.compatlib.fourteen.ActivityOptionsCompatVU;
 
 @RequiresApi(35)
 public class ActivityOptionsCompatVV extends ActivityOptionsCompatVU {

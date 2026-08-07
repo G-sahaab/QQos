@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.destinations
+package app.qqlauncher.ui.preferences.destinations
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
@@ -11,23 +11,23 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.LawnchairApp
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences.observeAsState
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.ui.preferences.components.QuickActionsPreferences
-import app.lawnchair.ui.preferences.components.RecentsQuickAction
-import app.lawnchair.ui.preferences.components.controls.SliderPreference
-import app.lawnchair.ui.preferences.components.controls.SwitchPreference
-import app.lawnchair.ui.preferences.components.controls.WarningPreference
-import app.lawnchair.ui.preferences.components.layout.ExpandAndShrink
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
-import app.lawnchair.ui.theme.LawnchairTheme
-import app.lawnchair.ui.util.preview.PreferenceGroupPreviewContainer
-import app.lawnchair.ui.util.preview.PreviewLawnchair
-import app.lawnchair.util.isOnePlusStock
+import app.qqlauncher.QQ LauncherApp
+import app.qqlauncher.preferences.getAdapter
+import app.qqlauncher.preferences.observeAsState
+import app.qqlauncher.preferences.preferenceManager
+import app.qqlauncher.preferences2.preferenceManager2
+import app.qqlauncher.ui.preferences.components.QuickActionsPreferences
+import app.qqlauncher.ui.preferences.components.RecentsQuickAction
+import app.qqlauncher.ui.preferences.components.controls.SliderPreference
+import app.qqlauncher.ui.preferences.components.controls.SwitchPreference
+import app.qqlauncher.ui.preferences.components.controls.WarningPreference
+import app.qqlauncher.ui.preferences.components.layout.ExpandAndShrink
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroup
+import app.qqlauncher.ui.preferences.components.layout.PreferenceLayout
+import app.qqlauncher.ui.theme.QQ LauncherTheme
+import app.qqlauncher.ui.util.preview.PreferenceGroupPreviewContainer
+import app.qqlauncher.ui.util.preview.PreviewQQ Launcher
+import app.qqlauncher.util.isOnePlusStock
 import com.android.launcher3.R
 import com.android.launcher3.Utilities
 
@@ -75,7 +75,7 @@ fun QuickstepPreferences(
         label = stringResource(id = R.string.quickstep_label),
         modifier = modifier,
     ) {
-        if (!LawnchairApp.isRecentsEnabled) QuickSwitchIgnoredWarning()
+        if (!QQ LauncherApp.isRecentsEnabled) QuickSwitchIgnoredWarning()
         val recentsTranslucentBackground by prefs.recentsTranslucentBackground.observeAsState()
         PreferenceGroup(heading = stringResource(id = R.string.general_label)) {
             SwitchPreference(
@@ -132,12 +132,12 @@ fun QuickstepPreferences(
 }
 
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
-@PreviewLawnchair
+@PreviewQQ Launcher
 @Composable
 private fun QuickSwitchIgnoredWarning(
     modifier: Modifier = Modifier,
 ) {
-    LawnchairTheme {
+    QQ LauncherTheme {
         WarningPreference(
             text = stringResource(id = R.string.quickswitch_ignored_warning),
             modifier = modifier.padding(horizontal = 16.dp),

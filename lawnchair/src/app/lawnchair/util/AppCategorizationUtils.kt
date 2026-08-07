@@ -1,7 +1,7 @@
-package app.lawnchair.util
+package app.qqlauncher.util
 
 import android.content.Context
-import app.lawnchair.flowerpot.Flowerpot
+import app.qqlauncher.flowerpot.Flowerpot
 import com.android.launcher3.model.data.AppInfo
 import com.android.launcher3.util.ApplicationInfoWrapper
 import com.android.launcher3.util.PackageManagerHelper

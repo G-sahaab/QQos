@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.destinations
+package app.qqlauncher.ui.preferences.destinations
 
 import android.util.Log
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -35,23 +35,23 @@ import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
-import app.lawnchair.data.folder.FolderEntry
-import app.lawnchair.data.folder.model.FolderViewModel
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.ui.ModalBottomSheetContent
-import app.lawnchair.ui.preferences.LocalNavController
-import app.lawnchair.ui.preferences.components.controls.ClickablePreference
-import app.lawnchair.ui.preferences.components.controls.SwitchPreference
-import app.lawnchair.ui.preferences.components.layout.LoadingScreen
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.preferences.components.reorderable.ReorderableDragHandle
-import app.lawnchair.ui.preferences.components.reorderable.ReorderablePreferenceGroup
-import app.lawnchair.ui.preferences.navigation.AppDrawerAppListToFolder
-import app.lawnchair.ui.preferences.navigation.AppDrawerFolder
-import app.lawnchair.ui.util.bottomSheetHandler
+import app.qqlauncher.data.folder.FolderEntry
+import app.qqlauncher.data.folder.model.FolderViewModel
+import app.qqlauncher.preferences.getAdapter
+import app.qqlauncher.preferences.preferenceManager
+import app.qqlauncher.ui.ModalBottomSheetContent
+import app.qqlauncher.ui.preferences.LocalNavController
+import app.qqlauncher.ui.preferences.components.controls.ClickablePreference
+import app.qqlauncher.ui.preferences.components.controls.SwitchPreference
+import app.qqlauncher.ui.preferences.components.layout.LoadingScreen
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroup
+import app.qqlauncher.ui.preferences.components.layout.PreferenceLayout
+import app.qqlauncher.ui.preferences.components.layout.PreferenceTemplate
+import app.qqlauncher.ui.preferences.components.reorderable.ReorderableDragHandle
+import app.qqlauncher.ui.preferences.components.reorderable.ReorderablePreferenceGroup
+import app.qqlauncher.ui.preferences.navigation.AppDrawerAppListToFolder
+import app.qqlauncher.ui.preferences.navigation.AppDrawerFolder
+import app.qqlauncher.ui.util.bottomSheetHandler
 import com.android.launcher3.R
 
 @Composable

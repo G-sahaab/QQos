@@ -1,4 +1,4 @@
-package app.lawnchair.util
+package app.qqlauncher.util
 
 import android.content.Context
 import android.content.res.Resources
@@ -29,7 +29,7 @@ import kotlin.math.max
 
 @Keep
 @LauncherAppSingleton
-class LawnchairWindowManagerProxy @Inject constructor() : WindowManagerProxy(Utilities.ATLEAST_T) {
+class QQ LauncherWindowManagerProxy @Inject constructor() : WindowManagerProxy(Utilities.ATLEAST_T) {
 
     @Suppress("PropertyName")
     val TAG = "LC-WindowManagerProxy"

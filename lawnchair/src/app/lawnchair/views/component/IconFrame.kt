@@ -1,4 +1,4 @@
-package app.lawnchair.views.component
+package app.qqlauncher.views.component
 
 import android.content.Context
 import android.graphics.drawable.GradientDrawable

@@ -1,11 +1,11 @@
-package app.lawnchair.data.wallpaper.model
+package app.qqlauncher.data.wallpaper.model
 
 import android.app.Application
 import android.app.WallpaperManager
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import app.lawnchair.data.wallpaper.Wallpaper
-import app.lawnchair.wallpaper.WallpaperManagerCompat
+import app.qqlauncher.data.wallpaper.Wallpaper
+import app.qqlauncher.wallpaper.WallpaperManagerCompat
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch

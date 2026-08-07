@@ -1,6 +1,6 @@
-package app.lawnchair.preferences2
+package app.qqlauncher.preferences2
 
-import app.lawnchair.LawnchairApp
+import app.qqlauncher.QQ LauncherApp
 import com.patrykmichalik.opto.core.PreferenceImpl
 import com.patrykmichalik.opto.core.getFromPreferences
 import kotlin.jvm.JvmOverloads
@@ -13,7 +13,7 @@ import kotlin.jvm.JvmOverloads
  */
 @JvmOverloads
 fun <C, S> PreferenceImpl<C, S>.firstCached(
-    prefs2: PreferenceManager2 = PreferenceManager2.getInstance(LawnchairApp.instance),
+    prefs2: PreferenceManager2 = PreferenceManager2.getInstance(QQ LauncherApp.instance),
 ): C {
     return getFromPreferences(prefs2.getCachedPreferences())
 }

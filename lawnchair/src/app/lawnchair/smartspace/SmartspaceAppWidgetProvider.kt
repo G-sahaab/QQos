@@ -1,4 +1,4 @@
-package app.lawnchair.smartspace
+package app.qqlauncher.smartspace
 
 import android.appwidget.AppWidgetProvider
 import android.content.ComponentName

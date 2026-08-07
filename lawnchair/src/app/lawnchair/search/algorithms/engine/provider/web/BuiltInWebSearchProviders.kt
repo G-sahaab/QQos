@@ -1,8 +1,8 @@
-package app.lawnchair.search.algorithms.engine.provider.web
+package app.qqlauncher.search.algorithms.engine.provider.web
 
 import android.net.Uri
 import android.util.Log
-import app.lawnchair.util.kotlinxJson
+import app.qqlauncher.util.kotlinxJson
 import com.android.launcher3.R
 import java.lang.reflect.Type
 import kotlinx.coroutines.Dispatchers
@@ -218,8 +218,8 @@ object StartPageWebSearchProvider : WebSearchProvider {
         @GET("suggestions")
         suspend fun getSuggestions(
             @Query("q") query: String,
-            @Query("segment") segment: String = "startpage.lawnchair", // Identify our app
-            @Query("partner") partner: String = "lawnchair",
+            @Query("segment") segment: String = "startpage.qqlauncher", // Identify our app
+            @Query("partner") partner: String = "qqlauncher",
             @Query("format") format: String = "opensearch",
         ): Response<String>
     }
@@ -298,8 +298,8 @@ object StartPageEUWebSearchProvider : WebSearchProvider {
         @GET("suggestions")
         suspend fun getSuggestions(
             @Query("q") query: String,
-            @Query("segment") segment: String = "startpage.lawnchair",
-            @Query("partner") partner: String = "lawnchair",
+            @Query("segment") segment: String = "startpage.qqlauncher",
+            @Query("partner") partner: String = "qqlauncher",
             @Query("format") format: String = "opensearch",
         ): Response<String>
     }

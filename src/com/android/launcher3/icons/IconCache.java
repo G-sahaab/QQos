@@ -86,9 +86,9 @@ import java.util.stream.Stream;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import app.lawnchair.LawnchairActivityCachingLogic;
-import app.lawnchair.gestures.ui.LawnchairShortcutActivity;
-import app.lawnchair.icons.LawnchairIconProvider;
+import app.qqlauncher.QQ LauncherActivityCachingLogic;
+import app.qqlauncher.gestures.ui.QQ LauncherShortcutActivity;
+import app.qqlauncher.icons.QQ LauncherIconProvider;
 
 /**
  * Cache of application icons.  Icons can be made from any thread.
@@ -123,7 +123,7 @@ public class IconCache extends BaseIconCache {
             InvariantDeviceProfile idp,
             @Nullable @Named("ICONS_DB") String dbFileName,
             UserCache userCache,
-            LawnchairIconProvider iconProvider,
+            QQ LauncherIconProvider iconProvider,
             InstallSessionHelper installSessionHelper,
             LauncherIcons.IconPool iconPool,
             InstantAppResolver instantAppResolver,
@@ -202,7 +202,7 @@ public class IconCache extends BaseIconCache {
         removeIconsForPkg(packageName, user);
         long userSerial = mUserManager.getSerialNumberForUser(user);
         for (LauncherActivityInfo app : apps) {
-            addIconToDBAndMemCache(app, LawnchairActivityCachingLogic.INSTANCE.get(context), userSerial);
+            addIconToDBAndMemCache(app, QQ LauncherActivityCachingLogic.INSTANCE.get(context), userSerial);
         }
     }
 
@@ -270,7 +270,7 @@ public class IconCache extends BaseIconCache {
      */
     public synchronized void updateTitleAndIcon(AppInfo application) {
         CacheEntry entry = cacheLocked(application.componentName,
-            application.user, () -> null, LawnchairActivityCachingLogic.INSTANCE.get(context),
+            application.user, () -> null, QQ LauncherActivityCachingLogic.INSTANCE.get(context),
                 application.getMatchingLookupFlag());
         if (entry.bitmap != null || !isDefaultIcon(entry.bitmap, application.user)) {
             applyCacheEntry(entry, application);
@@ -325,7 +325,7 @@ public class IconCache extends BaseIconCache {
             return;
         }
 
-        info.bitmap = LawnchairShortcutActivity.Companion.shouldSkipShortcutBadge(context, si.getShortcutInfo())
+        info.bitmap = QQ LauncherShortcutActivity.Companion.shouldSkipShortcutBadge(context, si.getShortcutInfo())
             ? bitmapInfo.withFlags(FlagOp.NO_OP)
             : bitmapInfo.withBadgeInfo(getShortcutInfoBadge(si.getShortcutInfo()));
     }
@@ -392,7 +392,7 @@ public class IconCache extends BaseIconCache {
                     lookupFlag.withSkipAddToMemCache());
             applyCacheEntry(entry, info);
 
-            if (!LawnchairShortcutActivity.Companion.shouldSkipShortcutBadge(context, si)) {
+            if (!QQ LauncherShortcutActivity.Companion.shouldSkipShortcutBadge(context, si)) {
                 info.bitmap = info.bitmap.withBadgeInfo(getShortcutInfoBadge(si));
             }
         } else {
@@ -420,7 +420,7 @@ public class IconCache extends BaseIconCache {
             @NonNull Supplier<LauncherActivityInfo> activityInfoProvider,
             @NonNull CacheLookupFlag lookupFlag) {
         CacheEntry entry = cacheLocked(infoInOut.getTargetComponent(), infoInOut.user,
-            activityInfoProvider, LawnchairActivityCachingLogic.INSTANCE.get(context), lookupFlag);
+            activityInfoProvider, QQ LauncherActivityCachingLogic.INSTANCE.get(context), lookupFlag);
         applyCacheEntry(entry, infoInOut);
     }
 
@@ -521,7 +521,7 @@ public class IconCache extends BaseIconCache {
                                 cn,
                                 /* user = */ sectionKey.first,
                                 () -> duplicateIconRequests.get(0).launcherActivityInfo,
-                            LawnchairActivityCachingLogic.INSTANCE.get(context),
+                            QQ LauncherActivityCachingLogic.INSTANCE.get(context),
                                 sectionKey.second,
                                 c);
 
@@ -570,7 +570,7 @@ public class IconCache extends BaseIconCache {
                     loadFallbackIcon(
                             lai,
                             entry,
-                        LawnchairActivityCachingLogic.INSTANCE.get(context),
+                        QQ LauncherActivityCachingLogic.INSTANCE.get(context),
                             DEFAULT_LOOKUP_FLAG.withUsePackageIcon(false),
                             /* usePackageTitle= */ loadFallbackTitle,
                             cn,
@@ -580,7 +580,7 @@ public class IconCache extends BaseIconCache {
                     loadFallbackTitle(
                             lai,
                             entry,
-                        LawnchairActivityCachingLogic.INSTANCE.get(context),
+                        QQ LauncherActivityCachingLogic.INSTANCE.get(context),
                             sectionKey.first);
                 }
 
@@ -674,7 +674,7 @@ public class IconCache extends BaseIconCache {
     @VisibleForTesting
     synchronized boolean isItemInDb(ComponentKey cacheKey) {
         return getEntryFromDBLocked(cacheKey, new CacheEntry(), DEFAULT_LOOKUP_FLAG,
-            LawnchairActivityCachingLogic.INSTANCE.get(context));
+            QQ LauncherActivityCachingLogic.INSTANCE.get(context));
     }
 
     /**

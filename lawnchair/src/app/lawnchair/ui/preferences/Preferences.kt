@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences
+package app.qqlauncher.ui.preferences
 
 import android.content.Intent
 import androidx.compose.foundation.layout.Box
@@ -41,16 +41,16 @@ import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import androidx.window.layout.DisplayFeature
-import app.lawnchair.ui.preferences.destinations.PreferencesDashboard
-import app.lawnchair.ui.preferences.navigation.General
-import app.lawnchair.ui.preferences.navigation.IconPicker
-import app.lawnchair.ui.preferences.navigation.PreferenceNavigation
-import app.lawnchair.ui.preferences.navigation.PreferenceRootRoute
-import app.lawnchair.ui.preferences.navigation.PreferenceRoute
-import app.lawnchair.ui.preferences.navigation.Root
-import app.lawnchair.ui.preferences.navigation.SelectIcon
-import app.lawnchair.ui.util.ProvideBottomSheetHandler
-import app.lawnchair.util.ProvideLifecycleState
+import app.qqlauncher.ui.preferences.destinations.PreferencesDashboard
+import app.qqlauncher.ui.preferences.navigation.General
+import app.qqlauncher.ui.preferences.navigation.IconPicker
+import app.qqlauncher.ui.preferences.navigation.PreferenceNavigation
+import app.qqlauncher.ui.preferences.navigation.PreferenceRootRoute
+import app.qqlauncher.ui.preferences.navigation.PreferenceRoute
+import app.qqlauncher.ui.preferences.navigation.Root
+import app.qqlauncher.ui.preferences.navigation.SelectIcon
+import app.qqlauncher.ui.util.ProvideBottomSheetHandler
+import app.qqlauncher.util.ProvideLifecycleState
 import com.google.accompanist.adaptive.HorizontalTwoPaneStrategy
 import com.google.accompanist.adaptive.TwoPane
 

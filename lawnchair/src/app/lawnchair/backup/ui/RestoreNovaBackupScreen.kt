@@ -1,4 +1,4 @@
-package app.lawnchair.backup.ui
+package app.qqlauncher.backup.ui
 
 import android.app.Activity
 import android.content.Intent
@@ -30,17 +30,17 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import androidx.navigation.toRoute
-import app.lawnchair.backup.NovaBackupConverter.NovaBackupInfo
-import app.lawnchair.backup.ui.RestoreNovaBackupViewModel.Event
-import app.lawnchair.backup.ui.RestoreNovaBackupViewModel.State
-import app.lawnchair.ui.preferences.LocalIsExpandedScreen
-import app.lawnchair.ui.preferences.LocalNavController
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.preferences.navigation.RestoreNovaBackup
-import app.lawnchair.util.BackHandler
-import app.lawnchair.util.restartLauncher
+import app.qqlauncher.backup.NovaBackupConverter.NovaBackupInfo
+import app.qqlauncher.backup.ui.RestoreNovaBackupViewModel.Event
+import app.qqlauncher.backup.ui.RestoreNovaBackupViewModel.State
+import app.qqlauncher.ui.preferences.LocalIsExpandedScreen
+import app.qqlauncher.ui.preferences.LocalNavController
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroup
+import app.qqlauncher.ui.preferences.components.layout.PreferenceLayout
+import app.qqlauncher.ui.preferences.components.layout.PreferenceTemplate
+import app.qqlauncher.ui.preferences.navigation.RestoreNovaBackup
+import app.qqlauncher.util.BackHandler
+import app.qqlauncher.util.restartLauncher
 import com.android.launcher3.R
 import java.util.Base64
 import kotlinx.coroutines.flow.Flow

@@ -1,4 +1,4 @@
-package app.lawnchair.font
+package app.qqlauncher.font
 
 object FontAxes {
     const val WEIGHT = "wght"

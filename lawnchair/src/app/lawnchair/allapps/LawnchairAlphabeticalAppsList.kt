@@ -1,4 +1,4 @@
-package app.lawnchair.allapps
+package app.qqlauncher.allapps
 
 import android.content.Context
 import android.util.Log
@@ -6,13 +6,13 @@ import androidx.activity.ComponentActivity
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.lifecycleScope
-import app.lawnchair.data.folder.FolderEntry
-import app.lawnchair.data.folder.model.FolderViewModel
-import app.lawnchair.launcher
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.util.categorizeAppsWithSystemAndGoogle
-import app.lawnchair.util.observeOnce
+import app.qqlauncher.data.folder.FolderEntry
+import app.qqlauncher.data.folder.model.FolderViewModel
+import app.qqlauncher.launcher
+import app.qqlauncher.preferences.PreferenceManager
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.util.categorizeAppsWithSystemAndGoogle
+import app.qqlauncher.util.observeOnce
 import com.android.launcher3.InvariantDeviceProfile.OnIDPChangeListener
 import com.android.launcher3.allapps.AllAppsStore
 import com.android.launcher3.allapps.AlphabeticalAppsList
@@ -28,7 +28,7 @@ import com.patrykmichalik.opto.core.onEach
 import java.util.function.Predicate
 
 @Suppress("SYNTHETIC_PROPERTY_WITHOUT_JAVA_ORIGIN")
-class LawnchairAlphabeticalAppsList<T>(
+class QQ LauncherAlphabeticalAppsList<T>(
     private val context: T,
     private val appsStore: AllAppsStore<T>,
     workProfileManager: WorkProfileManager?,

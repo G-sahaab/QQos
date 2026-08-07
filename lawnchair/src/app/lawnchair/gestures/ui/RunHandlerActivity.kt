@@ -1,5 +1,5 @@
 /*
- * Copyright 2026, Lawnchair
+ * Copyright 2026, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,23 +14,23 @@
  * limitations under the License.
  */
 
-package app.lawnchair.gestures.ui
+package app.qqlauncher.gestures.ui
 
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import app.lawnchair.LawnchairLauncher
+import app.qqlauncher.QQ LauncherLauncher
 
 class RunHandlerActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        if (intent.action == LawnchairShortcutActivity.START_ACTION) {
+        if (intent.action == QQ LauncherShortcutActivity.START_ACTION) {
             startActivity(
-                Intent(this, LawnchairLauncher::class.java).apply {
-                    action = LawnchairShortcutActivity.START_ACTION
+                Intent(this, QQ LauncherLauncher::class.java).apply {
+                    action = QQ LauncherShortcutActivity.START_ACTION
                     putExtra(
-                        LawnchairShortcutActivity.EXTRA_HANDLER,
-                        intent.getStringExtra(LawnchairShortcutActivity.EXTRA_HANDLER),
+                        QQ LauncherShortcutActivity.EXTRA_HANDLER,
+                        intent.getStringExtra(QQ LauncherShortcutActivity.EXTRA_HANDLER),
                     )
                     addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_SINGLE_TOP)
                 },

@@ -57,9 +57,9 @@ import com.android.launcher3.testing.shared.TestProtocol;
 import java.util.ArrayList;
 import java.util.List;
 
-import app.lawnchair.preferences2.PreferenceCacheExtensionsKt;
-import app.lawnchair.preferences2.PreferenceManager2;
-import app.lawnchair.ui.popup.LauncherOptionsPopup;
+import app.qqlauncher.preferences2.PreferenceCacheExtensionsKt;
+import app.qqlauncher.preferences2.PreferenceManager2;
+import app.qqlauncher.ui.popup.LauncherOptionsPopup;
 
 /**
  * Popup shown on long pressing an empty space in launcher

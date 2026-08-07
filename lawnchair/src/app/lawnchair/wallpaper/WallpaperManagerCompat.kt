@@ -1,11 +1,11 @@
-package app.lawnchair.wallpaper
+package app.qqlauncher.wallpaper
 
 import android.app.WallpaperManager
 import android.content.Context
-import app.lawnchair.data.wallpaper.service.WallpaperService
-import app.lawnchair.util.MainThreadInitializedObject
-import app.lawnchair.util.requireSystemService
-import app.lawnchair.wallpaper.WallpaperColorsCompat.Companion.HINT_SUPPORTS_DARK_THEME
+import app.qqlauncher.data.wallpaper.service.WallpaperService
+import app.qqlauncher.util.MainThreadInitializedObject
+import app.qqlauncher.util.requireSystemService
+import app.qqlauncher.wallpaper.WallpaperColorsCompat.Companion.HINT_SUPPORTS_DARK_THEME
 import com.android.launcher3.Utilities
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

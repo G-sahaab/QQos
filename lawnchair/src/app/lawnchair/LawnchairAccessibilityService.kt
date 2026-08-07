@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package app.lawnchair
+package app.qqlauncher
 
 import android.accessibilityservice.AccessibilityService
 import android.accessibilityservice.AccessibilityServiceInfo
 import android.content.Intent
 import android.view.accessibility.AccessibilityEvent
 
-class LawnchairAccessibilityService : AccessibilityService() {
+class QQ LauncherAccessibilityService : AccessibilityService() {
 
     override fun onServiceConnected() {
         serviceInfo = AccessibilityServiceInfo().apply {
@@ -34,11 +34,11 @@ class LawnchairAccessibilityService : AccessibilityService() {
             // to events from all applications.
             packageNames = emptyArray()
         }
-        lawnchairApp.accessibilityService = this
+        qqlauncherApp.accessibilityService = this
     }
 
     override fun onDestroy() {
-        lawnchairApp.accessibilityService = null
+        qqlauncherApp.accessibilityService = null
         super.onDestroy()
     }
 

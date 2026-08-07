@@ -1,4 +1,4 @@
-package app.lawnchair.overview
+package app.qqlauncher.overview
 
 import android.content.Context
 import androidx.annotation.Keep
@@ -13,8 +13,8 @@ class TaskOverlayFactoryImpl(@Suppress("UNUSED_PARAMETER") context: Context) : T
 
     class TaskOverlay(
         taskThumbnailView: TaskContainer,
-    ) : TaskOverlayFactory.TaskOverlay<LawnchairOverviewActionsView>(taskThumbnailView) {
-        // Lawnchair-TODO-Recents: The entire code for initOverlay moved to Go variant???
+    ) : TaskOverlayFactory.TaskOverlay<QQ LauncherOverviewActionsView>(taskThumbnailView) {
+        // QQ Launcher-TODO-Recents: The entire code for initOverlay moved to Go variant???
     }
 
     sealed interface OverlayUICallbacks : TaskOverlayFactory.OverlayUICallbacks {

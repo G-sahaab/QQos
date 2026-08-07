@@ -1,4 +1,4 @@
-package app.lawnchair.smartspace.model
+package app.qqlauncher.smartspace.model
 
 object SmartspaceScores {
     const val SCORE_WEATHER = 0f

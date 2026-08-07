@@ -16,8 +16,8 @@
 
 package com.android.launcher3.util;
 
-import static app.lawnchair.wallpaper.WallpaperColorsCompat.HINT_SUPPORTS_DARK_TEXT;
-import static app.lawnchair.wallpaper.WallpaperColorsCompat.HINT_SUPPORTS_DARK_THEME;
+import static app.qqlauncher.wallpaper.WallpaperColorsCompat.HINT_SUPPORTS_DARK_TEXT;
+import static app.qqlauncher.wallpaper.WallpaperColorsCompat.HINT_SUPPORTS_DARK_THEME;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -36,14 +36,14 @@ import com.android.launcher3.Utilities;
 import com.android.launcher3.icons.GraphicsUtils;
 import com.android.launcher3.views.ActivityContext;
 
-import app.lawnchair.preferences2.PreferenceCacheExtensionsKt;
-import app.lawnchair.preferences.PreferenceManager;
-import app.lawnchair.preferences2.PreferenceManager2;
-import app.lawnchair.theme.color.ColorMode;
-import app.lawnchair.theme.color.tokens.ColorTokens;
-import app.lawnchair.wallpaper.WallpaperColorsCompat;
-import app.lawnchair.wallpaper.WallpaperManagerCompat;
-import app.lawnchair.ui.theme.ColorKt;
+import app.qqlauncher.preferences2.PreferenceCacheExtensionsKt;
+import app.qqlauncher.preferences.PreferenceManager;
+import app.qqlauncher.preferences2.PreferenceManager2;
+import app.qqlauncher.theme.color.ColorMode;
+import app.qqlauncher.theme.color.tokens.ColorTokens;
+import app.qqlauncher.wallpaper.WallpaperColorsCompat;
+import app.qqlauncher.wallpaper.WallpaperManagerCompat;
+import app.qqlauncher.ui.theme.ColorKt;
 
 /**
  * Various utility methods associated with theming.
@@ -109,7 +109,7 @@ public class Themes {
     }
 
     public static float getDialogCornerRadius(Context context) {
-        return context.getResources().getDimension(R.dimen.lawnchair_dialog_corner_radius);
+        return context.getResources().getDimension(R.dimen.qqlauncher_dialog_corner_radius);
     }
 
     public static float getDimension(Context context, int attr, float defaultValue) {

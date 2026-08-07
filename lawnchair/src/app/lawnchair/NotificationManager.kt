@@ -1,9 +1,9 @@
-package app.lawnchair
+package app.qqlauncher
 
 import android.content.Context
 import android.content.pm.PackageManager
 import android.service.notification.StatusBarNotification
-import app.lawnchair.util.checkPackagePermission
+import app.qqlauncher.util.checkPackagePermission
 import com.android.launcher3.dagger.ApplicationContext
 import com.android.launcher3.dagger.LauncherAppComponent
 import com.android.launcher3.dagger.LauncherAppSingleton

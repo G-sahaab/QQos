@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.search
+package app.qqlauncher.ui.preferences.components.search
 
 import android.Manifest
 import android.provider.SearchRecentSuggestions
@@ -20,20 +20,20 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.preferences.PreferenceAdapter
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.search.LawnchairRecentSuggestionProvider
-import app.lawnchair.ui.preferences.components.PermissionDialog
-import app.lawnchair.ui.preferences.components.controls.ClickablePreference
-import app.lawnchair.ui.preferences.components.controls.MainSwitchPreference
-import app.lawnchair.ui.preferences.components.controls.SliderPreference
-import app.lawnchair.ui.preferences.components.controls.SwitchPreference
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.util.openAppPermissionSettings
+import app.qqlauncher.preferences.PreferenceAdapter
+import app.qqlauncher.preferences.getAdapter
+import app.qqlauncher.preferences.preferenceManager
+import app.qqlauncher.preferences2.preferenceManager2
+import app.qqlauncher.search.QQ LauncherRecentSuggestionProvider
+import app.qqlauncher.ui.preferences.components.PermissionDialog
+import app.qqlauncher.ui.preferences.components.controls.ClickablePreference
+import app.qqlauncher.ui.preferences.components.controls.MainSwitchPreference
+import app.qqlauncher.ui.preferences.components.controls.SliderPreference
+import app.qqlauncher.ui.preferences.components.controls.SwitchPreference
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroup
+import app.qqlauncher.ui.preferences.components.layout.PreferenceLayout
+import app.qqlauncher.ui.preferences.components.layout.PreferenceTemplate
+import app.qqlauncher.util.openAppPermissionSettings
 import com.android.launcher3.R
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.isGranted
@@ -213,8 +213,8 @@ fun GenericSearchProviderPreference(
 
                     val suggestionsRecent = SearchRecentSuggestions(
                         context,
-                        LawnchairRecentSuggestionProvider.AUTHORITY,
-                        LawnchairRecentSuggestionProvider.MODE,
+                        QQ LauncherRecentSuggestionProvider.AUTHORITY,
+                        QQ LauncherRecentSuggestionProvider.MODE,
                     )
 
                     ClickablePreference(

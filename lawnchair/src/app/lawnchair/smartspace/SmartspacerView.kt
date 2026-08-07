@@ -1,4 +1,4 @@
-package app.lawnchair.smartspace
+package app.qqlauncher.smartspace
 
 import android.content.Context
 import android.content.Intent
@@ -7,12 +7,12 @@ import android.graphics.RectF
 import android.util.AttributeSet
 import android.view.View
 import androidx.viewpager.widget.ViewPager
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.launcher
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.preferences2.subscribeBlocking
-import app.lawnchair.ui.preferences.PreferenceActivity
-import app.lawnchair.ui.preferences.navigation.Smartspace
+import app.qqlauncher.QQ LauncherLauncher
+import app.qqlauncher.launcher
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.preferences2.subscribeBlocking
+import app.qqlauncher.ui.preferences.PreferenceActivity
+import app.qqlauncher.ui.preferences.navigation.Smartspace
 import com.android.launcher3.R
 import com.android.launcher3.logging.StatsLogManager
 import com.android.launcher3.views.OptionsPopupView
@@ -60,7 +60,7 @@ class SmartspacerView(context: Context, attrs: AttributeSet?) : BcSmartspaceView
                     getDismissOption(target, dismissAction),
                 ).ifEmpty { listOf(getCustomizeOptionFallback()) }
                 val popup = OptionsPopupView
-                    .show<LawnchairLauncher>(launcher, RectF(pos), options, true)
+                    .show<QQ LauncherLauncher>(launcher, RectF(pos), options, true)
                 return object : Popup {
                     override fun dismiss() {
                         popup.close(true)

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package app.lawnchair.util;
+package app.qqlauncher.util;
 
 import static com.android.launcher3.util.Executors.MAIN_EXECUTOR;
 
@@ -34,9 +34,9 @@ import java.util.Set;
 import java.util.concurrent.ExecutionException;
 
 /**
- * [Lawnchair-specific] Utility class for defining singletons which are initiated on main thread.
+ * [QQ Launcher-specific] Utility class for defining singletons which are initiated on main thread.
  * <p> 
- * Lawnchair: This Launcher3 class has moved to Launcher3 Go variant.
+ * QQ Launcher: This Launcher3 class has moved to Launcher3 Go variant.
  */
 public class MainThreadInitializedObject<T> {
 

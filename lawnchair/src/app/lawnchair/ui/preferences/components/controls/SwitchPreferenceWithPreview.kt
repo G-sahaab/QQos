@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.controls
+package app.qqlauncher.ui.preferences.components.controls
 
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.tween
@@ -26,10 +26,10 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import app.lawnchair.preferences.PreferenceAdapter
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroupHeading
-import app.lawnchair.ui.theme.preferenceGroupColor
-import app.lawnchair.ui.util.addIf
+import app.qqlauncher.preferences.PreferenceAdapter
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroupHeading
+import app.qqlauncher.ui.theme.preferenceGroupColor
+import app.qqlauncher.ui.util.addIf
 
 @Composable
 fun SwitchPreferenceWithPreview(

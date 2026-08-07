@@ -1,12 +1,12 @@
-package app.lawnchair.search.algorithms
+package app.qqlauncher.search.algorithms
 
 import android.content.Context
 import android.os.Handler
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.search.adapter.SPACE
-import app.lawnchair.search.adapter.SearchTargetCompat
-import app.lawnchair.search.adapter.SearchTargetFactory
-import app.lawnchair.util.isDefaultLauncher
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.search.adapter.SPACE
+import app.qqlauncher.search.adapter.SearchTargetCompat
+import app.qqlauncher.search.adapter.SearchTargetFactory
+import app.qqlauncher.util.isDefaultLauncher
 import com.android.launcher3.LauncherAppState
 import com.android.launcher3.LauncherModel
 import com.android.launcher3.allapps.BaseAllAppsAdapter
@@ -21,7 +21,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class LawnchairAppSearchAlgorithm(context: Context) : LawnchairSearchAlgorithm(context) {
+class QQ LauncherAppSearchAlgorithm(context: Context) : QQ LauncherSearchAlgorithm(context) {
 
     private val appState = LauncherAppState.getInstance(context)
     private val resultHandler = Handler(Executors.MAIN_EXECUTOR.looper)

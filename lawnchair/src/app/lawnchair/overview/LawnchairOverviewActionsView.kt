@@ -1,4 +1,4 @@
-package app.lawnchair.overview
+package app.qqlauncher.overview
 
 import android.content.Context
 import android.util.AttributeSet
@@ -8,12 +8,12 @@ import android.widget.LinearLayout
 import android.widget.Space
 import androidx.core.view.ViewCompat
 import androidx.core.view.isVisible
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.util.isOnePlusStock
+import app.qqlauncher.preferences.PreferenceManager
+import app.qqlauncher.util.isOnePlusStock
 import com.android.launcher3.R
 import com.android.quickstep.views.OverviewActionsView
 
-class LawnchairOverviewActionsView @JvmOverloads constructor(
+class QQ LauncherOverviewActionsView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0,

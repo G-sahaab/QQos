@@ -1,12 +1,12 @@
-package app.lawnchair.icons.iconpack
+package app.qqlauncher.icons.iconpack
 
 import android.content.ComponentName
 import android.content.Context
 import android.graphics.drawable.Drawable
-import app.lawnchair.icons.ClockMetadata
-import app.lawnchair.icons.picker.IconEntry
-import app.lawnchair.icons.picker.IconPickerCategory
-import app.lawnchair.icons.picker.IconPickerItem
+import app.qqlauncher.icons.ClockMetadata
+import app.qqlauncher.icons.picker.IconEntry
+import app.qqlauncher.icons.picker.IconPickerCategory
+import app.qqlauncher.icons.picker.IconPickerItem
 import com.android.launcher3.compat.AlphabeticIndexCompat
 import java.util.concurrent.Semaphore
 import kotlinx.coroutines.CoroutineName

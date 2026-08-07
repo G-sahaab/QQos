@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.search
+package app.qqlauncher.ui.preferences.components.search
 
 import androidx.compose.animation.Crossfade
 import androidx.compose.foundation.background
@@ -23,37 +23,37 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.hotseat.DisabledHotseat
-import app.lawnchair.hotseat.HotseatMode
-import app.lawnchair.hotseat.LawnchairHotseat
-import app.lawnchair.preferences.PreferenceAdapter
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.qsb.LawnQsbLayout
-import app.lawnchair.qsb.LawnQsbUi
-import app.lawnchair.qsb.QsbActions
-import app.lawnchair.qsb.buildQsbStyle
-import app.lawnchair.qsb.getHotseatBackgroundColor
-import app.lawnchair.qsb.providers.Google
-import app.lawnchair.qsb.providers.PixelSearch
-import app.lawnchair.qsb.providers.QsbSearchProvider
-import app.lawnchair.qsb.rememberHotseatQsbState
-import app.lawnchair.theme.UiColorMode
-import app.lawnchair.theme.color.ColorOption
-import app.lawnchair.theme.color.tokens.ColorTokens
-import app.lawnchair.ui.preferences.components.NavigationActionPreference
-import app.lawnchair.ui.preferences.components.colorpreference.ColorPreference
-import app.lawnchair.ui.preferences.components.controls.ListPreference
-import app.lawnchair.ui.preferences.components.controls.ListPreferenceEntry
-import app.lawnchair.ui.preferences.components.controls.SliderPreference
-import app.lawnchair.ui.preferences.components.controls.SwitchPreference
-import app.lawnchair.ui.preferences.components.layout.ExpandAndShrink
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.preferences.navigation.DockSearchProvider
-import app.lawnchair.ui.theme.isSelectedThemeDark
-import app.lawnchair.ui.theme.preferenceGroupColor
+import app.qqlauncher.hotseat.DisabledHotseat
+import app.qqlauncher.hotseat.HotseatMode
+import app.qqlauncher.hotseat.QQ LauncherHotseat
+import app.qqlauncher.preferences.PreferenceAdapter
+import app.qqlauncher.preferences.getAdapter
+import app.qqlauncher.preferences.preferenceManager
+import app.qqlauncher.preferences2.preferenceManager2
+import app.qqlauncher.qsb.LawnQsbLayout
+import app.qqlauncher.qsb.LawnQsbUi
+import app.qqlauncher.qsb.QsbActions
+import app.qqlauncher.qsb.buildQsbStyle
+import app.qqlauncher.qsb.getHotseatBackgroundColor
+import app.qqlauncher.qsb.providers.Google
+import app.qqlauncher.qsb.providers.PixelSearch
+import app.qqlauncher.qsb.providers.QsbSearchProvider
+import app.qqlauncher.qsb.rememberHotseatQsbState
+import app.qqlauncher.theme.UiColorMode
+import app.qqlauncher.theme.color.ColorOption
+import app.qqlauncher.theme.color.tokens.ColorTokens
+import app.qqlauncher.ui.preferences.components.NavigationActionPreference
+import app.qqlauncher.ui.preferences.components.colorpreference.ColorPreference
+import app.qqlauncher.ui.preferences.components.controls.ListPreference
+import app.qqlauncher.ui.preferences.components.controls.ListPreferenceEntry
+import app.qqlauncher.ui.preferences.components.controls.SliderPreference
+import app.qqlauncher.ui.preferences.components.controls.SwitchPreference
+import app.qqlauncher.ui.preferences.components.layout.ExpandAndShrink
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroup
+import app.qqlauncher.ui.preferences.components.layout.PreferenceTemplate
+import app.qqlauncher.ui.preferences.navigation.DockSearchProvider
+import app.qqlauncher.ui.theme.isSelectedThemeDark
+import app.qqlauncher.ui.theme.preferenceGroupColor
 import com.android.launcher3.R
 
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
@@ -74,7 +74,7 @@ fun DockSearchPreference(
     val hotseatQsbProviderAdapter by prefs2.hotseatQsbProvider.getAdapter()
 
     Crossfade(isHotseatEnabled.state.value, label = "transition", modifier = modifier) { hotseatEnabled ->
-        val isLawnchairHotseat = hotseatModeAdapter.state.value == LawnchairHotseat
+        val isQQ LauncherHotseat = hotseatModeAdapter.state.value == QQ LauncherHotseat
         if (hotseatEnabled) {
             Column {
                 PreferenceGroup {
@@ -94,7 +94,7 @@ fun DockSearchPreference(
                         )
                     }
                 }
-                ExpandAndShrink(visible = isLawnchairHotseat) {
+                ExpandAndShrink(visible = isQQ LauncherHotseat) {
                     Column {
                         PreferenceGroup(
                             heading = stringResource(R.string.search_bar_settings),

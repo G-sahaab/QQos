@@ -1,4 +1,4 @@
-package app.lawnchair.util
+package app.qqlauncher.util
 
 import android.os.FileObserver
 import com.android.launcher3.Utilities

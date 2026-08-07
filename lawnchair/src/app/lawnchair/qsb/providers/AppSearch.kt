@@ -1,7 +1,7 @@
-package app.lawnchair.qsb.providers
+package app.qqlauncher.qsb.providers
 
-import app.lawnchair.animateToAllApps
-import app.lawnchair.qsb.ThemingMethod
+import app.qqlauncher.animateToAllApps
+import app.qqlauncher.qsb.ThemingMethod
 import com.android.launcher3.Launcher
 import com.android.launcher3.R
 

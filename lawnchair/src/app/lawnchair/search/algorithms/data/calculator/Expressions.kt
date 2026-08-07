@@ -1,11 +1,11 @@
-package app.lawnchair.search.algorithms.data.calculator
+package app.qqlauncher.search.algorithms.data.calculator
 
-import app.lawnchair.search.algorithms.data.calculator.internal.Evaluator
-import app.lawnchair.search.algorithms.data.calculator.internal.Expr
-import app.lawnchair.search.algorithms.data.calculator.internal.Function
-import app.lawnchair.search.algorithms.data.calculator.internal.Parser
-import app.lawnchair.search.algorithms.data.calculator.internal.Scanner
-import app.lawnchair.search.algorithms.data.calculator.internal.Token
+import app.qqlauncher.search.algorithms.data.calculator.internal.Evaluator
+import app.qqlauncher.search.algorithms.data.calculator.internal.Expr
+import app.qqlauncher.search.algorithms.data.calculator.internal.Function
+import app.qqlauncher.search.algorithms.data.calculator.internal.Parser
+import app.qqlauncher.search.algorithms.data.calculator.internal.Scanner
+import app.qqlauncher.search.algorithms.data.calculator.internal.Token
 import java.math.BigDecimal
 import java.math.MathContext
 import java.math.RoundingMode

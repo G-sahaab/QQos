@@ -1,4 +1,4 @@
-package app.lawnchair.search.model
+package app.qqlauncher.search.model
 
 data class SearchResult(
     val resultType: String,

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Modifications copyright 2025 Lawnchair
+ * Modifications copyright 2025 QQ Launcher
  */
 
 package com.android.launcher3;
@@ -62,13 +62,13 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 import com.hoko.blur.HokoBlur;
-import app.lawnchair.preferences2.PreferenceCacheExtensionsKt;
-import app.lawnchair.hotseat.DisabledHotseat;
-import app.lawnchair.hotseat.HotseatMode;
-import app.lawnchair.hotseat.LawnchairHotseat;
-import app.lawnchair.preferences.PreferenceManager;
-import app.lawnchair.preferences2.PreferenceManager2;
-import app.lawnchair.theme.drawable.DrawableTokens;
+import app.qqlauncher.preferences2.PreferenceCacheExtensionsKt;
+import app.qqlauncher.hotseat.DisabledHotseat;
+import app.qqlauncher.hotseat.HotseatMode;
+import app.qqlauncher.hotseat.QQ LauncherHotseat;
+import app.qqlauncher.preferences.PreferenceManager;
+import app.qqlauncher.preferences2.PreferenceManager2;
+import app.qqlauncher.theme.drawable.DrawableTokens;
 
 /**
  * View class that represents the bottom row of the home screen.
@@ -138,7 +138,7 @@ public class Hotseat extends CellLayout implements Insettable {
         if (!hotseatMode.isAvailable(context)) {
             // The current hotseat mode is not available,
             // setting the hotseat mode to one that is always available
-            hotseatMode = LawnchairHotseat.INSTANCE;
+            hotseatMode = QQ LauncherHotseat.INSTANCE;
             com.patrykmichalik.opto.core.PreferenceExtensionsKt.setBlocking(preferenceManager2.getHotseatMode(), hotseatMode);
         }
         int layoutId = hotseatMode.getLayoutResourceId();

@@ -1,17 +1,17 @@
-package app.lawnchair.search.algorithms.engine.provider
+package app.qqlauncher.search.algorithms.engine.provider
 
 import android.Manifest
 import android.content.Context
 import android.content.pm.PackageManager
 import android.provider.ContactsContract
 import android.util.Log
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.preferences2.firstCached
-import app.lawnchair.search.algorithms.data.ContactInfo
-import app.lawnchair.search.algorithms.engine.SearchPermission
-import app.lawnchair.search.algorithms.engine.SearchProvider
-import app.lawnchair.search.algorithms.engine.SearchResult
+import app.qqlauncher.preferences.PreferenceManager
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.preferences2.firstCached
+import app.qqlauncher.search.algorithms.data.ContactInfo
+import app.qqlauncher.search.algorithms.engine.SearchPermission
+import app.qqlauncher.search.algorithms.engine.SearchProvider
+import app.qqlauncher.search.algorithms.engine.SearchResult
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow

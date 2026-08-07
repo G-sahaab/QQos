@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair
+package app.qqlauncher
 
 import android.content.Context
 import android.content.Intent
@@ -24,11 +24,11 @@ import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Process
 import android.util.Log
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.util.SingletonHolder
-import app.lawnchair.util.ensureOnMainThread
-import app.lawnchair.util.getSignatureHash
-import app.lawnchair.util.useApplicationContext
+import app.qqlauncher.preferences.PreferenceManager
+import app.qqlauncher.util.SingletonHolder
+import app.qqlauncher.util.ensureOnMainThread
+import app.qqlauncher.util.getSignatureHash
+import app.qqlauncher.util.useApplicationContext
 import com.android.launcher3.BuildConfig
 import com.android.launcher3.R
 import com.android.launcher3.Utilities
@@ -41,7 +41,7 @@ class FeedBridge(private val context: Context) {
     private val bridgePackages by lazy {
         listOf(
             PixelBridgeInfo("com.google.android.apps.nexuslauncher", R.integer.bridge_signature_hash),
-            BridgeInfo("app.lawnchair.lawnfeed", R.integer.lawnfeed_signature_hash),
+            BridgeInfo("app.qqlauncher.lawnfeed", R.integer.lawnfeed_signature_hash),
         )
     }
 

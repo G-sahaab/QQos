@@ -1,11 +1,11 @@
-package app.lawnchair.ui.preferences.about
+package app.qqlauncher.ui.preferences.about
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.preferences2.firstCached
+import app.qqlauncher.preferences.PreferenceManager
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.preferences2.firstCached
 import com.android.launcher3.BuildConfig
 import com.android.launcher3.R
 import java.io.File
@@ -86,7 +86,7 @@ class AboutViewModel(
 
     private suspend fun fetchActiveContributors(): Set<String> {
         return runCatching {
-            nightlyBuildsRepository.api.getRepositoryEvents("LawnchairLauncher", "lawnchair")
+            nightlyBuildsRepository.api.getRepositoryEvents("QQ LauncherLauncher", "qqlauncher")
                 .map { it.actor.login.lowercase() }
                 .toSet()
         }.getOrDefault(emptySet())
@@ -188,27 +188,27 @@ class AboutViewModel(
             Link(
                 iconResId = R.drawable.ic_new_releases,
                 labelResId = R.string.news,
-                url = "https://t.me/lawnchairci",
+                url = "https://t.me/qqlauncherci",
             ),
             Link(
                 iconResId = R.drawable.ic_help,
                 labelResId = R.string.support,
-                url = "https://lawnchair.app/support",
+                url = "https://qqlauncher.app/support",
             ),
             Link(
                 iconResId = R.drawable.ic_github,
                 labelResId = R.string.github,
-                url = "https://github.com/LawnchairLauncher/lawnchair",
+                url = "https://github.com/QQ LauncherLauncher/qqlauncher",
             ),
             Link(
                 iconResId = R.drawable.ic_translate,
                 labelResId = R.string.translate,
-                url = "https://lawnchair.crowdin.com/lawnchair",
+                url = "https://qqlauncher.crowdin.com/qqlauncher",
             ),
             Link(
                 iconResId = R.drawable.ic_open_collective,
                 labelResId = R.string.donate,
-                url = "https://opencollective.com/lawnchair",
+                url = "https://opencollective.com/qqlauncher",
             ),
         )
 
@@ -226,7 +226,7 @@ class AboutViewModel(
             Link(
                 iconResId = R.drawable.ic_x_twitter,
                 labelResId = R.string.x_twitter,
-                url = "https://x.com/lawnchairapp",
+                url = "https://x.com/qqlauncherapp",
             ),
         )
 

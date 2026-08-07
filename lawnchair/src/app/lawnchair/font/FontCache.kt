@@ -1,21 +1,21 @@
 /*
- *     This file is part of Lawnchair Launcher.
+ *     This file is part of QQ Launcher Launcher.
  *
- *     Lawnchair Launcher is free software: you can redistribute it and/or modify
+ *     QQ Launcher Launcher is free software: you can redistribute it and/or modify
  *     it under the terms of the GNU General Public License as published by
  *     the Free Software Foundation, either version 3 of the License, or
  *     (at your option) any later version.
  *
- *     Lawnchair Launcher is distributed in the hope that it will be useful,
+ *     QQ Launcher Launcher is distributed in the hope that it will be useful,
  *     but WITHOUT ANY WARRANTY; without even the implied warranty of
  *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  *     GNU General Public License for more details.
  *
  *     You should have received a copy of the GNU General Public License
- *     along with Lawnchair Launcher.  If not, see <https://www.gnu.org/licenses/>.
+ *     along with QQ Launcher Launcher.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package app.lawnchair.font
+package app.qqlauncher.font
 
 import android.content.Context
 import android.content.res.AssetManager
@@ -31,10 +31,10 @@ import androidx.compose.ui.text.googlefonts.GoogleFont as ComposeGoogleFont
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.provider.FontRequest
 import androidx.core.provider.FontsContractCompat
-import app.lawnchair.font.googlefonts.GoogleFontsListing
-import app.lawnchair.util.getDisplayName
-import app.lawnchair.util.subscribeFiles
-import app.lawnchair.util.uiHelperHandler
+import app.qqlauncher.font.googlefonts.GoogleFontsListing
+import app.qqlauncher.util.getDisplayName
+import app.qqlauncher.util.subscribeFiles
+import app.qqlauncher.util.uiHelperHandler
 import com.android.launcher3.R
 import com.android.launcher3.dagger.ApplicationContext
 import com.android.launcher3.dagger.LauncherAppComponent
@@ -123,7 +123,7 @@ class FontCache @Inject constructor(
     /**
      * A Google Sans Flex [ResourceFont] with the given variation [axes]. Used to back the AOSP
      * Material 3 Expressive `variable-*` font family names, mirroring
-     * [app.lawnchair.ui.theme.GoogleSansFlex].
+     * [app.qqlauncher.ui.theme.GoogleSansFlex].
      */
     fun googleSansFlexVariable(axes: Map<String, Float>): ResourceFont = ResourceFont(
         context,

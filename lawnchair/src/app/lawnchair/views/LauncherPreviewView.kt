@@ -1,4 +1,4 @@
-package app.lawnchair.views
+package app.qqlauncher.views
 
 import android.annotation.SuppressLint
 import android.appwidget.AppWidgetProviderInfo

@@ -1,4 +1,4 @@
-package app.lawnchair.factory
+package app.qqlauncher.factory
 
 import android.content.Context
 import com.android.internal.annotations.Keep
@@ -7,7 +7,7 @@ import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject
 
-class LawnchairWidgetHolder @AssistedInject constructor(
+class QQ LauncherWidgetHolder @AssistedInject constructor(
     @Assisted("UI_CONTEXT") context: Context,
 ) : LauncherWidgetHolder(context) {
 

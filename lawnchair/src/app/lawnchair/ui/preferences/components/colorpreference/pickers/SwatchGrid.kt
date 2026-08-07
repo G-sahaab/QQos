@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.colorpreference.pickers
+package app.qqlauncher.ui.preferences.components.colorpreference.pickers
 
 import androidx.compose.animation.Crossfade
 import androidx.compose.foundation.background
@@ -25,9 +25,9 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.ui.preferences.components.colorpreference.ColorPreferenceEntry
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.theme.isSelectedThemeDark
+import app.qqlauncher.ui.preferences.components.colorpreference.ColorPreferenceEntry
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroup
+import app.qqlauncher.ui.theme.isSelectedThemeDark
 import com.android.launcher3.R
 
 object SwatchGridDefaults {

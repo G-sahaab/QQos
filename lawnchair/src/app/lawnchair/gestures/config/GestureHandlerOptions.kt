@@ -1,4 +1,4 @@
-package app.lawnchair.gestures.config
+package app.qqlauncher.gestures.config
 
 import android.app.Activity
 import android.content.Context

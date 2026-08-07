@@ -1,4 +1,4 @@
-package app.lawnchair.backup
+package app.qqlauncher.backup
 
 import android.content.Context
 import android.content.Intent
@@ -8,8 +8,8 @@ import android.database.sqlite.SQLiteDatabase
 import android.net.Uri
 import android.os.Process
 import android.util.Log
-import app.lawnchair.DeviceProfileOverrides
-import app.lawnchair.preferences.PreferenceManager
+import app.qqlauncher.DeviceProfileOverrides
+import app.qqlauncher.preferences.PreferenceManager
 import com.android.launcher3.GridType
 import com.android.launcher3.InvariantDeviceProfile
 import com.android.launcher3.LauncherSettings.Favorites
@@ -171,9 +171,9 @@ class NovaBackupConverter(
                 gridState.writeToPrefs(context)
                 InvariantDeviceProfile.INSTANCE.get(context).dbFile = gridInfo.dbFile
             }
-            writeGridToLawnchairPrefs(info)
+            writeGridToQQ LauncherPrefs(info)
 
-            val restoredDbFile = context.getDatabasePath(LawnchairBackup.RESTORED_DB_FILE_NAME)
+            val restoredDbFile = context.getDatabasePath(QQ LauncherBackup.RESTORED_DB_FILE_NAME)
             restoredDbFile.parentFile?.mkdirs()
             stagedDbFile.copyTo(restoredDbFile, overwrite = true)
 
@@ -193,7 +193,7 @@ class NovaBackupConverter(
         packageName
     }
 
-    private fun writeGridToLawnchairPrefs(info: NovaBackupInfo) {
+    private fun writeGridToQQ LauncherPrefs(info: NovaBackupInfo) {
         val prefs = PreferenceManager.getInstance(context)
         prefs.sp.edit().apply {
             info.columns?.let { putInt(prefs.workspaceColumns.key, it) }
@@ -338,7 +338,7 @@ class NovaBackupConverter(
                 }
 
                 val title = getStringOrNull(cursor, NOVA_COL_TITLE)
-                /* TODO: Lawnchair folder synchronization support
+                /* TODO: QQ Launcher folder synchronization support
                  *        For nova parity:
                  *           Sync folder contents from allapps to workspace, or workspace to allapps
                  *        ImplNote:

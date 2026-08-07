@@ -1,4 +1,4 @@
-package app.lawnchair.views.overlay
+package app.qqlauncher.views.overlay
 
 import android.annotation.StringRes
 import com.android.launcher3.R

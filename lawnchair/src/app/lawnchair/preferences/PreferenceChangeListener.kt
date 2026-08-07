@@ -1,4 +1,4 @@
-package app.lawnchair.preferences
+package app.qqlauncher.preferences
 
 fun interface PreferenceChangeListener {
     fun onPreferenceChange()

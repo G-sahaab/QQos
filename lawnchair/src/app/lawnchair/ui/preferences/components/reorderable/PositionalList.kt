@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.reorderable
+package app.qqlauncher.ui.preferences.components.reorderable
 
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.foundation.layout.Column
@@ -36,15 +36,15 @@ import androidx.compose.ui.semantics.CustomAccessibilityAction
 import androidx.compose.ui.semantics.customActions
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
-import app.lawnchair.ui.OverflowMenu
-import app.lawnchair.ui.OverflowMenuScope
-import app.lawnchair.ui.preferences.components.layout.ExpandAndShrink
-import app.lawnchair.ui.preferences.components.layout.PreferenceDivider
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroupHeading
-import app.lawnchair.ui.preferences.components.layout.PreferenceLazyColumn
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.theme.preferenceGroupColor
+import app.qqlauncher.ui.OverflowMenu
+import app.qqlauncher.ui.OverflowMenuScope
+import app.qqlauncher.ui.preferences.components.layout.ExpandAndShrink
+import app.qqlauncher.ui.preferences.components.layout.PreferenceDivider
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroup
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroupHeading
+import app.qqlauncher.ui.preferences.components.layout.PreferenceLazyColumn
+import app.qqlauncher.ui.preferences.components.layout.PreferenceTemplate
+import app.qqlauncher.ui.theme.preferenceGroupColor
 import com.android.launcher3.R
 import sh.calvin.reorderable.ReorderableCollectionItemScope
 import sh.calvin.reorderable.ReorderableItem

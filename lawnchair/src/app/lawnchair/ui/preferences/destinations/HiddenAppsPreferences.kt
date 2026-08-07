@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.destinations
+package app.qqlauncher.ui.preferences.destinations
 
 import androidx.compose.animation.Crossfade
 import androidx.compose.foundation.layout.Spacer
@@ -33,18 +33,18 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.ui.OverflowMenuGrouped
-import app.lawnchair.ui.preferences.LocalIsExpandedScreen
-import app.lawnchair.ui.preferences.components.AppItem
-import app.lawnchair.ui.preferences.components.AppItemPlaceholder
-import app.lawnchair.ui.preferences.components.layout.PreferenceLazyColumn
-import app.lawnchair.ui.preferences.components.layout.PreferenceScaffold
-import app.lawnchair.ui.preferences.components.layout.preferenceGroupItems
-import app.lawnchair.util.App
-import app.lawnchair.util.appComparator
-import app.lawnchair.util.appsState
+import app.qqlauncher.preferences.getAdapter
+import app.qqlauncher.preferences2.preferenceManager2
+import app.qqlauncher.ui.OverflowMenuGrouped
+import app.qqlauncher.ui.preferences.LocalIsExpandedScreen
+import app.qqlauncher.ui.preferences.components.AppItem
+import app.qqlauncher.ui.preferences.components.AppItemPlaceholder
+import app.qqlauncher.ui.preferences.components.layout.PreferenceLazyColumn
+import app.qqlauncher.ui.preferences.components.layout.PreferenceScaffold
+import app.qqlauncher.ui.preferences.components.layout.preferenceGroupItems
+import app.qqlauncher.util.App
+import app.qqlauncher.util.appComparator
+import app.qqlauncher.util.appsState
 import com.android.launcher3.R
 import java.util.Comparator.comparing
 

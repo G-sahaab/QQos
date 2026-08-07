@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Lawnchair
+ * Copyright 2022, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.destinations
+package app.qqlauncher.ui.preferences.destinations
 
 import android.app.Activity
 import android.view.ContextThemeWrapper
@@ -36,28 +36,28 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
-import app.lawnchair.preferences.PreferenceAdapter
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.smartspace.SmartspaceViewContainer
-import app.lawnchair.smartspace.model.LawnchairSmartspace
-import app.lawnchair.smartspace.model.SmartspaceCalendar
-import app.lawnchair.smartspace.model.SmartspaceMode
-import app.lawnchair.smartspace.model.SmartspaceTimeFormat
-import app.lawnchair.smartspace.model.Smartspacer
-import app.lawnchair.smartspace.provider.SmartspaceProvider
-import app.lawnchair.ui.preferences.LocalIsExpandedScreen
-import app.lawnchair.ui.preferences.components.controls.ClickablePreference
-import app.lawnchair.ui.preferences.components.controls.ListPreference
-import app.lawnchair.ui.preferences.components.controls.ListPreferenceEntry
-import app.lawnchair.ui.preferences.components.controls.MainSwitchPreference
-import app.lawnchair.ui.preferences.components.controls.SliderPreference
-import app.lawnchair.ui.preferences.components.controls.SwitchPreference
-import app.lawnchair.ui.preferences.components.layout.ExpandAndShrink
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
-import app.lawnchair.ui.theme.isSelectedThemeDark
-import app.lawnchair.ui.theme.preferenceGroupColor
+import app.qqlauncher.preferences.PreferenceAdapter
+import app.qqlauncher.preferences.getAdapter
+import app.qqlauncher.preferences2.preferenceManager2
+import app.qqlauncher.smartspace.SmartspaceViewContainer
+import app.qqlauncher.smartspace.model.QQ LauncherSmartspace
+import app.qqlauncher.smartspace.model.SmartspaceCalendar
+import app.qqlauncher.smartspace.model.SmartspaceMode
+import app.qqlauncher.smartspace.model.SmartspaceTimeFormat
+import app.qqlauncher.smartspace.model.Smartspacer
+import app.qqlauncher.smartspace.provider.SmartspaceProvider
+import app.qqlauncher.ui.preferences.LocalIsExpandedScreen
+import app.qqlauncher.ui.preferences.components.controls.ClickablePreference
+import app.qqlauncher.ui.preferences.components.controls.ListPreference
+import app.qqlauncher.ui.preferences.components.controls.ListPreferenceEntry
+import app.qqlauncher.ui.preferences.components.controls.MainSwitchPreference
+import app.qqlauncher.ui.preferences.components.controls.SliderPreference
+import app.qqlauncher.ui.preferences.components.controls.SwitchPreference
+import app.qqlauncher.ui.preferences.components.layout.ExpandAndShrink
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroup
+import app.qqlauncher.ui.preferences.components.layout.PreferenceLayout
+import app.qqlauncher.ui.theme.isSelectedThemeDark
+import app.qqlauncher.ui.theme.preferenceGroupColor
 import com.android.launcher3.R
 import com.kieronquinn.app.smartspacer.sdk.SmartspacerConstants
 
@@ -71,7 +71,7 @@ fun SmartspacePreferences(
     val smartspaceAdapter = preferenceManager2.enableSmartspace.getAdapter()
     val smartspaceModeAdapter = preferenceManager2.smartspaceMode.getAdapter()
     val selectedMode = smartspaceModeAdapter.state.value
-    val modeIsLawnchair = selectedMode == LawnchairSmartspace
+    val modeIsQQ Launcher = selectedMode == QQ LauncherSmartspace
 
     PreferenceLayout(
         label = stringResource(id = R.string.smartspace_widget),
@@ -80,14 +80,14 @@ fun SmartspacePreferences(
     ) {
         if (fromWidget) {
             SmartspacePreview()
-            LawnchairSmartspaceSettings(smartspaceProvider)
+            QQ LauncherSmartspaceSettings(smartspaceProvider)
         } else {
             MainSwitchPreference(
                 adapter = smartspaceAdapter,
                 label = stringResource(R.string.smartspace_widget_toggle_label),
-                description = stringResource(id = R.string.smartspace_widget_toggle_description).takeIf { modeIsLawnchair },
+                description = stringResource(id = R.string.smartspace_widget_toggle_description).takeIf { modeIsQQ Launcher },
             ) {
-                if (modeIsLawnchair) {
+                if (modeIsQQ Launcher) {
                     SmartspacePreview()
                 }
                 PreferenceGroup {
@@ -101,8 +101,8 @@ fun SmartspacePreferences(
                     label = "Smartspace setting transition",
                 ) { targetState ->
                     when (targetState) {
-                        LawnchairSmartspace -> {
-                            LawnchairSmartspaceSettings(smartspaceProvider)
+                        QQ LauncherSmartspace -> {
+                            QQ LauncherSmartspaceSettings(smartspaceProvider)
                         }
 
                         Smartspacer -> {
@@ -118,7 +118,7 @@ fun SmartspacePreferences(
 }
 
 @Composable
-private fun LawnchairSmartspaceSettings(
+private fun QQ LauncherSmartspaceSettings(
     smartspaceProvider: SmartspaceProvider,
     modifier: Modifier = Modifier,
 ) {

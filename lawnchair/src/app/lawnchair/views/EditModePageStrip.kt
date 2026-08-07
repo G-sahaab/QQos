@@ -1,4 +1,4 @@
-package app.lawnchair.views
+package app.qqlauncher.views
 
 import android.content.Context
 import android.util.AttributeSet

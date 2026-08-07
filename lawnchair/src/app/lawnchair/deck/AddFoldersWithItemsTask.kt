@@ -1,4 +1,4 @@
-package app.lawnchair.deck
+package app.qqlauncher.deck
 
 import android.content.Intent
 import android.os.UserHandle

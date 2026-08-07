@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.layout
+package app.qqlauncher.ui.preferences.components.layout
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box

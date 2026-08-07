@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.controls
+package app.qqlauncher.ui.preferences.components.controls
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Warning
@@ -15,11 +15,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.preferences.components.layout.ProvideDescriptionTextStyle
-import app.lawnchair.ui.theme.LawnchairTheme
-import app.lawnchair.ui.util.preview.PreferenceGroupPreviewContainer
-import app.lawnchair.ui.util.preview.PreviewLawnchair
+import app.qqlauncher.ui.preferences.components.layout.PreferenceTemplate
+import app.qqlauncher.ui.preferences.components.layout.ProvideDescriptionTextStyle
+import app.qqlauncher.ui.theme.QQ LauncherTheme
+import app.qqlauncher.ui.util.preview.PreferenceGroupPreviewContainer
+import app.qqlauncher.ui.util.preview.PreviewQQ Launcher
 
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable
@@ -87,10 +87,10 @@ fun WarningPreference(
     )
 }
 
-@PreviewLawnchair
+@PreviewQQ Launcher
 @Composable
 private fun WarningPreferencePreview() {
-    LawnchairTheme {
+    QQ LauncherTheme {
         PreferenceGroupPreviewContainer {
             WarningPreference(
                 text = "Text",
@@ -99,10 +99,10 @@ private fun WarningPreferencePreview() {
     }
 }
 
-@PreviewLawnchair
+@PreviewQQ Launcher
 @Composable
 private fun WarningPreferenceStandalonePreview() {
-    LawnchairTheme {
+    QQ LauncherTheme {
         WarningPreference(
             text = "Text",
             standalone = true,

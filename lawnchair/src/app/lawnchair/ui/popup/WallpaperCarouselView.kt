@@ -1,4 +1,4 @@
-package app.lawnchair.ui.popup
+package app.qqlauncher.ui.popup
 
 import android.animation.ValueAnimator
 import android.annotation.SuppressLint
@@ -17,12 +17,12 @@ import android.widget.ProgressBar
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.LifecycleOwner
-import app.lawnchair.data.wallpaper.Wallpaper
-import app.lawnchair.data.wallpaper.model.WallpaperViewModel
-import app.lawnchair.launcher
-import app.lawnchair.util.decodeSampledBitmapFromFile
-import app.lawnchair.util.observeOnce
-import app.lawnchair.views.component.IconFrame
+import app.qqlauncher.data.wallpaper.Wallpaper
+import app.qqlauncher.data.wallpaper.model.WallpaperViewModel
+import app.qqlauncher.launcher
+import app.qqlauncher.util.decodeSampledBitmapFromFile
+import app.qqlauncher.util.observeOnce
+import app.qqlauncher.views.component.IconFrame
 import com.android.launcher3.R
 import com.android.launcher3.util.Themes
 import java.io.File

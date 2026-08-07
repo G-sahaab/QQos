@@ -1,13 +1,13 @@
-package app.lawnchair.util
+package app.qqlauncher.util
 
-import LawnchairLockedStateController
+import QQ LauncherLockedStateController
 import android.app.ActivityManager
 import android.app.ActivityTaskManager
 import android.content.Context
 import android.os.Process
 import android.os.UserHandle
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.launcher
+import app.qqlauncher.QQ LauncherLauncher
+import app.qqlauncher.launcher
 import com.android.launcher3.BuildConfig
 import com.android.quickstep.views.RecentsView
 import com.android.systemui.shared.recents.model.Task
@@ -18,7 +18,7 @@ object RecentHelper {
     fun clearAllTaskStacks(context: Context) {
         try {
             val launcher = context.launcher
-            val recentsView = launcher.getOverviewPanel<RecentsView<LawnchairLauncher, *>>()
+            val recentsView = launcher.getOverviewPanel<RecentsView<QQ LauncherLauncher, *>>()
             val taskViewCount = recentsView.getTaskViewCount()
             val currentUserId = Process.myUid()
             for (i in 0..taskViewCount) {
@@ -58,12 +58,12 @@ object RecentHelper {
 
     fun isAppLocked(packageName: String, context: Context): Boolean {
         val pref = context.getSharedPreferences(
-            LawnchairLockedStateController.TASK_LOCK_STATE,
+            QQ LauncherLockedStateController.TASK_LOCK_STATE,
             Context.MODE_PRIVATE,
         )
 
         val lockedApps = pref.getStringSet(
-            LawnchairLockedStateController.TASK_LOCK_LIST_KEY_WITH_USERID,
+            QQ LauncherLockedStateController.TASK_LOCK_LIST_KEY_WITH_USERID,
             emptySet(),
         )
 

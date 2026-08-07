@@ -1,16 +1,16 @@
-package app.lawnchair.ui.preferences.destinations
+package app.qqlauncher.ui.preferences.destinations
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import app.lawnchair.backup.ui.restoreBackupOpener
-import app.lawnchair.backup.ui.restoreNovaBackupOpener
-import app.lawnchair.ui.preferences.LocalIsExpandedScreen
-import app.lawnchair.ui.preferences.components.NavigationActionPreference
-import app.lawnchair.ui.preferences.components.controls.ClickablePreference
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
-import app.lawnchair.ui.preferences.navigation.CreateBackup
+import app.qqlauncher.backup.ui.restoreBackupOpener
+import app.qqlauncher.backup.ui.restoreNovaBackupOpener
+import app.qqlauncher.ui.preferences.LocalIsExpandedScreen
+import app.qqlauncher.ui.preferences.components.NavigationActionPreference
+import app.qqlauncher.ui.preferences.components.controls.ClickablePreference
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroup
+import app.qqlauncher.ui.preferences.components.layout.PreferenceLayout
+import app.qqlauncher.ui.preferences.navigation.CreateBackup
 import com.android.launcher3.R
 
 @Composable

@@ -1,5 +1,5 @@
 /*
- * Copyright 2026, Lawnchair
+ * Copyright 2026, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.gestures.ui
+package app.qqlauncher.gestures.ui
 
 import android.content.Context
 import android.content.Intent
@@ -38,20 +38,20 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
-import app.lawnchair.gestures.config.GestureHandlerConfig
-import app.lawnchair.ui.theme.EdgeToEdge
-import app.lawnchair.ui.theme.LawnchairTheme
-import app.lawnchair.ui.util.addIf
-import app.lawnchair.util.ProvideLifecycleState
+import app.qqlauncher.gestures.config.GestureHandlerConfig
+import app.qqlauncher.ui.theme.EdgeToEdge
+import app.qqlauncher.ui.theme.QQ LauncherTheme
+import app.qqlauncher.ui.util.addIf
+import app.qqlauncher.util.ProvideLifecycleState
 
-class LawnchairShortcutActivity : ComponentActivity() {
+class QQ LauncherShortcutActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
         setContent {
-            LawnchairTheme {
+            QQ LauncherTheme {
                 EdgeToEdge()
                 val windowSizeClass = calculateWindowSizeClass(this)
 
@@ -119,9 +119,9 @@ class LawnchairShortcutActivity : ComponentActivity() {
     }
 
     companion object {
-        const val START_ACTION = "app.lawnchair.START_ACTION"
-        const val EXTRA_HANDLER = "app.lawnchair.EXTRA_HANDLER"
-        const val EXTRA_RESULT_RECEIVER = "app.lawnchair.EXTRA_RESULT_RECEIVER"
+        const val START_ACTION = "app.qqlauncher.START_ACTION"
+        const val EXTRA_HANDLER = "app.qqlauncher.EXTRA_HANDLER"
+        const val EXTRA_RESULT_RECEIVER = "app.qqlauncher.EXTRA_RESULT_RECEIVER"
         const val GESTURE_SHORTCUT_ID_PREFIX = "gesture:"
 
         fun shouldSkipShortcutBadge(context: Context, si: ShortcutInfo): Boolean {

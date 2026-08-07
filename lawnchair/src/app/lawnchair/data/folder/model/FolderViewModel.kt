@@ -1,12 +1,12 @@
-﻿package app.lawnchair.data.folder.model
+﻿package app.qqlauncher.data.folder.model
 
 import android.app.Application
 import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import app.lawnchair.data.folder.FolderEntry
-import app.lawnchair.data.folder.service.FolderService
-import app.lawnchair.preferences2.ReloadHelper
+import app.qqlauncher.data.folder.FolderEntry
+import app.qqlauncher.data.folder.service.FolderService
+import app.qqlauncher.preferences2.ReloadHelper
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow

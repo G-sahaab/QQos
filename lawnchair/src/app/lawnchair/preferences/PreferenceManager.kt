@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Lawnchair
+ * Copyright 2022, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package app.lawnchair.preferences
+package app.qqlauncher.preferences
 
 import android.content.Context
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.font.FontCache
-import app.lawnchair.util.getApkVersionComparison
-import app.lawnchair.util.isGestureNavContractCompatible
-import app.lawnchair.util.isOnePlusStock
+import app.qqlauncher.QQ LauncherLauncher
+import app.qqlauncher.font.FontCache
+import app.qqlauncher.util.getApkVersionComparison
+import app.qqlauncher.util.isGestureNavContractCompatible
+import app.qqlauncher.util.isOnePlusStock
 import com.android.launcher3.InvariantDeviceProfile
 import com.android.launcher3.InvariantDeviceProfile.INDEX_DEFAULT
 import com.android.launcher3.LauncherAppState
@@ -60,7 +60,7 @@ class PreferenceManager @Inject constructor(
     private val deviceType = dc.info.deviceType
 
     private val recreate = {
-        LawnchairLauncher.instance?.recreateIfNotScheduled()
+        QQ LauncherLauncher.instance?.recreateIfNotScheduled()
         Unit
     }
 
@@ -185,8 +185,8 @@ class PreferenceManager @Inject constructor(
     val enableGnc = BoolPref("pref_enableGnc", isGestureNavContractCompatible, recreate)
     val hasOpenedSettings = BoolPref("pref_hasOpenedSettings", false)
 
-    val lawnchairMajorVersion = IntPref(
-        "pref_lawnchairMajorVersion",
+    val qqlauncherMajorVersion = IntPref(
+        "pref_qqlauncherMajorVersion",
         context.getApkVersionComparison().first[0],
     )
 

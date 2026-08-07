@@ -1,10 +1,10 @@
-package app.lawnchair.smartspace
+package app.qqlauncher.smartspace
 
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Color
 import android.util.AttributeSet
-import app.lawnchair.views.CustomTextView
+import app.qqlauncher.views.CustomTextView
 import com.android.launcher3.views.ShadowInfo.Companion.fromContext
 
 open class DoubleShadowTextView @JvmOverloads constructor(

@@ -1,4 +1,4 @@
-package app.lawnchair.smartspace
+package app.qqlauncher.smartspace
 
 import android.content.Context
 import android.graphics.Rect
@@ -8,10 +8,10 @@ import android.view.LayoutInflater
 import android.view.MotionEvent
 import android.view.View
 import android.widget.FrameLayout
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.launcher
-import app.lawnchair.ui.preferences.PreferenceActivity
-import app.lawnchair.ui.preferences.navigation.Smartspace
+import app.qqlauncher.QQ LauncherLauncher
+import app.qqlauncher.launcher
+import app.qqlauncher.ui.preferences.PreferenceActivity
+import app.qqlauncher.ui.preferences.navigation.Smartspace
 import com.android.launcher3.CheckLongPressHelper
 import com.android.launcher3.InvariantDeviceProfile
 import com.android.launcher3.R
@@ -48,7 +48,7 @@ class SmartspaceViewContainer @JvmOverloads constructor(
         val launcher = context.launcher
         val pos = Rect()
         launcher.dragLayer.getDescendantRectRelativeToSelf(smartspaceView, pos)
-        OptionsPopupView.show<LawnchairLauncher>(launcher, RectF(pos), listOf(getCustomizeOption()), true)
+        OptionsPopupView.show<QQ LauncherLauncher>(launcher, RectF(pos), listOf(getCustomizeOption()), true)
     }
 
     private fun getCustomizeOption() = OptionsPopupView.OptionItem(

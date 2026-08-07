@@ -1,10 +1,10 @@
-package app.lawnchair.theme.color
+package app.qqlauncher.theme.color
 
 import android.graphics.Color
 import androidx.compose.ui.res.stringResource
-import app.lawnchair.ui.preferences.components.colorpreference.ColorPreferenceEntry
-import app.lawnchair.ui.theme.getSystemAccent
-import app.lawnchair.wallpaper.WallpaperManagerCompat
+import app.qqlauncher.ui.preferences.components.colorpreference.ColorPreferenceEntry
+import app.qqlauncher.ui.theme.getSystemAccent
+import app.qqlauncher.wallpaper.WallpaperManagerCompat
 import com.android.launcher3.R
 import com.android.launcher3.Utilities
 
@@ -35,7 +35,7 @@ sealed class ColorOption {
             { context ->
                 val wallpaperManager = WallpaperManagerCompat.INSTANCE.get(context)
                 val primaryColor = wallpaperManager.wallpaperColors?.primaryColor
-                primaryColor ?: LawnchairBlue.color
+                primaryColor ?: QQ LauncherBlue.color
             },
         )
 
@@ -65,7 +65,7 @@ sealed class ColorOption {
 
         override val colorPreferenceEntry = ColorPreferenceEntry<ColorOption>(
             this,
-            { stringResource(id = R.string.managed_by_lawnchair) },
+            { stringResource(id = R.string.managed_by_qqlauncher) },
             { 0 },
         )
 
@@ -73,7 +73,7 @@ sealed class ColorOption {
     }
 
     companion object {
-        val LawnchairBlue = CustomColor(0xFF007FFF)
+        val QQ LauncherBlue = CustomColor(0xFF007FFF)
 
         fun fromString(stringValue: String) = when (stringValue) {
             "system_accent" -> SystemAccent
@@ -93,7 +93,7 @@ sealed class ColorOption {
             return when {
                 Utilities.ATLEAST_S -> SystemAccent
                 Utilities.ATLEAST_O_MR1 -> WallpaperPrimary
-                else -> LawnchairBlue
+                else -> QQ LauncherBlue
             }
         }
     }

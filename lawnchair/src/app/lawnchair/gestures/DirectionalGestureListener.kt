@@ -1,4 +1,4 @@
-package app.lawnchair.gestures
+package app.qqlauncher.gestures
 
 import android.annotation.SuppressLint
 import android.content.Context

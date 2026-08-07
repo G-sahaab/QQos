@@ -1,7 +1,7 @@
-package app.lawnchair.compatlib.sixteen;
+package app.qqlauncher.compatlib.sixteen;
 
 import androidx.annotation.RequiresApi;
-import app.lawnchair.compatlib.fifteen.ActivityManagerCompatVV;
+import app.qqlauncher.compatlib.fifteen.ActivityManagerCompatVV;
 
 @RequiresApi(36)
 public class ActivityManagerCompatVBaklava extends ActivityManagerCompatVV {}

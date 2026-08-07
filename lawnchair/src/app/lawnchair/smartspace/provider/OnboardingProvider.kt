@@ -1,4 +1,4 @@
-package app.lawnchair.smartspace.provider
+package app.qqlauncher.smartspace.provider
 
 import android.app.PendingIntent
 import android.content.Context
@@ -6,11 +6,11 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.graphics.drawable.Icon
 import androidx.core.content.edit
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.smartspace.model.SmartspaceAction
-import app.lawnchair.smartspace.model.SmartspaceScores
-import app.lawnchair.smartspace.model.SmartspaceTarget
-import app.lawnchair.util.getApkVersionComparison
+import app.qqlauncher.preferences.preferenceManager
+import app.qqlauncher.smartspace.model.SmartspaceAction
+import app.qqlauncher.smartspace.model.SmartspaceScores
+import app.qqlauncher.smartspace.model.SmartspaceTarget
+import app.qqlauncher.util.getApkVersionComparison
 import com.android.launcher3.LauncherPrefs.Companion.getPrefs
 import com.android.launcher3.R
 import com.android.launcher3.util.OnboardingPrefs
@@ -25,7 +25,7 @@ class OnboardingProvider(context: Context) :
     ) {
 
     companion object {
-        const val PREF_LAWNCHAIR_MAJOR_VERSION = "pref_lawnchairMajorVersion"
+        const val PREF_LAWNCHAIR_MAJOR_VERSION = "pref_qqlauncherMajorVersion"
         const val PREF_HAS_OPENED_SETTINGS = "pref_hasOpenedSettings"
 
         private val HOME_BOUNCE_KEY = OnboardingPrefs.HOME_BOUNCE_SEEN.sharedPrefKey

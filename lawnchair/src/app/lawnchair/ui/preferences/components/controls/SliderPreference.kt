@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.components.controls
+package app.qqlauncher.ui.preferences.components.controls
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
@@ -41,12 +41,12 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import androidx.compose.ui.unit.dp
-import app.lawnchair.preferences.PreferenceAdapter
-import app.lawnchair.preferences.rememberTransformAdapter
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.theme.LawnchairTheme
-import app.lawnchair.ui.util.preview.PreferenceGroupPreviewContainer
-import app.lawnchair.ui.util.preview.PreviewLawnchair
+import app.qqlauncher.preferences.PreferenceAdapter
+import app.qqlauncher.preferences.rememberTransformAdapter
+import app.qqlauncher.ui.preferences.components.layout.PreferenceTemplate
+import app.qqlauncher.ui.theme.QQ LauncherTheme
+import app.qqlauncher.ui.util.preview.PreferenceGroupPreviewContainer
+import app.qqlauncher.ui.util.preview.PreviewQQ Launcher
 import com.android.launcher3.R
 import com.android.launcher3.util.MSDLPlayerWrapper
 import com.google.android.msdl.data.model.MSDLToken
@@ -206,12 +206,12 @@ fun snapSliderValue(start: Float, value: Float, step: Float): Float {
     return start + snappedDistance
 }
 
-@PreviewLawnchair
+@PreviewQQ Launcher
 @Composable
 private fun SliderPreferencePreview(
     @PreviewParameter(SliderPreferencePreviewParameterProvider::class) sliderValue: Float,
 ) {
-    LawnchairTheme {
+    QQ LauncherTheme {
         PreferenceGroupPreviewContainer {
             SliderPreference(
                 label = "Label",

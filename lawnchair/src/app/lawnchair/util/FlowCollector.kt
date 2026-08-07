@@ -1,4 +1,4 @@
-package app.lawnchair.util
+package app.qqlauncher.util
 
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.MainScope

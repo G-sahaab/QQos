@@ -1,4 +1,4 @@
-package app.lawnchair.data.iconoverride
+package app.qqlauncher.data.iconoverride
 
 import androidx.room.Dao
 import androidx.room.Insert

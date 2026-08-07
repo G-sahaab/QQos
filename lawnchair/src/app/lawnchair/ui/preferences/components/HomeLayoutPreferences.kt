@@ -1,4 +1,4 @@
-﻿package app.lawnchair.ui.preferences.components
+﻿package app.qqlauncher.ui.preferences.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -32,13 +32,13 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import app.lawnchair.deck.LawndeckManager
-import app.lawnchair.gestures.config.GestureHandlerConfig
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.ui.preferences.components.controls.SwitchPreferenceWithPreview
-import app.lawnchair.util.BackHandler
+import app.qqlauncher.deck.LawndeckManager
+import app.qqlauncher.gestures.config.GestureHandlerConfig
+import app.qqlauncher.preferences.getAdapter
+import app.qqlauncher.preferences.preferenceManager
+import app.qqlauncher.preferences2.preferenceManager2
+import app.qqlauncher.ui.preferences.components.controls.SwitchPreferenceWithPreview
+import app.qqlauncher.util.BackHandler
 import com.android.launcher3.R
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

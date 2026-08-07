@@ -1,4 +1,4 @@
-package app.lawnchair.smartspace.provider
+package app.qqlauncher.smartspace.provider
 
 import android.content.Context
 import android.content.Intent
@@ -7,11 +7,11 @@ import android.graphics.drawable.Icon
 import android.os.BatteryManager
 import android.util.Log
 import androidx.core.content.getSystemService
-import app.lawnchair.smartspace.model.SmartspaceAction
-import app.lawnchair.smartspace.model.SmartspaceScores
-import app.lawnchair.smartspace.model.SmartspaceTarget
-import app.lawnchair.util.broadcastReceiverFlow
-import app.lawnchair.util.formatShortElapsedTimeRoundingUpToMinutes
+import app.qqlauncher.smartspace.model.SmartspaceAction
+import app.qqlauncher.smartspace.model.SmartspaceScores
+import app.qqlauncher.smartspace.model.SmartspaceTarget
+import app.qqlauncher.util.broadcastReceiverFlow
+import app.qqlauncher.util.formatShortElapsedTimeRoundingUpToMinutes
 import com.android.launcher3.R
 import com.android.launcher3.Utilities
 import kotlin.math.abs

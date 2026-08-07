@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair
+package app.qqlauncher
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -38,14 +38,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.core.content.FileProvider
-import app.lawnchair.backup.LawnchairBackup
-import app.lawnchair.flowerpot.Flowerpot
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.ui.ModalBottomSheetContent
-import app.lawnchair.ui.preferences.destinations.openAppInfo
-import app.lawnchair.util.restartLauncher
-import app.lawnchair.util.unsafeLazy
-import app.lawnchair.views.ComposeBottomSheet
+import app.qqlauncher.backup.QQ LauncherBackup
+import app.qqlauncher.flowerpot.Flowerpot
+import app.qqlauncher.preferences.PreferenceManager
+import app.qqlauncher.ui.ModalBottomSheetContent
+import app.qqlauncher.ui.preferences.destinations.openAppInfo
+import app.qqlauncher.util.restartLauncher
+import app.qqlauncher.util.unsafeLazy
+import app.qqlauncher.views.ComposeBottomSheet
 import com.android.launcher3.BuildConfig
 import com.android.launcher3.InvariantDeviceProfile
 import com.android.launcher3.Launcher
@@ -56,12 +56,12 @@ import com.android.quickstep.RecentsActivity
 import com.android.systemui.shared.system.QuickStepContract
 import java.io.File
 
-class LawnchairApp : LauncherApplication() {
+class QQ LauncherApp : LauncherApplication() {
     private val compatible = Build.VERSION.SDK_INT in BuildConfig.QUICKSTEP_MIN_SDK..BuildConfig.QUICKSTEP_MAX_SDK
     private val isRecentsComponent: Boolean by unsafeLazy { checkRecentsComponent() }
     private val recentsEnabled: Boolean get() = compatible && isRecentsComponent
     private val isAtleastT = Utilities.ATLEAST_T
-    internal var accessibilityService: LawnchairAccessibilityService? = null
+    internal var accessibilityService: QQ LauncherAccessibilityService? = null
     val isVibrateOnIconAnimation: Boolean by unsafeLazy { getSystemUiBoolean("config_vibrateOnIconAnimation", false) }
 
     override fun onCreate() {
@@ -106,7 +106,7 @@ class LawnchairApp : LauncherApplication() {
     }
 
     fun renameRestoredDb(dbName: String) {
-        val restoredDbFile = getDatabasePath(LawnchairBackup.RESTORED_DB_FILE_NAME)
+        val restoredDbFile = getDatabasePath(QQ LauncherBackup.RESTORED_DB_FILE_NAME)
         if (!restoredDbFile.exists()) return
         val dbFile = getDatabasePath(dbName)
         restoredDbFile.renameTo(dbFile)
@@ -160,8 +160,8 @@ class LawnchairApp : LauncherApplication() {
         var foregroundActivity: Activity? = null
             private set
 
-        val launcher: LawnchairLauncher?
-            get() = activities.filterIsInstance<LawnchairLauncher>().firstOrNull()
+        val launcher: QQ LauncherLauncher?
+            get() = activities.filterIsInstance<QQ LauncherLauncher>().firstOrNull()
 
         fun finishAll() {
             HashSet(activities).forEach { it.finish() }
@@ -206,7 +206,7 @@ class LawnchairApp : LauncherApplication() {
         val isRecentsComponent = recentsComponent.packageName == packageName &&
             recentsComponent.className == RecentsActivity::class.java.name
         if (!isRecentsComponent) {
-            Log.d(TAG, "config_recentsComponentName ($recentsComponent) is not Lawnchair, disabling recents")
+            Log.d(TAG, "config_recentsComponentName ($recentsComponent) is not QQ Launcher, disabling recents")
             return false
         }
 
@@ -225,10 +225,10 @@ class LawnchairApp : LauncherApplication() {
     }
 
     companion object {
-        private const val TAG = "LawnchairApp"
+        private const val TAG = "QQ LauncherApp"
 
         @JvmStatic
-        lateinit var instance: LawnchairApp
+        lateinit var instance: QQ LauncherApp
             private set
 
         @JvmStatic
@@ -238,12 +238,12 @@ class LawnchairApp : LauncherApplication() {
         val isAtleastT: Boolean get() = instance.isAtleastT
 
         @JvmStatic
-        val launcher: LawnchairLauncher? get() = instance.activityHandler.launcher
+        val launcher: QQ LauncherLauncher? get() = instance.activityHandler.launcher
 
         @OptIn(ExperimentalMaterial3ExpressiveApi::class, ExperimentalMaterial3Api::class)
         fun Launcher.showQuickstepWarningIfNecessary() {
             val launcher = this
-            if (!lawnchairApp.isRecentsComponent || isRecentsEnabled) return
+            if (!qqlauncherApp.isRecentsComponent || isRecentsEnabled) return
             ComposeBottomSheet.show(this) {
                 ModalBottomSheetContent(
                     title = { Text(text = stringResource(id = R.string.quickstep_incompatible)) },
@@ -283,4 +283,4 @@ class LawnchairApp : LauncherApplication() {
     }
 }
 
-val Context.lawnchairApp get() = applicationContext as LawnchairApp
+val Context.qqlauncherApp get() = applicationContext as QQ LauncherApp

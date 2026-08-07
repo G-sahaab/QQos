@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?><!--
 /*
 **
-** Copyright (c) 2021, Lawnchair
+** Copyright (c) 2021, QQ Launcher
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -62,12 +62,12 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name="app.lawnchair.ui.preferences.PreferenceActivity"
+            android:name="app.qqlauncher.ui.preferences.PreferenceActivity"
             android:autoRemoveFromRecents="true"
             android:exported="true"
             android:label="@string/settings_button_text"
             android:icon="@mipmap/ic_settings"
-            android:theme="@style/Theme.Lawnchair"
+            android:theme="@style/Theme.QQ Launcher"
             android:windowSoftInputMode="adjustResize"
             android:enableOnBackInvokedCallback="true">
             <intent-filter android:priority="1">
@@ -79,16 +79,16 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="lawnchair" android:host="settings" android:pathPrefix="/" />
+                <data android:scheme="qqlauncher" android:host="settings" android:pathPrefix="/" />
             </intent-filter>
         </activity>
 
         <activity
-            android:label="@string/lawnchair_actions"
+            android:label="@string/qqlauncher_actions"
             android:icon="@mipmap/ic_launcher_home"
-            android:name="app.lawnchair.gestures.ui.LawnchairShortcutActivity"
+            android:name="app.qqlauncher.gestures.ui.QQ LauncherShortcutActivity"
             android:exported="true"
-            android:theme="@style/Theme.Lawnchair">
+            android:theme="@style/Theme.QQ Launcher">
             <intent-filter>
                 <action android:name="android.intent.action.CREATE_SHORTCUT" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -96,11 +96,11 @@
         </activity>
 
         <activity
-            android:name="app.lawnchair.gestures.ui.RunHandlerActivity"
+            android:name="app.qqlauncher.gestures.ui.RunHandlerActivity"
             android:exported="true"
-            android:theme="@style/Theme.Lawnchair">
+            android:theme="@style/Theme.QQ Launcher">
             <intent-filter>
-                <action android:name="app.lawnchair.START_ACTION" />
+                <action android:name="app.qqlauncher.START_ACTION" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -111,25 +111,25 @@
             tools:node="remove" />
 
         <activity
-            android:name="app.lawnchair.ui.ApplyIconPackActivity"
+            android:name="app.qqlauncher.ui.ApplyIconPackActivity"
             android:exported="true"
             android:theme="@style/Theme.Transparent">
             <intent-filter>
-                <action android:name="app.lawnchair.APPLY_ICONS" />
+                <action android:name="app.qqlauncher.APPLY_ICONS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
         <activity
-            android:name="app.lawnchair.BlankActivity"
+            android:name="app.qqlauncher.BlankActivity"
             android:theme="@style/Theme.Transparent" />
 
         <activity
-            android:name="app.lawnchair.smartspace.SmartspacePreferencesShortcut"
+            android:name="app.qqlauncher.smartspace.SmartspacePreferencesShortcut"
             android:theme="@style/Theme.Transparent" />
 
         <receiver
-            android:name="app.lawnchair.gestures.handlers.SleepMethodDeviceAdmin$SleepDeviceAdmin"
+            android:name="app.qqlauncher.gestures.handlers.SleepMethodDeviceAdmin$SleepDeviceAdmin"
             android:description="@string/dt2s_admin_hint"
             android:exported="true"
             android:label="@string/derived_app_name"
@@ -143,7 +143,7 @@
         </receiver>
 
         <service
-            android:name="app.lawnchair.LawnchairAccessibilityService"
+            android:name="app.qqlauncher.QQ LauncherAccessibilityService"
             android:exported="false"
             android:label="@string/derived_app_name"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
@@ -156,7 +156,7 @@
         </service>
 
         <provider
-            android:name="app.lawnchair.bugreport.FileProvider"
+            android:name="app.qqlauncher.bugreport.FileProvider"
             android:authorities="${applicationId}.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
@@ -166,13 +166,13 @@
         </provider>
 
         <provider
-            android:name="app.lawnchair.search.LawnchairRecentSuggestionProvider"
-            android:authorities="${applicationId}.search.LawnchairRecentSuggestionProvider"
+            android:name="app.qqlauncher.search.QQ LauncherRecentSuggestionProvider"
+            android:authorities="${applicationId}.search.QQ LauncherRecentSuggestionProvider"
             android:syncable="true"
             android:exported="false" />
 
         <receiver
-            android:name="app.lawnchair.bugreport.BugReportReceiver"
+            android:name="app.qqlauncher.bugreport.BugReportReceiver"
             android:exported="false">
             <intent-filter>
                 <action android:name="${applicationId}.bugreport.COPY" />
@@ -182,14 +182,14 @@
         </receiver>
 
         <service
-            android:name="app.lawnchair.bugreport.UploaderService"
+            android:name="app.qqlauncher.bugreport.UploaderService"
             android:enabled="true"
             android:exported="false"
             android:process=":bugReport"
             android:foregroundServiceType="dataSync" />
 
         <receiver
-            android:name="app.lawnchair.smartspace.SmartspaceAppWidgetProvider"
+            android:name="app.qqlauncher.smartspace.SmartspaceAppWidgetProvider"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />

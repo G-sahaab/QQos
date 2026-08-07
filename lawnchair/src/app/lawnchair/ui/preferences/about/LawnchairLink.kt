@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.about
+package app.qqlauncher.ui.preferences.about
 
 import android.content.Intent
 import androidx.annotation.DrawableRes
@@ -43,10 +43,10 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.core.net.toUri
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
+import app.qqlauncher.ui.preferences.components.layout.PreferenceTemplate
 
 @Composable
-fun LawnchairLink(
+fun QQ LauncherLink(
     @DrawableRes iconResId: Int,
     label: String,
     url: String,
@@ -86,7 +86,7 @@ fun LawnchairLink(
 
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable
-fun HorizontalLawnchairLink(
+fun HorizontalQQ LauncherLink(
     @DrawableRes iconResId: Int,
     label: String,
     url: String,

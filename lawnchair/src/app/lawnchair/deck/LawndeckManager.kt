@@ -1,12 +1,12 @@
-package app.lawnchair.deck
+package app.qqlauncher.deck
 
 import android.content.Context
 import android.util.Log
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.flowerpot.Flowerpot
-import app.lawnchair.launcher
-import app.lawnchair.launcherNullable
-import app.lawnchair.util.categorizeAppsWithSystemAndGoogle
+import app.qqlauncher.QQ LauncherLauncher
+import app.qqlauncher.flowerpot.Flowerpot
+import app.qqlauncher.launcher
+import app.qqlauncher.launcherNullable
+import app.qqlauncher.util.categorizeAppsWithSystemAndGoogle
 import com.android.launcher3.InvariantDeviceProfile
 import com.android.launcher3.LauncherAppState
 import com.android.launcher3.LauncherSettings
@@ -31,7 +31,7 @@ class LawndeckManager(private val context: Context) {
 
     // TODO
 
-    private val launcher = context.launcherNullable ?: LawnchairLauncher.instance?.launcher
+    private val launcher = context.launcherNullable ?: QQ LauncherLauncher.instance?.launcher
 
     suspend fun enableLawndeck(
         onProgress: ((String) -> Unit)? = null,

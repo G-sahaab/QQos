@@ -1,4 +1,4 @@
-package app.lawnchair.data
+package app.qqlauncher.data
 
 import androidx.room.Database
 import androidx.room.Room
@@ -7,14 +7,14 @@ import androidx.room.TypeConverters
 import androidx.room.migration.Migration
 import androidx.sqlite.db.SimpleSQLiteQuery
 import androidx.sqlite.db.SupportSQLiteDatabase
-import app.lawnchair.data.folder.FolderInfoEntity
-import app.lawnchair.data.folder.FolderItemEntity
-import app.lawnchair.data.folder.service.FolderDao
-import app.lawnchair.data.iconoverride.IconOverride
-import app.lawnchair.data.iconoverride.IconOverrideDao
-import app.lawnchair.data.wallpaper.Wallpaper
-import app.lawnchair.data.wallpaper.service.WallpaperDao
-import app.lawnchair.util.MainThreadInitializedObject
+import app.qqlauncher.data.folder.FolderInfoEntity
+import app.qqlauncher.data.folder.FolderItemEntity
+import app.qqlauncher.data.folder.service.FolderDao
+import app.qqlauncher.data.iconoverride.IconOverride
+import app.qqlauncher.data.iconoverride.IconOverrideDao
+import app.qqlauncher.data.wallpaper.Wallpaper
+import app.qqlauncher.data.wallpaper.service.WallpaperDao
+import app.qqlauncher.util.MainThreadInitializedObject
 import kotlinx.coroutines.runBlocking
 
 @Database(entities = [IconOverride::class, Wallpaper::class, FolderInfoEntity::class, FolderItemEntity::class], version = 3)

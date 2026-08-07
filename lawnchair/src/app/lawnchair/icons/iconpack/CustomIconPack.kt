@@ -1,4 +1,4 @@
-package app.lawnchair.icons.iconpack
+package app.qqlauncher.icons.iconpack
 
 import android.annotation.SuppressLint
 import android.content.ComponentName
@@ -9,12 +9,12 @@ import android.content.res.Resources
 import android.content.res.XmlResourceParser
 import android.graphics.drawable.Drawable
 import android.util.Xml
-import app.lawnchair.icons.ClockMetadata
-import app.lawnchair.icons.ExtendedBitmapDrawable
-import app.lawnchair.icons.picker.IconEntry
-import app.lawnchair.icons.picker.IconPickerCategory
-import app.lawnchair.icons.picker.IconPickerItem
-import app.lawnchair.icons.picker.IconType
+import app.qqlauncher.icons.ClockMetadata
+import app.qqlauncher.icons.ExtendedBitmapDrawable
+import app.qqlauncher.icons.picker.IconEntry
+import app.qqlauncher.icons.picker.IconPickerCategory
+import app.qqlauncher.icons.picker.IconPickerItem
+import app.qqlauncher.icons.picker.IconType
 import com.android.launcher3.R
 import java.io.IOException
 import kotlinx.coroutines.Dispatchers

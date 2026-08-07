@@ -1,12 +1,12 @@
-package app.lawnchair.search.algorithms.engine
+package app.qqlauncher.search.algorithms.engine
 
 import android.content.pm.ShortcutInfo
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import app.lawnchair.search.algorithms.data.ContactInfo
-import app.lawnchair.search.algorithms.data.IFileInfo
-import app.lawnchair.search.algorithms.data.RecentKeyword
-import app.lawnchair.search.algorithms.data.SettingInfo
+import app.qqlauncher.search.algorithms.data.ContactInfo
+import app.qqlauncher.search.algorithms.data.IFileInfo
+import app.qqlauncher.search.algorithms.data.RecentKeyword
+import app.qqlauncher.search.algorithms.data.SettingInfo
 import com.android.launcher3.model.data.AppInfo
 
 /**
@@ -21,7 +21,7 @@ sealed interface SearchResult {
     data class Shortcut(val data: ShortcutInfo) : SearchResult
     data class WebSuggestion(val suggestion: String, val provider: String) : SearchResult
     data class History(val data: RecentKeyword) : SearchResult
-    data class Calculation(val data: app.lawnchair.search.algorithms.data.Calculation) : SearchResult
+    data class Calculation(val data: app.qqlauncher.search.algorithms.data.Calculation) : SearchResult
     sealed interface Action : SearchResult {
         data class MarketSearch(val query: String) : Action
         data class WebSearch(

@@ -1,6 +1,6 @@
-package app.lawnchair.ui.preferences.about
+package app.qqlauncher.ui.preferences.about
 
-import app.lawnchair.util.kotlinxJson
+import app.qqlauncher.util.kotlinxJson
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import okhttp3.MediaType.Companion.toMediaType
@@ -20,7 +20,7 @@ import retrofit2.http.Url
  * It uses Retrofit for making HTTP requests and kotlinx.serialization for JSON parsing.
  */
 interface GitHubService {
-    @GET("repos/LawnchairLauncher/lawnchair/releases")
+    @GET("repos/QQ LauncherLauncher/qqlauncher/releases")
     suspend fun getReleases(): List<GitHubRelease>
 
     @GET("repos/{owner}/{repo}/events")

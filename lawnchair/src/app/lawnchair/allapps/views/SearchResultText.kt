@@ -1,16 +1,16 @@
-package app.lawnchair.allapps.views
+package app.qqlauncher.allapps.views
 
 import android.content.Context
 import android.util.AttributeSet
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.view.ViewCompat
-import app.lawnchair.font.FontManager
-import app.lawnchair.launcher
-import app.lawnchair.search.adapter.SPACE
-import app.lawnchair.search.adapter.SPACE_MINI
-import app.lawnchair.search.adapter.SearchTargetCompat
-import app.lawnchair.theme.color.tokens.ColorTokens
+import app.qqlauncher.font.FontManager
+import app.qqlauncher.launcher
+import app.qqlauncher.search.adapter.SPACE
+import app.qqlauncher.search.adapter.SPACE_MINI
+import app.qqlauncher.search.adapter.SearchTargetCompat
+import app.qqlauncher.theme.color.tokens.ColorTokens
 import com.android.launcher3.R
 import com.android.systemui.shared.system.BlurUtils
 

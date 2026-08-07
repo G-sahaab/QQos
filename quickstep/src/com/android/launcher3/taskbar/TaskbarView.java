@@ -78,10 +78,10 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
-import app.lawnchair.preferences2.PreferenceCacheExtensionsKt;
-import app.lawnchair.hotseat.HotseatMode;
-import app.lawnchair.preferences2.PreferenceManager2;
-import app.lawnchair.theme.color.tokens.ColorTokens;
+import app.qqlauncher.preferences2.PreferenceCacheExtensionsKt;
+import app.qqlauncher.hotseat.HotseatMode;
+import app.qqlauncher.preferences2.PreferenceManager2;
+import app.qqlauncher.theme.color.tokens.ColorTokens;
 
 /**
  * Hosts the Taskbar content such as Hotseat and Recent Apps. Drawn on top of other apps.

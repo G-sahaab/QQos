@@ -1,4 +1,4 @@
-package app.lawnchair
+package app.qqlauncher
 
 import android.app.Activity
 import android.content.Intent
@@ -24,9 +24,9 @@ import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.core.os.bundleOf
-import app.lawnchair.ui.theme.EdgeToEdge
-import app.lawnchair.ui.theme.LawnchairTheme
-import app.lawnchair.util.unsafeLazy
+import app.qqlauncher.ui.theme.EdgeToEdge
+import app.qqlauncher.ui.theme.QQ LauncherTheme
+import app.qqlauncher.util.unsafeLazy
 import kotlin.coroutines.resume
 import kotlinx.coroutines.suspendCancellableCoroutine
 
@@ -46,7 +46,7 @@ class BlankActivity : ComponentActivity() {
             return
         }
         setContent {
-            LawnchairTheme {
+            QQ LauncherTheme {
                 EdgeToEdge()
                 Surface(
                     modifier = Modifier.fillMaxSize(),

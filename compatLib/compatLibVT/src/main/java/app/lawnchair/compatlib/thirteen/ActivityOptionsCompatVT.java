@@ -1,4 +1,4 @@
-package app.lawnchair.compatlib.thirteen;
+package app.qqlauncher.compatlib.thirteen;
 
 import android.app.ActivityOptions;
 import android.content.Context;
@@ -8,7 +8,7 @@ import android.window.RemoteTransition;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
-import app.lawnchair.compatlib.twelve.ActivityOptionsCompatVS;
+import app.qqlauncher.compatlib.twelve.ActivityOptionsCompatVS;
 
 @RequiresApi(33)
 public class ActivityOptionsCompatVT extends ActivityOptionsCompatVS {

@@ -1,3 +1,3 @@
-package app.lawnchair.overview
+package app.qqlauncher.overview
 
 object TaskShortcutFactory

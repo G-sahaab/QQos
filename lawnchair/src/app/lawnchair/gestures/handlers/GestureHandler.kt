@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package app.lawnchair.gestures.handlers
+package app.qqlauncher.gestures.handlers
 
 import android.content.Context
-import app.lawnchair.LawnchairLauncher
+import app.qqlauncher.QQ LauncherLauncher
 
 sealed class GestureHandler(val context: Context) {
-    abstract suspend fun onTrigger(launcher: LawnchairLauncher)
+    abstract suspend fun onTrigger(launcher: QQ LauncherLauncher)
 }
 
 class NoOpGestureHandler(context: Context) : GestureHandler(context) {
-    override suspend fun onTrigger(launcher: LawnchairLauncher) = Unit
+    override suspend fun onTrigger(launcher: QQ LauncherLauncher) = Unit
 }

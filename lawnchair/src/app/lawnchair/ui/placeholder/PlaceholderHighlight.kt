@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.placeholder
+package app.qqlauncher.ui.placeholder
 
 import androidx.annotation.FloatRange
 import androidx.compose.animation.core.AnimationSpec

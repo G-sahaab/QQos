@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Modifications copyright 2022 Lawnchair
+ * Modifications copyright 2022 QQ Launcher
  */
 
-package app.lawnchair.preferences2
+package app.qqlauncher.preferences2
 
 import android.content.Context
 import androidx.datastore.migrations.SharedPreferencesView

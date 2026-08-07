@@ -1,14 +1,14 @@
-package app.lawnchair.ui.preferences.components
+package app.qqlauncher.ui.preferences.components
 
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import app.lawnchair.preferences.BasePreferenceManager
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.ui.preferences.LocalNavController
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.preferences.navigation.GeneralFontSelection
+import app.qqlauncher.preferences.BasePreferenceManager
+import app.qqlauncher.preferences.getAdapter
+import app.qqlauncher.ui.preferences.LocalNavController
+import app.qqlauncher.ui.preferences.components.layout.PreferenceTemplate
+import app.qqlauncher.ui.preferences.navigation.GeneralFontSelection
 
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable

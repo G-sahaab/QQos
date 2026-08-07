@@ -5,7 +5,7 @@
       <list>
         <IssueNavigationLink>
           <option name="issueRegexp" value="#(\d+)" />
-          <option name="linkRegexp" value="https://github.com/LawnchairLauncher/lawnchair/pull/$1" />
+          <option name="linkRegexp" value="https://github.com/QQ LauncherLauncher/qqlauncher/pull/$1" />
         </IssueNavigationLink>
         <IssueNavigationLink>
           <option name="issueRegexp" value="b/(\d+)" />

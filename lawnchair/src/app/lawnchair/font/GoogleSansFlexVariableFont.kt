@@ -1,9 +1,9 @@
-package app.lawnchair.font
+package app.qqlauncher.font
 
 /**
  * Resolves the AOSP variable-* names used in the launcher to the matching GSF variation axes.
  *
- * @see [app.lawnchair.ui.theme.GoogleSansFlex]
+ * @see [app.qqlauncher.ui.theme.GoogleSansFlex]
  */
 object GoogleSansFlexVariableFont {
 

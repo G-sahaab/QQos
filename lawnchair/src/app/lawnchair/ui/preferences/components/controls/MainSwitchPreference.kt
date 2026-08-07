@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.controls
+package app.qqlauncher.ui.preferences.components.controls
 
 import androidx.compose.animation.Crossfade
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -23,11 +23,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import app.lawnchair.preferences.PreferenceAdapter
-import app.lawnchair.ui.preferences.components.layout.ExpandAndShrink
-import app.lawnchair.ui.theme.LawnchairTheme
-import app.lawnchair.ui.util.preview.PreferenceGroupPreviewContainer
-import app.lawnchair.ui.util.preview.PreviewLawnchair
+import app.qqlauncher.preferences.PreferenceAdapter
+import app.qqlauncher.ui.preferences.components.layout.ExpandAndShrink
+import app.qqlauncher.ui.theme.QQ LauncherTheme
+import app.qqlauncher.ui.util.preview.PreferenceGroupPreviewContainer
+import app.qqlauncher.ui.util.preview.PreviewQQ Launcher
 
 /**
  * A toggle to enable a list of preferences.
@@ -155,10 +155,10 @@ fun MainSwitchPreference(
     }
 }
 
-@PreviewLawnchair
+@PreviewQQ Launcher
 @Composable
 private fun MainSwitchPreferenceCheckedPreview() {
-    LawnchairTheme {
+    QQ LauncherTheme {
         PreferenceGroupPreviewContainer {
             MainSwitchPreference(
                 checked = true,
@@ -175,10 +175,10 @@ private fun MainSwitchPreferenceCheckedPreview() {
     }
 }
 
-@PreviewLawnchair
+@PreviewQQ Launcher
 @Composable
 private fun MainSwitchPreferenceUncheckedPreview() {
-    LawnchairTheme {
+    QQ LauncherTheme {
         PreferenceGroupPreviewContainer {
             MainSwitchPreference(
                 checked = false,

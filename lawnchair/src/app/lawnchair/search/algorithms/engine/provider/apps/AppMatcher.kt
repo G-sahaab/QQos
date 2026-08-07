@@ -1,4 +1,4 @@
-package app.lawnchair.search.algorithms.engine.provider.apps
+package app.qqlauncher.search.algorithms.engine.provider.apps
 
 import java.util.Locale
 import me.xdrop.fuzzywuzzy.FuzzySearch

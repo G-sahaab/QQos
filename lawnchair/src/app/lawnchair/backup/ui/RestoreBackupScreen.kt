@@ -1,4 +1,4 @@
-package app.lawnchair.backup.ui
+package app.qqlauncher.backup.ui
 
 import android.app.Activity
 import android.content.Intent
@@ -43,17 +43,17 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import androidx.navigation.toRoute
-import app.lawnchair.backup.LawnchairBackup
-import app.lawnchair.ui.preferences.LocalIsExpandedScreen
-import app.lawnchair.ui.preferences.LocalNavController
-import app.lawnchair.ui.preferences.components.DummyLauncherBox
-import app.lawnchair.ui.preferences.components.controls.FlagSwitchPreference
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
-import app.lawnchair.ui.preferences.navigation.RestoreBackup
-import app.lawnchair.util.BackHandler
-import app.lawnchair.util.hasFlag
-import app.lawnchair.util.restartLauncher
+import app.qqlauncher.backup.QQ LauncherBackup
+import app.qqlauncher.ui.preferences.LocalIsExpandedScreen
+import app.qqlauncher.ui.preferences.LocalNavController
+import app.qqlauncher.ui.preferences.components.DummyLauncherBox
+import app.qqlauncher.ui.preferences.components.controls.FlagSwitchPreference
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroup
+import app.qqlauncher.ui.preferences.components.layout.PreferenceLayout
+import app.qqlauncher.ui.preferences.navigation.RestoreBackup
+import app.qqlauncher.util.BackHandler
+import app.qqlauncher.util.hasFlag
+import app.qqlauncher.util.restartLauncher
 import com.android.launcher3.R
 import java.util.Base64
 import kotlinx.coroutines.launch
@@ -116,7 +116,7 @@ fun RestoreBackupScreen(
 @Composable
 fun ColumnScope.RestoreBackupOptions(
     isPortrait: Boolean,
-    backup: LawnchairBackup,
+    backup: QQ LauncherBackup,
     modifier: Modifier = Modifier,
     viewModel: RestoreBackupViewModel = viewModel(),
 ) {
@@ -156,7 +156,7 @@ fun ColumnScope.RestoreBackupOptions(
             darkText = backup.info.previewDarkText,
         ) {
             val wallpaper = backup.wallpaper
-            if (contents.hasFlag(LawnchairBackup.INCLUDE_WALLPAPER) && wallpaper != null) {
+            if (contents.hasFlag(QQ LauncherBackup.INCLUDE_WALLPAPER) && wallpaper != null) {
                 Image(
                     bitmap = wallpaper.asImageBitmap(),
                     contentDescription = null,
@@ -165,7 +165,7 @@ fun ColumnScope.RestoreBackupOptions(
                 )
             }
             val screenshot = backup.screenshot
-            if (contents.hasFlag(LawnchairBackup.INCLUDE_LAYOUT_AND_SETTINGS) && screenshot != null) {
+            if (contents.hasFlag(QQ LauncherBackup.INCLUDE_LAYOUT_AND_SETTINGS) && screenshot != null) {
                 Image(
                     bitmap = screenshot.asImageBitmap(),
                     contentDescription = null,
@@ -183,16 +183,16 @@ fun ColumnScope.RestoreBackupOptions(
         FlagSwitchPreference(
             flags = contents,
             setFlags = viewModel::setBackupContents,
-            mask = LawnchairBackup.INCLUDE_LAYOUT_AND_SETTINGS,
+            mask = QQ LauncherBackup.INCLUDE_LAYOUT_AND_SETTINGS,
             label = stringResource(id = R.string.backup_content_layout_and_settings),
-            enabled = backupContents.hasFlag(LawnchairBackup.INCLUDE_LAYOUT_AND_SETTINGS),
+            enabled = backupContents.hasFlag(QQ LauncherBackup.INCLUDE_LAYOUT_AND_SETTINGS),
         )
         FlagSwitchPreference(
             flags = contents,
             setFlags = viewModel::setBackupContents,
-            mask = LawnchairBackup.INCLUDE_WALLPAPER,
+            mask = QQ LauncherBackup.INCLUDE_WALLPAPER,
             label = stringResource(id = R.string.backup_content_wallpaper),
-            enabled = backupContents.hasFlag(LawnchairBackup.INCLUDE_WALLPAPER),
+            enabled = backupContents.hasFlag(QQ LauncherBackup.INCLUDE_WALLPAPER),
         )
     }
     Box(
@@ -229,8 +229,8 @@ fun restoreBackupOpener(): () -> Unit {
     return {
         Intent(Intent.ACTION_OPEN_DOCUMENT)
             .addCategory(Intent.CATEGORY_OPENABLE)
-            .setType(LawnchairBackup.MIME_TYPE)
-            .putExtra(Intent.EXTRA_MIME_TYPES, LawnchairBackup.EXTRA_MIME_TYPES)
+            .setType(QQ LauncherBackup.MIME_TYPE)
+            .putExtra(Intent.EXTRA_MIME_TYPES, QQ LauncherBackup.EXTRA_MIME_TYPES)
             .let { request.launch(it) }
     }
 }

@@ -1,4 +1,4 @@
-package app.lawnchair.ui.util.preview
+package app.qqlauncher.ui.util.preview
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -7,7 +7,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroup
 
 @Composable
 fun PreferenceGroupPreviewContainer(

@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.layout
+package app.qqlauncher.ui.preferences.components.layout
 
 import androidx.compose.animation.animateContentSize
 import androidx.compose.foundation.background
@@ -24,8 +24,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.lerp
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import app.lawnchair.ui.preferences.LocalIsExpandedScreen
-import app.lawnchair.ui.theme.preferenceGroupColor
+import app.qqlauncher.ui.preferences.LocalIsExpandedScreen
+import app.qqlauncher.ui.theme.preferenceGroupColor
 import kotlin.math.abs
 import kotlinx.coroutines.launch
 

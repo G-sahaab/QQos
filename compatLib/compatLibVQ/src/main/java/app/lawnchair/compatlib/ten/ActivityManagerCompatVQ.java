@@ -1,4 +1,4 @@
-package app.lawnchair.compatlib.ten;
+package app.qqlauncher.compatlib.ten;
 
 import static android.app.ActivityManager.RECENT_IGNORE_UNAVAILABLE;
 
@@ -17,8 +17,8 @@ import android.view.RemoteAnimationTarget;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
-import app.lawnchair.compatlib.ActivityManagerCompat;
-import app.lawnchair.compatlib.RecentsAnimationRunnerCompat;
+import app.qqlauncher.compatlib.ActivityManagerCompat;
+import app.qqlauncher.compatlib.RecentsAnimationRunnerCompat;
 import java.util.ArrayList;
 import java.util.List;
 

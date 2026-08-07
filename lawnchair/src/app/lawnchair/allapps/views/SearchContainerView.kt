@@ -1,8 +1,8 @@
-package app.lawnchair.allapps.views
+package app.qqlauncher.allapps.views
 
 import android.content.Context
 import android.util.AttributeSet
-import app.lawnchair.search.LawnchairSearchUiDelegate
+import app.qqlauncher.search.QQ LauncherSearchUiDelegate
 import com.android.launcher3.allapps.LauncherAllAppsContainerView
 
 class SearchContainerView @JvmOverloads constructor(
@@ -11,5 +11,5 @@ class SearchContainerView @JvmOverloads constructor(
     defStyleAttr: Int = 0,
 ) : LauncherAllAppsContainerView(context, attrs, defStyleAttr) {
 
-    override fun createSearchUiDelegate() = LawnchairSearchUiDelegate(this)
+    override fun createSearchUiDelegate() = QQ LauncherSearchUiDelegate(this)
 }

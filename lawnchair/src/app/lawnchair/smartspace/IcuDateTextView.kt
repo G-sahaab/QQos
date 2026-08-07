@@ -1,4 +1,4 @@
-package app.lawnchair.smartspace
+package app.qqlauncher.smartspace
 
 import android.content.Context
 import android.content.Intent
@@ -8,12 +8,12 @@ import android.icu.text.DisplayContext
 import android.os.SystemClock
 import android.text.format.DateFormat.is24HourFormat
 import android.util.AttributeSet
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.smartspace.model.SmartspaceCalendar
-import app.lawnchair.smartspace.model.SmartspaceTimeFormat
-import app.lawnchair.util.broadcastReceiverFlow
-import app.lawnchair.util.repeatOnAttached
-import app.lawnchair.util.subscribeBlocking
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.smartspace.model.SmartspaceCalendar
+import app.qqlauncher.smartspace.model.SmartspaceTimeFormat
+import app.qqlauncher.util.broadcastReceiverFlow
+import app.qqlauncher.util.repeatOnAttached
+import app.qqlauncher.util.subscribeBlocking
 import com.android.launcher3.R
 import java.util.Locale
 import kotlinx.coroutines.flow.combine

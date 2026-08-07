@@ -1,10 +1,10 @@
-package app.lawnchair.search.algorithms.engine.provider.apps
+package app.qqlauncher.search.algorithms.engine.provider.apps
 
 import android.content.Context
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.preferences2.firstCached
-import app.lawnchair.search.algorithms.engine.SearchResult
-import app.lawnchair.search.algorithms.filterHiddenApps
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.preferences2.firstCached
+import app.qqlauncher.search.algorithms.engine.SearchResult
+import app.qqlauncher.search.algorithms.filterHiddenApps
 import com.android.launcher3.model.AllAppsList
 import com.android.launcher3.model.data.AppInfo
 import com.android.launcher3.search.StringMatcherUtility

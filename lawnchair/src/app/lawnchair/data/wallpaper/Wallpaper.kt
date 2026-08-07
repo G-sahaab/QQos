@@ -1,4 +1,4 @@
-﻿package app.lawnchair.data.wallpaper
+﻿package app.qqlauncher.data.wallpaper
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

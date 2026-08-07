@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.destinations
+package app.qqlauncher.ui.preferences.destinations
 
 import android.app.Activity
 import android.content.ComponentName
@@ -54,41 +54,41 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.core.content.getSystemService
-import app.lawnchair.LawnchairApp
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences.observeAsState
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.preferences2.firstCached
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.ui.OverflowMenuGrouped
-import app.lawnchair.ui.preferences.components.AnnouncementPreference
-import app.lawnchair.ui.preferences.components.controls.PreferenceCategory
-import app.lawnchair.ui.preferences.components.controls.WarningPreference
-import app.lawnchair.ui.preferences.components.layout.ClickableIcon
-import app.lawnchair.ui.preferences.components.layout.ExpandAndShrink
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.preferences.components.layout.ProvideDescriptionTextStyle
-import app.lawnchair.ui.preferences.data.liveinfo.SyncLiveInformation
-import app.lawnchair.ui.preferences.navigation.About
-import app.lawnchair.ui.preferences.navigation.AppDrawer
-import app.lawnchair.ui.preferences.navigation.BackupAndRestore
-import app.lawnchair.ui.preferences.navigation.DebugMenu
-import app.lawnchair.ui.preferences.navigation.Dock
-import app.lawnchair.ui.preferences.navigation.ExperimentalFeatures
-import app.lawnchair.ui.preferences.navigation.Folders
-import app.lawnchair.ui.preferences.navigation.General
-import app.lawnchair.ui.preferences.navigation.Gestures
-import app.lawnchair.ui.preferences.navigation.HomeScreen
-import app.lawnchair.ui.preferences.navigation.PreferenceRootRoute
-import app.lawnchair.ui.preferences.navigation.Quickstep
-import app.lawnchair.ui.preferences.navigation.Search
-import app.lawnchair.ui.preferences.navigation.Smartspace
-import app.lawnchair.ui.util.addIf
-import app.lawnchair.util.isDefaultLauncher
-import app.lawnchair.util.restartLauncher
+import app.qqlauncher.QQ LauncherApp
+import app.qqlauncher.QQ LauncherLauncher
+import app.qqlauncher.preferences.getAdapter
+import app.qqlauncher.preferences.observeAsState
+import app.qqlauncher.preferences.preferenceManager
+import app.qqlauncher.preferences2.firstCached
+import app.qqlauncher.preferences2.preferenceManager2
+import app.qqlauncher.ui.OverflowMenuGrouped
+import app.qqlauncher.ui.preferences.components.AnnouncementPreference
+import app.qqlauncher.ui.preferences.components.controls.PreferenceCategory
+import app.qqlauncher.ui.preferences.components.controls.WarningPreference
+import app.qqlauncher.ui.preferences.components.layout.ClickableIcon
+import app.qqlauncher.ui.preferences.components.layout.ExpandAndShrink
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroup
+import app.qqlauncher.ui.preferences.components.layout.PreferenceLayout
+import app.qqlauncher.ui.preferences.components.layout.PreferenceTemplate
+import app.qqlauncher.ui.preferences.components.layout.ProvideDescriptionTextStyle
+import app.qqlauncher.ui.preferences.data.liveinfo.SyncLiveInformation
+import app.qqlauncher.ui.preferences.navigation.About
+import app.qqlauncher.ui.preferences.navigation.AppDrawer
+import app.qqlauncher.ui.preferences.navigation.BackupAndRestore
+import app.qqlauncher.ui.preferences.navigation.DebugMenu
+import app.qqlauncher.ui.preferences.navigation.Dock
+import app.qqlauncher.ui.preferences.navigation.ExperimentalFeatures
+import app.qqlauncher.ui.preferences.navigation.Folders
+import app.qqlauncher.ui.preferences.navigation.General
+import app.qqlauncher.ui.preferences.navigation.Gestures
+import app.qqlauncher.ui.preferences.navigation.HomeScreen
+import app.qqlauncher.ui.preferences.navigation.PreferenceRootRoute
+import app.qqlauncher.ui.preferences.navigation.Quickstep
+import app.qqlauncher.ui.preferences.navigation.Search
+import app.qqlauncher.ui.preferences.navigation.Smartspace
+import app.qqlauncher.ui.util.addIf
+import app.qqlauncher.util.isDefaultLauncher
+import app.qqlauncher.util.restartLauncher
 import com.android.launcher3.BuildConfig
 import com.android.launcher3.R
 
@@ -200,7 +200,7 @@ fun PreferencesDashboard(
             )
 
             ExpandAndShrink(
-                visible = LawnchairApp.isRecentsEnabled || BuildConfig.DEBUG,
+                visible = QQ LauncherApp.isRecentsEnabled || BuildConfig.DEBUG,
             ) {
                 PreferenceCategory(
                     label = stringResource(id = R.string.quickstep_label),
@@ -378,6 +378,6 @@ fun PreferencesSetDefaultLauncherWarning(
 
 fun openAppInfo(context: Context) {
     val launcherApps = context.getSystemService<LauncherApps>()
-    val componentName = ComponentName(context, LawnchairLauncher::class.java)
+    val componentName = ComponentName(context, QQ LauncherLauncher::class.java)
     launcherApps?.startAppDetailsActivity(componentName, Process.myUserHandle(), null, null)
 }

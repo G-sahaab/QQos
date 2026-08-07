@@ -1,4 +1,4 @@
-package app.lawnchair.ui.theme
+package app.qqlauncher.ui.theme
 
 import androidx.compose.ui.text.ExperimentalTextApi
 import androidx.compose.ui.text.font.Font

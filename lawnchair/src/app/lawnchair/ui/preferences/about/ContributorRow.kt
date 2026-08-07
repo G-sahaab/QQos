@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.about
+package app.qqlauncher.ui.preferences.about
 
 import android.content.Intent
 import androidx.compose.foundation.background
@@ -33,10 +33,10 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.core.net.toUri
-import app.lawnchair.ui.placeholder.PlaceholderHighlight
-import app.lawnchair.ui.placeholder.fade
-import app.lawnchair.ui.placeholder.placeholder
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
+import app.qqlauncher.ui.placeholder.PlaceholderHighlight
+import app.qqlauncher.ui.placeholder.fade
+import app.qqlauncher.ui.placeholder.placeholder
+import app.qqlauncher.ui.preferences.components.layout.PreferenceTemplate
 import coil.compose.SubcomposeAsyncImage
 import com.android.launcher3.R
 

@@ -1,13 +1,13 @@
-package app.lawnchair.icons
+package app.qqlauncher.icons
 
 import android.content.Context
 import android.util.Log
-import app.lawnchair.icons.shape.IconShape
-import app.lawnchair.icons.shape.PathShapeDelegate
-import app.lawnchair.preferences.PreferenceChangeListener
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.preferences2.firstCached
+import app.qqlauncher.icons.shape.IconShape
+import app.qqlauncher.icons.shape.PathShapeDelegate
+import app.qqlauncher.preferences.PreferenceChangeListener
+import app.qqlauncher.preferences.PreferenceManager
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.preferences2.firstCached
 import com.android.launcher3.LauncherPrefs
 import com.android.launcher3.concurrent.annotations.Ui
 import com.android.launcher3.dagger.ApplicationContext
@@ -25,7 +25,7 @@ import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.plus
 
 @LauncherAppSingleton
-class LawnchairThemeManager
+class QQ LauncherThemeManager
 @Inject
 constructor(
     @ApplicationContext private val context: Context,
@@ -57,7 +57,7 @@ constructor(
     override var iconState = parseIconStateV2(null)
 
     init {
-        val scope = MainScope() + CoroutineName("LawnchairThemeManager")
+        val scope = MainScope() + CoroutineName("QQ LauncherThemeManager")
         merge(
             prefs2.iconShape.get(),
             prefs2.customIconShape.get(),
@@ -129,4 +129,4 @@ constructor(
     }
 }
 
-private const val TAG = "LawnchairThemeManager"
+private const val TAG = "QQ LauncherThemeManager"

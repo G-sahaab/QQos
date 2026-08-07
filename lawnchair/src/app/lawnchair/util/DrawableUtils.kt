@@ -1,4 +1,4 @@
-package app.lawnchair.util
+package app.qqlauncher.util
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -8,7 +8,7 @@ import android.graphics.drawable.GradientDrawable
 import androidx.annotation.DrawableRes
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.createBitmap
-import app.lawnchair.theme.color.tokens.ColorTokens
+import app.qqlauncher.theme.color.tokens.ColorTokens
 import com.android.launcher3.R
 
 fun GradientDrawable.getCornerRadiiCompat(): FloatArray? = try {

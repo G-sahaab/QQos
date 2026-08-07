@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.colorpreference.pickers
+package app.qqlauncher.ui.preferences.components.colorpreference.pickers
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
@@ -10,11 +10,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.theme.color.ColorOption
-import app.lawnchair.ui.preferences.components.colorpreference.ColorDot
-import app.lawnchair.ui.preferences.components.colorpreference.ColorPreferenceEntry
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
+import app.qqlauncher.theme.color.ColorOption
+import app.qqlauncher.ui.preferences.components.colorpreference.ColorDot
+import app.qqlauncher.ui.preferences.components.colorpreference.ColorPreferenceEntry
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroup
+import app.qqlauncher.ui.preferences.components.layout.PreferenceTemplate
 import com.android.launcher3.R
 
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)

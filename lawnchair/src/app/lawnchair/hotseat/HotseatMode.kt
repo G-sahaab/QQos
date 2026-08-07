@@ -1,9 +1,9 @@
-package app.lawnchair.hotseat
+package app.qqlauncher.hotseat
 
 import android.content.Context
 import androidx.annotation.LayoutRes
 import androidx.annotation.StringRes
-import app.lawnchair.util.isPackageInstalledAndEnabled
+import app.qqlauncher.util.isPackageInstalledAndEnabled
 import com.android.launcher3.R
 
 sealed class HotseatMode(
@@ -14,7 +14,7 @@ sealed class HotseatMode(
         fun fromString(value: String): HotseatMode = when (value) {
             "disabled" -> DisabledHotseat
             "google_search" -> GoogleSearchHotseat
-            else -> LawnchairHotseat
+            else -> QQ LauncherHotseat
         }
 
         /**
@@ -22,7 +22,7 @@ sealed class HotseatMode(
          */
         fun values() = listOf(
             DisabledHotseat,
-            LawnchairHotseat,
+            QQ LauncherHotseat,
             GoogleSearchHotseat,
         )
     }
@@ -30,11 +30,11 @@ sealed class HotseatMode(
     abstract fun isAvailable(context: Context): Boolean
 }
 
-object LawnchairHotseat : HotseatMode(
-    nameResourceId = R.string.hotseat_mode_lawnchair,
+object QQ LauncherHotseat : HotseatMode(
+    nameResourceId = R.string.hotseat_mode_qqlauncher,
     layoutResourceId = R.layout.search_container_hotseat,
 ) {
-    override fun toString() = "lawnchair"
+    override fun toString() = "qqlauncher"
     override fun isAvailable(context: Context): Boolean = true
 }
 

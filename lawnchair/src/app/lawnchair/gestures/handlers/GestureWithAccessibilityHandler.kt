@@ -1,4 +1,4 @@
-package app.lawnchair.gestures.handlers
+package app.qqlauncher.gestures.handlers
 
 import android.content.Intent
 import android.provider.Settings
@@ -17,16 +17,16 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.lawnchairApp
-import app.lawnchair.ui.ModalBottomSheetContent
-import app.lawnchair.views.ComposeBottomSheet
+import app.qqlauncher.QQ LauncherLauncher
+import app.qqlauncher.qqlauncherApp
+import app.qqlauncher.ui.ModalBottomSheetContent
+import app.qqlauncher.views.ComposeBottomSheet
 import com.android.launcher3.R
 
 object GestureWithAccessibilityHandler {
 
-    fun onTrigger(launcher: LawnchairLauncher, stringAction: Int, action: Int) {
-        val app = launcher.lawnchairApp
+    fun onTrigger(launcher: QQ LauncherLauncher, stringAction: Int, action: Int) {
+        val app = launcher.qqlauncherApp
         if (!app.isAccessibilityServiceBound()) {
             val intent = Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)
                 .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)

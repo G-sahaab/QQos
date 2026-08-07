@@ -1,4 +1,4 @@
-package app.lawnchair.qsb.providers
+package app.qqlauncher.qsb.providers
 
 import android.app.ActivityOptions
 import android.app.PendingIntent
@@ -7,9 +7,9 @@ import android.content.Context
 import android.content.Intent
 import android.view.View
 import androidx.core.view.descendants
-import app.lawnchair.HeadlessWidgetsManager
-import app.lawnchair.qsb.ThemingMethod
-import app.lawnchair.util.pendingIntent
+import app.qqlauncher.HeadlessWidgetsManager
+import app.qqlauncher.qsb.ThemingMethod
+import app.qqlauncher.util.pendingIntent
 import com.android.launcher3.Launcher
 import com.android.launcher3.R
 import com.android.launcher3.Utilities

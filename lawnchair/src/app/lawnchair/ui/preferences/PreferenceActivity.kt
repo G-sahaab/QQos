@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences
+package app.qqlauncher.ui.preferences
 
 import android.content.Context
 import android.content.Intent
@@ -25,10 +25,10 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
 import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
 import androidx.core.content.edit
-import app.lawnchair.smartspace.provider.OnboardingProvider
-import app.lawnchair.ui.preferences.navigation.PreferenceRoute
-import app.lawnchair.ui.theme.EdgeToEdge
-import app.lawnchair.ui.theme.LawnchairTheme
+import app.qqlauncher.smartspace.provider.OnboardingProvider
+import app.qqlauncher.ui.preferences.navigation.PreferenceRoute
+import app.qqlauncher.ui.theme.EdgeToEdge
+import app.qqlauncher.ui.theme.QQ LauncherTheme
 import com.android.launcher3.LauncherPrefs
 import com.google.accompanist.adaptive.calculateDisplayFeatures
 import kotlinx.serialization.json.Json
@@ -48,7 +48,7 @@ class PreferenceActivity : ComponentActivity() {
         }
 
         setContent {
-            LawnchairTheme {
+            QQ LauncherTheme {
                 EdgeToEdge()
                 Preferences(
                     windowSizeClass = calculateWindowSizeClass(this),
@@ -68,7 +68,7 @@ class PreferenceActivity : ComponentActivity() {
 
     companion object {
 
-        private const val EXTRA_DESTINATION_ROUTE = "app.lawnchair.ui.preferences.DESTINATION_ROUTE"
+        private const val EXTRA_DESTINATION_ROUTE = "app.qqlauncher.ui.preferences.DESTINATION_ROUTE"
 
         fun createIntent(context: Context, destination: PreferenceRoute): Intent {
             val intent = Intent(context, PreferenceActivity::class.java)

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui;
+package app.qqlauncher.ui;
 
 import android.animation.ValueAnimator;
 import android.content.Context;

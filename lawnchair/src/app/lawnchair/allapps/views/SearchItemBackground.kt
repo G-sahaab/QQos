@@ -1,4 +1,4 @@
-package app.lawnchair.allapps.views
+package app.qqlauncher.allapps.views
 
 import android.content.Context
 import android.graphics.Canvas
@@ -6,7 +6,7 @@ import android.graphics.Paint
 import android.graphics.Path
 import android.graphics.RectF
 import android.view.View
-import app.lawnchair.theme.color.tokens.ColorTokens
+import app.qqlauncher.theme.color.tokens.ColorTokens
 import com.android.launcher3.R
 import com.android.systemui.shared.system.BlurUtils
 import com.android.systemui.util.dpToPx

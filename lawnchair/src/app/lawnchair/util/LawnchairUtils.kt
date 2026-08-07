@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.util
+package app.qqlauncher.util
 
 import android.annotation.SuppressLint
 import android.app.AlarmManager
@@ -48,11 +48,11 @@ import androidx.core.graphics.ColorUtils
 import androidx.core.graphics.createBitmap
 import androidx.core.graphics.luminance
 import androidx.core.os.UserManagerCompat
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.preferences2.firstCached
-import app.lawnchair.theme.color.ColorOption
-import app.lawnchair.theme.color.tokens.ColorTokens
+import app.qqlauncher.preferences.PreferenceManager
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.preferences2.firstCached
+import app.qqlauncher.theme.color.ColorOption
+import app.qqlauncher.theme.color.tokens.ColorTokens
 import com.android.launcher3.BaseActivity
 import com.android.launcher3.BuildConfig
 import com.android.launcher3.R
@@ -220,7 +220,7 @@ fun resolveFolderBackgroundColor(context: Context): Int {
     }
 }
 
-/** Apply Lawnchair custom allapps colour to the provided colour */
+/** Apply QQ Launcher custom allapps colour to the provided colour */
 private fun getAllAppsBaseColor(context: Context, defaultColor: Int): Int {
     val prefs2 = PreferenceManager2.getInstance(context)
     val colorOptions: ColorOption = prefs2.appDrawerBackgroundColor.firstCached()
@@ -229,7 +229,7 @@ private fun getAllAppsBaseColor(context: Context, defaultColor: Int): Int {
     return ColorUtils.setAlphaComponent(baseColor, 255)
 }
 
-/** Apply Lawnchair custom allapps opacity and colour to the provided colour */
+/** Apply QQ Launcher custom allapps opacity and colour to the provided colour */
 fun getAllAppsBackgroundColor(context: Context, defaultColor: Int): Int {
     val prefs = PreferenceManager.getInstance(context)
     val userOpacity = prefs.drawerOpacity.get()
@@ -322,7 +322,7 @@ fun Context.getDefaultResolveInfo(): ResolveInfo? {
  * Parses a version code into [Major, Minor, Stage, Release, Patch].
  * Handles both 8-digit (AA_BB_CC_DD) and 10-digit (AA_BB_CC_DD_EE) formats.
  *
- * Lawnchair format has: [Major, Minor, Stage, Release]
+ * QQ Launcher format has: [Major, Minor, Stage, Release]
  *
  * pE format has: [Major, Minor, Stage, Release, Patch]
  */

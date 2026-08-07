@@ -238,8 +238,8 @@ import java.util.function.BiConsumer;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
-import app.lawnchair.LawnchairApp;
-import app.lawnchair.compat.LawnchairQuickstepCompat;
+import app.qqlauncher.QQ LauncherApp;
+import app.qqlauncher.compat.QQ LauncherQuickstepCompat;
 
 public class QuickstepLauncher extends Launcher implements RecentsViewContainer,
         SystemShortcut.BubbleActivityStarter {
@@ -328,9 +328,9 @@ public class QuickstepLauncher extends Launcher implements RecentsViewContainer,
                         getDepthController(), getStatsLogManager(),
                         systemUiProxy, RecentsModel.INSTANCE.get(this),
                         () -> onStateBack());
-        if (DesktopModeStatus.canEnterDesktopMode(this) && LawnchairApp.isRecentsEnabled()) {
+        if (DesktopModeStatus.canEnterDesktopMode(this) && QQ LauncherApp.isRecentsEnabled()) {
             mDesktopRecentsTransitionController = new DesktopRecentsTransitionController(
-                    getStateManager(), systemUiProxy, LawnchairApp.getInstance().getIApplicationThread(),
+                    getStateManager(), systemUiProxy, QQ LauncherApp.getInstance().getIApplicationThread(),
                     getDepthController());
         }
         overviewPanel.init(mActionsView, mSplitSelectStateController,
@@ -342,7 +342,7 @@ public class QuickstepLauncher extends Launcher implements RecentsViewContainer,
         mActionsView.updateDimension(getDeviceProfile(), overviewPanel.getLastComputedTaskSize());
         mActionsView.updateVerticalMargin(DisplayController.getNavigationMode(this));
 
-        if (LawnchairApp.isRecentsEnabled()) {
+        if (QQ LauncherApp.isRecentsEnabled()) {
             mAppTransitionManager = buildAppTransitionManager();
             mAppTransitionManager.registerRemoteAnimations();
             mAppTransitionManager.registerRemoteTransitions();
@@ -355,7 +355,7 @@ public class QuickstepLauncher extends Launcher implements RecentsViewContainer,
         }
         mHotseatPredictionController = new HotseatPredictionController(this);
 
-        mEnableWidgetDepth = LawnchairApp.isRecentsEnabled() ? SystemProperties.getBoolean("ro.launcher.depth.widget", true) : false;
+        mEnableWidgetDepth = QQ LauncherApp.isRecentsEnabled() ? SystemProperties.getBoolean("ro.launcher.depth.widget", true) : false;
         getWorkspace().addOverlayCallback(progress ->
                 onTaskbarInAppDisplayProgressUpdate(progress, MINUS_ONE_PAGE_PROGRESS_INDEX));
         if (Utilities.ATLEAST_U) {
@@ -517,7 +517,7 @@ public class QuickstepLauncher extends Launcher implements RecentsViewContainer,
         List<SystemShortcut.Factory> shortcuts = new ArrayList(Arrays.asList(
                 APP_INFO, WellbeingModel.SHORTCUT_FACTORY, mHotseatPredictionController));
 
-        if (LawnchairApp.isRecentsEnabled()) {
+        if (QQ LauncherApp.isRecentsEnabled()) {
             shortcuts.addAll(getSplitShortcuts());
         }
         shortcuts.add(WIDGETS);
@@ -980,7 +980,7 @@ public class QuickstepLauncher extends Launcher implements RecentsViewContainer,
     public void onUiChangedWhileSleeping() {
         // Remove the snapshot because the content view may have obvious changes.
         UI_HELPER_EXECUTOR.execute(
-                () -> LawnchairQuickstepCompat.getActivityManagerCompat().invalidateHomeTaskSnapshot(this));
+                () -> QQ LauncherQuickstepCompat.getActivityManagerCompat().invalidateHomeTaskSnapshot(this));
     }
 
     @Override
@@ -1629,7 +1629,7 @@ public class QuickstepLauncher extends Launcher implements RecentsViewContainer,
     public View onCreateView(View parent, String name, Context context, AttributeSet attrs) {
         // ClockEventDelegate / setClockEventDelegate were added in Android 15 (API 35); on older
         // platforms we must fall back to the framework default to avoid loading classes that do
-        // not exist on the device (b/353166316, lawnchair issue #6781).
+        // not exist on the device (b/353166316, qqlauncher issue #6781).
         if (Utilities.ATLEAST_V) {
             switch (name) {
                 case "TextClock", "android.widget.TextClock" -> {

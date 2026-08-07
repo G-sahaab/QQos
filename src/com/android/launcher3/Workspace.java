@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Modifications copyright 2025, Lawnchair
+ * Modifications copyright 2025, QQ Launcher
  */
 
 package com.android.launcher3;
@@ -145,18 +145,18 @@ import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-import app.lawnchair.preferences2.PreferenceCacheExtensionsKt;
-import static app.lawnchair.util.LawnchairUtilsKt.toBitmap;
-import app.lawnchair.LawnchairApp;
-import app.lawnchair.LawnchairAppKt;
-import app.lawnchair.preferences.PreferenceManager;
-import app.lawnchair.preferences2.PreferenceManager2;
-import app.lawnchair.smartspace.DoubleShadowTextView;
-import app.lawnchair.smartspace.SmartspaceAppWidgetProvider;
-import app.lawnchair.smartspace.model.LawnchairSmartspace;
-import app.lawnchair.smartspace.model.SmartspaceMode;
-import app.lawnchair.theme.drawable.DrawableTokens;
-import app.lawnchair.util.LawnchairUtilsKt;
+import app.qqlauncher.preferences2.PreferenceCacheExtensionsKt;
+import static app.qqlauncher.util.QQ LauncherUtilsKt.toBitmap;
+import app.qqlauncher.QQ LauncherApp;
+import app.qqlauncher.QQ LauncherAppKt;
+import app.qqlauncher.preferences.PreferenceManager;
+import app.qqlauncher.preferences2.PreferenceManager2;
+import app.qqlauncher.smartspace.DoubleShadowTextView;
+import app.qqlauncher.smartspace.SmartspaceAppWidgetProvider;
+import app.qqlauncher.smartspace.model.QQ LauncherSmartspace;
+import app.qqlauncher.smartspace.model.SmartspaceMode;
+import app.qqlauncher.theme.drawable.DrawableTokens;
+import app.qqlauncher.util.QQ LauncherUtilsKt;
 
 /**
  * The workspace is a wide area with a wallpaper and a finite number of pages.
@@ -515,7 +515,7 @@ public class Workspace<T extends View & PageIndicator> extends PagedView<T>
 
         if (mDragInfo != null && mDragInfo.cell != null) {
             CellLayout layout = (CellLayout) (mDragInfo.cell instanceof LauncherAppWidgetHostView
-                    // LC: https://github.com/LawnchairLauncher/lawnchair/issues/3143
+                    // LC: https://github.com/QQ LauncherLauncher/qqlauncher/issues/3143
                     && dragObject.dragView.getContentViewParent() != null
                     ? dragObject.dragView.getContentViewParent().getParent()
                     : mDragInfo.cell.getParent().getParent());
@@ -613,9 +613,9 @@ public class Workspace<T extends View & PageIndicator> extends PagedView<T>
 
     public void updateStatusbarClock() {
         if (mCurrentPage == 0 && PreferenceCacheExtensionsKt.firstCached(mPreferenceManager2.getStatusBarClock())) {
-            LawnchairAppKt.getLawnchairApp(mLauncher).hideClockInStatusBar();
+            QQ LauncherAppKt.getQQ LauncherApp(mLauncher).hideClockInStatusBar();
         } else {
-            LawnchairAppKt.getLawnchairApp(mLauncher).restoreClockInStatusBar();
+            QQ LauncherAppKt.getQQ LauncherApp(mLauncher).restoreClockInStatusBar();
         }
     }
 
@@ -672,7 +672,7 @@ public class Workspace<T extends View & PageIndicator> extends PagedView<T>
             if (!smartspaceMode.isAvailable(this.mLauncher)) {
                 // The current smartspace mode is not available,
                 // setting the smartspace mode to one that is always available
-                smartspaceMode = LawnchairSmartspace.INSTANCE;
+                smartspaceMode = QQ LauncherSmartspace.INSTANCE;
                 com.patrykmichalik.opto.core.PreferenceExtensionsKt.setBlocking(mPreferenceManager2.getSmartspaceMode(), smartspaceMode);
             }
             // In transposed layout, we add the first page pinned widget in the Grid.
@@ -1188,14 +1188,14 @@ public class Workspace<T extends View & PageIndicator> extends PagedView<T>
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         if (shouldSkipPagedViewInterceptionForIconSwipe(ev)) {
             return false;
-        } // Lawnchair: Icon swipe gesture feature
+        } // QQ Launcher: Icon swipe gesture feature
         if (isTrackpadMultiFingerSwipe(ev)) {
             return false;
         }
         return super.onInterceptTouchEvent(ev);
     }
 
-    // Lawnchair: Icon swipe gesture feature
+    // QQ Launcher: Icon swipe gesture feature
     private boolean shouldSkipPagedViewInterceptionForIconSwipe(MotionEvent ev) {
         switch (ev.getActionMasked()) {
             case MotionEvent.ACTION_DOWN:
@@ -1224,7 +1224,7 @@ public class Workspace<T extends View & PageIndicator> extends PagedView<T>
         }
     }
 
-    // Lawnchair: Icon swipe gesture feature
+    // QQ Launcher: Icon swipe gesture feature
     public boolean isTouchOnIconWithSwipeGesture(float x, float y, boolean vertical) {
         boolean hasConfiguredIconSwipeGesture = false;
         BubbleTextView touchedIcon = findIconAtPosition(x, y);
@@ -1238,7 +1238,7 @@ public class Workspace<T extends View & PageIndicator> extends PagedView<T>
         return hasConfiguredIconSwipeGesture;
     }
 
-    // Lawnchair: Icon swipe gesture feature
+    // QQ Launcher: Icon swipe gesture feature
     private BubbleTextView findIconAtPosition(float x, float y) {
         for (int i = getChildCount() - 1; i >= 0; i--) {
             View child = getChildAt(i);
@@ -1258,7 +1258,7 @@ public class Workspace<T extends View & PageIndicator> extends PagedView<T>
         return null;
     }
 
-    // Lawnchair: Icon swipe gesture feature
+    // QQ Launcher: Icon swipe gesture feature
     private BubbleTextView findIconInCellLayout(CellLayout cellLayout, float x, float y) {
         ShortcutAndWidgetContainer container = cellLayout.getShortcutsAndWidgets();
         float containerX = x - container.getLeft();

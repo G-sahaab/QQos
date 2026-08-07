@@ -1,4 +1,4 @@
-package app.lawnchair.theme.color
+package app.qqlauncher.theme.color
 
 import androidx.annotation.ColorInt
 import com.android.systemui.monet.ColorScheme as MonetColorScheme

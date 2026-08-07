@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.destinations
+package app.qqlauncher.ui.preferences.destinations
 
 import android.app.Activity
 import android.content.Intent
@@ -12,17 +12,17 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.core.graphics.drawable.toBitmap
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import app.lawnchair.data.iconoverride.IconOverrideRepository
-import app.lawnchair.icons.picker.IconPickerItem
-import app.lawnchair.ui.preferences.LocalNavController
-import app.lawnchair.ui.preferences.LocalPreferenceInteractor
-import app.lawnchair.ui.preferences.components.AppItem
-import app.lawnchair.ui.preferences.components.controls.ClickablePreference
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayoutLazyColumn
-import app.lawnchair.ui.preferences.components.layout.preferenceGroupItems
-import app.lawnchair.ui.preferences.navigation.IconPicker
-import app.lawnchair.ui.util.OnResult
-import app.lawnchair.util.requireSystemService
+import app.qqlauncher.data.iconoverride.IconOverrideRepository
+import app.qqlauncher.icons.picker.IconPickerItem
+import app.qqlauncher.ui.preferences.LocalNavController
+import app.qqlauncher.ui.preferences.LocalPreferenceInteractor
+import app.qqlauncher.ui.preferences.components.AppItem
+import app.qqlauncher.ui.preferences.components.controls.ClickablePreference
+import app.qqlauncher.ui.preferences.components.layout.PreferenceLayoutLazyColumn
+import app.qqlauncher.ui.preferences.components.layout.preferenceGroupItems
+import app.qqlauncher.ui.preferences.navigation.IconPicker
+import app.qqlauncher.ui.util.OnResult
+import app.qqlauncher.util.requireSystemService
 import com.android.launcher3.LauncherAppState
 import com.android.launcher3.R
 import com.android.launcher3.util.ComponentKey

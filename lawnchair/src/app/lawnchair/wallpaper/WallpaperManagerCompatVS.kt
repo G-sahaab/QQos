@@ -1,4 +1,4 @@
-package app.lawnchair.wallpaper
+package app.qqlauncher.wallpaper
 
 import android.annotation.TargetApi
 import android.app.WallpaperColors
@@ -7,8 +7,8 @@ import android.content.Context
 import android.os.Build
 import android.os.Handler
 import android.os.Looper
-import app.lawnchair.wallpaper.WallpaperColorsCompat.Companion.HINT_SUPPORTS_DARK_TEXT
-import app.lawnchair.wallpaper.WallpaperColorsCompat.Companion.HINT_SUPPORTS_DARK_THEME
+import app.qqlauncher.wallpaper.WallpaperColorsCompat.Companion.HINT_SUPPORTS_DARK_TEXT
+import app.qqlauncher.wallpaper.WallpaperColorsCompat.Companion.HINT_SUPPORTS_DARK_THEME
 
 @TargetApi(Build.VERSION_CODES.S)
 internal class WallpaperManagerCompatVS(context: Context) : WallpaperManagerCompat(context) {

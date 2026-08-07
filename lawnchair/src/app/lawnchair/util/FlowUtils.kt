@@ -1,4 +1,4 @@
-package app.lawnchair.util
+package app.qqlauncher.util
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -9,8 +9,8 @@ import androidx.compose.runtime.Composable
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.lifecycleScope
-import app.lawnchair.LawnchairApp
-import app.lawnchair.preferences2.PreferenceManager2
+import app.qqlauncher.QQ LauncherApp
+import app.qqlauncher.preferences2.PreferenceManager2
 import com.patrykmichalik.opto.core.PreferenceImpl
 import com.patrykmichalik.opto.core.getFromPreferences
 import kotlinx.coroutines.CoroutineScope
@@ -34,7 +34,7 @@ fun <T> Flow<T>.firstBlocking() = runBlocking { first() }
 fun <T> Flow<T>.collectAsStateBlocking() = collectAsStateWithLifecycle(initialValue = firstBlocking())
 
 fun <C, S> PreferenceImpl<C, S>.firstCached(
-    prefs2: PreferenceManager2 = PreferenceManager2.getInstance(LawnchairApp.instance),
+    prefs2: PreferenceManager2 = PreferenceManager2.getInstance(QQ LauncherApp.instance),
 ): C = getFromPreferences(prefs2.getCachedPreferences())
 
 fun broadcastReceiverFlow(context: Context, filter: IntentFilter) = callbackFlow {

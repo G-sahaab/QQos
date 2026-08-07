@@ -1,4 +1,4 @@
-package app.lawnchair.theme.drawable
+package app.qqlauncher.theme.drawable
 
 import android.content.Context
 import android.content.res.Resources
@@ -8,9 +8,9 @@ import android.util.TypedValue
 import androidx.annotation.AttrRes
 import androidx.annotation.DrawableRes
 import androidx.appcompat.content.res.AppCompatResources
-import app.lawnchair.theme.ResourceToken
-import app.lawnchair.theme.UiColorMode
-import app.lawnchair.theme.color.tokens.ColorToken
+import app.qqlauncher.theme.ResourceToken
+import app.qqlauncher.theme.UiColorMode
+import app.qqlauncher.theme.color.tokens.ColorToken
 import com.android.launcher3.util.Themes
 import dev.kdrag0n.monet.theme.ColorScheme
 

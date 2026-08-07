@@ -1,4 +1,4 @@
-package app.lawnchair.ui.util
+package app.qqlauncher.ui.util
 
 import androidx.compose.ui.Modifier
 

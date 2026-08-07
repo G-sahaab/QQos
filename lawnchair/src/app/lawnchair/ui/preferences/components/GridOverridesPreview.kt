@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components
+package app.qqlauncher.ui.preferences.components
 
 import android.content.res.Configuration
 import androidx.compose.foundation.layout.BoxWithConstraints
@@ -17,8 +17,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
-import app.lawnchair.DeviceProfileOverrides
-import app.lawnchair.preferences.preferenceManager
+import app.qqlauncher.DeviceProfileOverrides
+import app.qqlauncher.preferences.preferenceManager
 import com.android.launcher3.InvariantDeviceProfile
 
 @Composable

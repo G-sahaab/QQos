@@ -1,6 +1,6 @@
-package app.lawnchair.ui.preferences.data.liveinfo
+package app.qqlauncher.ui.preferences.data.liveinfo
 
-import app.lawnchair.ui.preferences.data.liveinfo.model.LiveInformation
+import app.qqlauncher.ui.preferences.data.liveinfo.model.LiveInformation
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Url

@@ -1,10 +1,10 @@
-package app.lawnchair.search.algorithms.engine.provider
+package app.qqlauncher.search.algorithms.engine.provider
 
 import android.content.Context
 import android.content.pm.ShortcutInfo
-import app.lawnchair.launcher
-import app.lawnchair.search.algorithms.engine.SearchResult
-import app.lawnchair.util.isDefaultLauncher
+import app.qqlauncher.launcher
+import app.qqlauncher.search.algorithms.engine.SearchResult
+import app.qqlauncher.util.isDefaultLauncher
 import com.android.launcher3.model.data.AppInfo
 import com.android.launcher3.popup.PopupPopulator
 import com.android.launcher3.shortcuts.ShortcutRequest

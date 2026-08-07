@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.colorpreference
+package app.qqlauncher.ui.preferences.components.colorpreference
 
 import android.content.Context
 import android.graphics.Color
@@ -24,15 +24,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.theme.color.ColorOption
-import app.lawnchair.ui.preferences.LocalNavController
-import app.lawnchair.ui.preferences.components.colorpreference.pickers.CustomColorPicker
-import app.lawnchair.ui.preferences.components.colorpreference.pickers.PresetsList
-import app.lawnchair.ui.preferences.components.colorpreference.pickers.SwatchGrid
-import app.lawnchair.ui.preferences.components.layout.BottomSpacer
-import app.lawnchair.ui.preferences.components.layout.Chip
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
+import app.qqlauncher.preferences.getAdapter
+import app.qqlauncher.theme.color.ColorOption
+import app.qqlauncher.ui.preferences.LocalNavController
+import app.qqlauncher.ui.preferences.components.colorpreference.pickers.CustomColorPicker
+import app.qqlauncher.ui.preferences.components.colorpreference.pickers.PresetsList
+import app.qqlauncher.ui.preferences.components.colorpreference.pickers.SwatchGrid
+import app.qqlauncher.ui.preferences.components.layout.BottomSpacer
+import app.qqlauncher.ui.preferences.components.layout.Chip
+import app.qqlauncher.ui.preferences.components.layout.PreferenceLayout
 import com.android.launcher3.R
 import com.patrykmichalik.opto.domain.Preference
 import kotlinx.coroutines.launch

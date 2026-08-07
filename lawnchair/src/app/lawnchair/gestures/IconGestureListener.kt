@@ -1,4 +1,4 @@
-package app.lawnchair.gestures
+package app.qqlauncher.gestures
 
 import android.util.Log
 import android.view.ViewConfiguration
@@ -6,11 +6,11 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.dynamicanimation.animation.DynamicAnimation
 import androidx.dynamicanimation.animation.SpringForce
 import androidx.lifecycle.lifecycleScope
-import app.lawnchair.animation.PhysicsAnimator
-import app.lawnchair.gestures.config.GestureHandlerConfig
-import app.lawnchair.gestures.type.GestureType
-import app.lawnchair.launcher
-import app.lawnchair.preferences2.PreferenceManager2
+import app.qqlauncher.animation.PhysicsAnimator
+import app.qqlauncher.gestures.config.GestureHandlerConfig
+import app.qqlauncher.gestures.type.GestureType
+import app.qqlauncher.launcher
+import app.qqlauncher.preferences2.PreferenceManager2
 import com.android.launcher3.BubbleTextView
 import com.android.launcher3.util.ComponentKey
 import com.android.launcher3.util.VibratorWrapper
@@ -126,7 +126,7 @@ class IconGestureListener(
 
         context.launcher.lifecycleScope.launch {
             Log.d("GESTURE_HANDLER", "Triggering gesture: ${gestureType.name}")
-            // Lawnchair-TODO: Migrate to MSDL vibration?
+            // QQ Launcher-TODO: Migrate to MSDL vibration?
             VibratorWrapper.INSTANCE.get(context.launcher).vibrate(VibratorWrapper.OVERVIEW_HAPTIC)
             gesture.createHandler(context).onTrigger(context.launcher)
         }

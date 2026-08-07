@@ -1,4 +1,4 @@
-package app.lawnchair.ui
+package app.qqlauncher.ui
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.material.icons.Icons
@@ -12,7 +12,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.DpOffset
 import androidx.compose.ui.unit.dp
-import app.lawnchair.ui.preferences.components.layout.ClickableIcon
+import app.qqlauncher.ui.preferences.components.layout.ClickableIcon
 
 @Composable
 fun OverflowMenu(

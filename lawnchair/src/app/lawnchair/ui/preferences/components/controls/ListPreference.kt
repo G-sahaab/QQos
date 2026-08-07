@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.components.controls
+package app.qqlauncher.ui.preferences.components.controls
 
 import android.R as AndroidR
 import androidx.compose.foundation.lazy.LazyColumn
@@ -30,14 +30,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.preferences.PreferenceAdapter
-import app.lawnchair.ui.ModalBottomSheetContent
-import app.lawnchair.ui.preferences.components.layout.PreferenceDivider
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.theme.LawnchairTheme
-import app.lawnchair.ui.util.bottomSheetHandler
-import app.lawnchair.ui.util.preview.PreferenceGroupPreviewContainer
-import app.lawnchair.ui.util.preview.PreviewLawnchair
+import app.qqlauncher.preferences.PreferenceAdapter
+import app.qqlauncher.ui.ModalBottomSheetContent
+import app.qqlauncher.ui.preferences.components.layout.PreferenceDivider
+import app.qqlauncher.ui.preferences.components.layout.PreferenceTemplate
+import app.qqlauncher.ui.theme.QQ LauncherTheme
+import app.qqlauncher.ui.util.bottomSheetHandler
+import app.qqlauncher.ui.util.preview.PreferenceGroupPreviewContainer
+import app.qqlauncher.ui.util.preview.PreviewQQ Launcher
 
 @Composable
 fun <T> ListPreference(
@@ -144,7 +144,7 @@ class ListPreferenceEntry<T>(
     val label: @Composable () -> String,
 )
 
-@PreviewLawnchair
+@PreviewQQ Launcher
 @Composable
 private fun ListPreferencePreview() {
     val entries = listOf(
@@ -152,7 +152,7 @@ private fun ListPreferencePreview() {
         ListPreferenceEntry(value = "option2", label = { "Option 2" }),
         ListPreferenceEntry(value = "option3", label = { "Option 3" }, enabled = false),
     )
-    LawnchairTheme {
+    QQ LauncherTheme {
         PreferenceGroupPreviewContainer {
             ListPreference(
                 entries = entries,

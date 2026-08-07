@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components
+package app.qqlauncher.ui.preferences.components
 
 import android.annotation.SuppressLint
 import android.app.WallpaperManager
@@ -34,10 +34,10 @@ import androidx.core.graphics.drawable.toBitmap
 import androidx.core.graphics.drawable.toDrawable
 import androidx.lifecycle.compose.LifecycleResumeEffect
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import app.lawnchair.ui.util.isPlayStoreFlavor
-import app.lawnchair.util.FileAccessManager
-import app.lawnchair.util.FileAccessState
-import app.lawnchair.util.scaleDownToDisplaySize
+import app.qqlauncher.ui.util.isPlayStoreFlavor
+import app.qqlauncher.util.FileAccessManager
+import app.qqlauncher.util.FileAccessState
+import app.qqlauncher.util.scaleDownToDisplaySize
 import com.android.launcher3.R
 import com.google.accompanist.drawablepainter.rememberDrawablePainter
 import kotlinx.coroutines.Dispatchers

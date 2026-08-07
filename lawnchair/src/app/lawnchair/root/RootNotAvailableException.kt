@@ -1,3 +1,3 @@
-package app.lawnchair.root
+package app.qqlauncher.root
 
 class RootNotAvailableException : Exception()

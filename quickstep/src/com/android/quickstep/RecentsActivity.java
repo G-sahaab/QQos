@@ -97,7 +97,7 @@ import java.io.FileDescriptor;
 import java.io.PrintWriter;
 import java.util.List;
 
-import app.lawnchair.compat.LawnchairQuickstepCompat;
+import app.qqlauncher.compat.QQ LauncherQuickstepCompat;
 
 /**
  * A recents activity that shows the recently launched tasks as swipable task cards.
@@ -311,14 +311,14 @@ public final class RecentsActivity extends StatefulActivity<RecentsState> implem
 
         final LauncherAnimationRunner wrapper = new LauncherAnimationRunner(
                 mUiHandler, mActivityLaunchAnimationRunner, true /* startAtFrontOfQueue */);
-        final ActivityOptions options = LawnchairQuickstepCompat.getActivityOptionsCompat().makeRemoteAnimation(
+        final ActivityOptions options = QQ LauncherQuickstepCompat.getActivityOptionsCompat().makeRemoteAnimation(
                 new RemoteAnimationAdapter(wrapper, RECENTS_LAUNCH_DURATION,
                         RECENTS_LAUNCH_DURATION - STATUS_BAR_TRANSITION_DURATION
                                 - STATUS_BAR_TRANSITION_PRE_DELAY),
-                LawnchairQuickstepCompat.getRemoteTransitionCompat().getRemoteTransition(wrapper.toRemoteTransition(),
+                QQ LauncherQuickstepCompat.getRemoteTransitionCompat().getRemoteTransition(wrapper.toRemoteTransition(),
                         this.getIApplicationThread(),
                         "LaunchFromRecents"),
-                "Lawnchair");
+                "QQ Launcher");
         final ActivityOptionsWrapper activityOptions = new ActivityOptionsWrapper(options,
                 onEndCallback);
         if (Utilities.ATLEAST_T) {
@@ -497,12 +497,12 @@ public final class RecentsActivity extends StatefulActivity<RecentsState> implem
     private void startHomeInternal() {
         LauncherAnimationRunner runner = new LauncherAnimationRunner(
                 getMainThreadHandler(), mAnimationToHomeFactory, true);
-        ActivityOptions options = LawnchairQuickstepCompat.getActivityOptionsCompat().makeRemoteAnimation(
+        ActivityOptions options = QQ LauncherQuickstepCompat.getActivityOptionsCompat().makeRemoteAnimation(
                 new RemoteAnimationAdapter(runner, HOME_APPEAR_DURATION, 0),
-                LawnchairQuickstepCompat.getRemoteTransitionCompat().getRemoteTransition(runner.toRemoteTransition(),
+                QQ LauncherQuickstepCompat.getRemoteTransitionCompat().getRemoteTransition(runner.toRemoteTransition(),
                         this.getIApplicationThread(),
                         "StartHomeFromRecents"),
-                "Lawnchair");
+                "QQ Launcher");
         startHomeIntentSafely(this, options.toBundle(), TAG, getDisplayId());
     }
 

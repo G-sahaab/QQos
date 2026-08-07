@@ -1,4 +1,4 @@
-package app.lawnchair.smartspace.model
+package app.qqlauncher.smartspace.model
 
 import android.app.PendingIntent
 import android.content.Intent

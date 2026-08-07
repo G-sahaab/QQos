@@ -1,4 +1,4 @@
-package app.lawnchair.smartspace
+package app.qqlauncher.smartspace
 
 import android.app.ActivityOptions
 import android.content.ContentUris
@@ -9,7 +9,7 @@ import android.graphics.drawable.Icon
 import android.provider.CalendarContract
 import android.util.Log
 import android.view.View
-import app.lawnchair.smartspace.model.SmartspaceAction
+import app.qqlauncher.smartspace.model.SmartspaceAction
 import com.android.launcher3.R
 import com.android.launcher3.Utilities
 

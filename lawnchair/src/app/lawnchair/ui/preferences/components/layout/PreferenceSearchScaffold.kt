@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.layout
+package app.qqlauncher.ui.preferences.components.layout
 
 import androidx.activity.OnBackPressedDispatcher
 import androidx.activity.compose.LocalOnBackPressedDispatcherOwner
@@ -38,8 +38,8 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
-import app.lawnchair.ui.theme.LawnchairTheme
-import app.lawnchair.ui.util.preview.PreviewLawnchair
+import app.qqlauncher.ui.theme.QQ LauncherTheme
+import app.qqlauncher.ui.util.preview.PreviewQQ Launcher
 
 @Composable
 fun PreferenceSearchScaffold(
@@ -168,10 +168,10 @@ private fun SearchTextField(
     }
 }
 
-@PreviewLawnchair
+@PreviewQQ Launcher
 @Composable
 private fun SearchTextFieldPreview() {
-    LawnchairTheme {
+    QQ LauncherTheme {
         SearchTextField(
             value = "Example",
             onValueChange = {},

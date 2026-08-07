@@ -49,7 +49,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Set;
 
-import app.lawnchair.compat.LawnchairQuickstepCompat;
+import app.qqlauncher.compat.QQ LauncherQuickstepCompat;
 
 /**
  * Wrapper around {@link com.android.systemui.shared.system.RecentsAnimationListener} which

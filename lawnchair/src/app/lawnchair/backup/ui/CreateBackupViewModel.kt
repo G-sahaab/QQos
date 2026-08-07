@@ -1,4 +1,4 @@
-package app.lawnchair.backup.ui
+package app.qqlauncher.backup.ui
 
 import android.app.Application
 import android.content.res.Configuration
@@ -9,9 +9,9 @@ import android.view.View.MeasureSpec.EXACTLY
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
-import app.lawnchair.backup.LawnchairBackup
-import app.lawnchair.util.FileAccessManager
-import app.lawnchair.views.LauncherPreviewView
+import app.qqlauncher.backup.QQ LauncherBackup
+import app.qqlauncher.util.FileAccessManager
+import app.qqlauncher.views.LauncherPreviewView
 import com.android.launcher3.LauncherAppState
 import com.android.launcher3.R
 import com.android.launcher3.icons.BitmapRenderer
@@ -39,7 +39,7 @@ class CreateBackupViewModel(
 
     val backupContents = savedStateHandle.getStateFlow(
         "contents",
-        LawnchairBackup.INCLUDE_LAYOUT_AND_SETTINGS or LawnchairBackup.INCLUDE_WALLPAPER,
+        QQ LauncherBackup.INCLUDE_LAYOUT_AND_SETTINGS or QQ LauncherBackup.INCLUDE_WALLPAPER,
     )
 
     init {
@@ -63,7 +63,7 @@ class CreateBackupViewModel(
             val context = app.createConfigurationContext(config)
 
             val idp = LauncherAppState.getIDP(context)
-            val themedContext = ContextThemeWrapper(context, R.style.Theme_Lawnchair)
+            val themedContext = ContextThemeWrapper(context, R.style.Theme_QQ Launcher)
             val previewView = LauncherPreviewView(
                 context = themedContext,
                 idp = idp,

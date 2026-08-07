@@ -1,4 +1,4 @@
-package app.lawnchair.baseline
+package app.qqlauncher.baseline
 
 import android.os.Build
 import androidx.annotation.RequiresApi
@@ -19,7 +19,7 @@ import org.junit.runner.RunWith
  * You can run the generator with the Generate Baseline Profile run configuration,
  * or directly with `generateBaselineProfile` Gradle task:
  * ```
- * ./gradlew :lawnchair:generateReleaseBaselineProfile -Pandroid.testInstrumentationRunnerArguments.androidx.benchmark.enabledRules=BaselineProfile
+ * ./gradlew :qqlauncher:generateReleaseBaselineProfile -Pandroid.testInstrumentationRunnerArguments.androidx.benchmark.enabledRules=BaselineProfile
  * ```
  * The run configuration runs the Gradle task and applies filtering to run only the generators.
  *

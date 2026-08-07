@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.search
+package app.qqlauncher.ui.preferences.components.search
 
 import android.content.Context
 import androidx.compose.runtime.Composable
@@ -7,24 +7,24 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences.not
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.search.algorithms.LawnchairSearchAlgorithm
-import app.lawnchair.search.algorithms.engine.provider.web.CustomWebSearchProvider
-import app.lawnchair.ui.preferences.LocalNavController
-import app.lawnchair.ui.preferences.components.HiddenAppsInSearchPreference
-import app.lawnchair.ui.preferences.components.controls.ListPreference
-import app.lawnchair.ui.preferences.components.controls.ListPreferenceEntry
-import app.lawnchair.ui.preferences.components.controls.MainSwitchPreference
-import app.lawnchair.ui.preferences.components.controls.SwitchPreference
-import app.lawnchair.ui.preferences.components.controls.TwoTargetSwitchPreference
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.navigation.SearchProviderPreference
-import app.lawnchair.util.FileAccessManager
+import app.qqlauncher.preferences.PreferenceManager
+import app.qqlauncher.preferences.getAdapter
+import app.qqlauncher.preferences.not
+import app.qqlauncher.preferences.preferenceManager
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.preferences2.preferenceManager2
+import app.qqlauncher.search.algorithms.QQ LauncherSearchAlgorithm
+import app.qqlauncher.search.algorithms.engine.provider.web.CustomWebSearchProvider
+import app.qqlauncher.ui.preferences.LocalNavController
+import app.qqlauncher.ui.preferences.components.HiddenAppsInSearchPreference
+import app.qqlauncher.ui.preferences.components.controls.ListPreference
+import app.qqlauncher.ui.preferences.components.controls.ListPreferenceEntry
+import app.qqlauncher.ui.preferences.components.controls.MainSwitchPreference
+import app.qqlauncher.ui.preferences.components.controls.SwitchPreference
+import app.qqlauncher.ui.preferences.components.controls.TwoTargetSwitchPreference
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroup
+import app.qqlauncher.ui.preferences.navigation.SearchProviderPreference
+import app.qqlauncher.util.FileAccessManager
 import com.android.launcher3.R
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.isGranted
@@ -67,8 +67,8 @@ fun DrawerSearchPreference(
         val searchAlgorithm = preferenceManager2().searchAlgorithm.getAdapter().state.value
         val navController = LocalNavController.current
         PreferenceGroup(heading = stringResource(id = R.string.show_search_result_types)) {
-            if (searchAlgorithm != LawnchairSearchAlgorithm.ASI_SEARCH) {
-                val canDisable = searchAlgorithm != LawnchairSearchAlgorithm.APP_SEARCH
+            if (searchAlgorithm != QQ LauncherSearchAlgorithm.ASI_SEARCH) {
+                val canDisable = searchAlgorithm != QQ LauncherSearchAlgorithm.APP_SEARCH
                 val adapter = prefs.searchResultApps.getAdapter()
 
                 TwoTargetSwitchPreference(
@@ -82,7 +82,7 @@ fun DrawerSearchPreference(
                 )
             }
             when (searchAlgorithm) {
-                LawnchairSearchAlgorithm.LOCAL_SEARCH -> {
+                QQ LauncherSearchAlgorithm.LOCAL_SEARCH -> {
                     LocalSearchSettings(
                         prefs = prefs,
                         prefs2 = prefs2,
@@ -90,7 +90,7 @@ fun DrawerSearchPreference(
                     )
                 }
 
-                LawnchairSearchAlgorithm.ASI_SEARCH -> {
+                QQ LauncherSearchAlgorithm.ASI_SEARCH -> {
                     ASISearchSettings(prefs)
                 }
             }
@@ -124,12 +124,12 @@ private fun SearchProvider(
 ) {
     val searchAlgorithmEntries = remember {
         sequenceOf(
-            ListPreferenceEntry(LawnchairSearchAlgorithm.APP_SEARCH) { stringResource(R.string.search_algorithm_app_search) },
-            ListPreferenceEntry(LawnchairSearchAlgorithm.LOCAL_SEARCH) { stringResource(R.string.search_algorithm_global_search_on_device) },
-            ListPreferenceEntry(LawnchairSearchAlgorithm.ASI_SEARCH) { stringResource(R.string.search_algorithm_global_search_via_asi) },
+            ListPreferenceEntry(QQ LauncherSearchAlgorithm.APP_SEARCH) { stringResource(R.string.search_algorithm_app_search) },
+            ListPreferenceEntry(QQ LauncherSearchAlgorithm.LOCAL_SEARCH) { stringResource(R.string.search_algorithm_global_search_on_device) },
+            ListPreferenceEntry(QQ LauncherSearchAlgorithm.ASI_SEARCH) { stringResource(R.string.search_algorithm_global_search_via_asi) },
         ).filter {
             when (it.value) {
-                LawnchairSearchAlgorithm.ASI_SEARCH -> LawnchairSearchAlgorithm.isASISearchEnabled(
+                QQ LauncherSearchAlgorithm.ASI_SEARCH -> QQ LauncherSearchAlgorithm.isASISearchEnabled(
                     context,
                 )
 

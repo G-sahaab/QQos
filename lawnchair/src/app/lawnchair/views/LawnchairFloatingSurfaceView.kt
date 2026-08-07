@@ -1,4 +1,4 @@
-package app.lawnchair.views
+package app.qqlauncher.views
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
@@ -25,8 +25,8 @@ import androidx.core.graphics.createBitmap
 import androidx.dynamicanimation.animation.DynamicAnimation
 import androidx.dynamicanimation.animation.SpringAnimation
 import androidx.dynamicanimation.animation.SpringForce
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.launcher
+import app.qqlauncher.QQ LauncherLauncher
+import app.qqlauncher.launcher
 import com.android.app.animation.Interpolators
 import com.android.launcher3.AbstractFloatingView
 import com.android.launcher3.CellLayout
@@ -45,7 +45,7 @@ import com.android.launcher3.views.FloatingIconViewCompanion.setPropertiesVisibl
 import java.util.function.Consumer
 import kotlin.math.roundToInt
 
-class LawnchairFloatingSurfaceView @JvmOverloads constructor(
+class QQ LauncherFloatingSurfaceView @JvmOverloads constructor(
     context: Context?,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0,
@@ -55,7 +55,7 @@ class LawnchairFloatingSurfaceView @JvmOverloads constructor(
     SurfaceHolder.Callback2 {
     private val mTmpPosition = RectF()
 
-    private val mLauncher: LawnchairLauncher = context!!.launcher
+    private val mLauncher: QQ LauncherLauncher = context!!.launcher
     private val mIconPosition = RectF()
     private val mDeviceProfile = mLauncher.deviceProfile
 
@@ -168,7 +168,7 @@ class LawnchairFloatingSurfaceView @JvmOverloads constructor(
 
     private fun getBackgroundAnimator(): ObjectAnimator {
         val depthController = DepthController(mLauncher)
-        val targetDepth = mLauncher.stateManager.state.getDepth<LawnchairLauncher?>(mLauncher)
+        val targetDepth = mLauncher.stateManager.state.getDepth<QQ LauncherLauncher?>(mLauncher)
 
         val backgroundRadiusAnim = createDepthAnimator(
             depthController,
@@ -395,8 +395,8 @@ class LawnchairFloatingSurfaceView @JvmOverloads constructor(
         /**
          * Shows the surfaceView for the provided contract
          */
-        fun show(launcher: LawnchairLauncher, contract: GestureNavContract?) {
-            val view: LawnchairFloatingSurfaceView =
+        fun show(launcher: QQ LauncherLauncher, contract: GestureNavContract?) {
+            val view: QQ LauncherFloatingSurfaceView =
                 launcher.viewCache.getView(
                     R.layout.floating_surface_view,
                     launcher,

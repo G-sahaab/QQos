@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.gestures.handlers
+package app.qqlauncher.gestures.handlers
 
 import android.accessibilityservice.AccessibilityService
 import android.annotation.TargetApi
@@ -24,10 +24,10 @@ import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.os.Build
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.util.requireSystemService
-import app.lawnchair.views.ComposeBottomSheet
+import app.qqlauncher.QQ LauncherLauncher
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.util.requireSystemService
+import app.qqlauncher.views.ComposeBottomSheet
 import com.android.launcher3.R
 import com.android.launcher3.Utilities
 import com.topjohnwu.superuser.Shell
@@ -35,7 +35,7 @@ import kotlinx.coroutines.flow.first
 
 class SleepGestureHandler(context: Context) : GestureHandler(context) {
 
-    override suspend fun onTrigger(launcher: LawnchairLauncher) {
+    override suspend fun onTrigger(launcher: QQ LauncherLauncher) {
         val pref = PreferenceManager2.getInstance(context).sleepMode.get().first()
         val method = when (pref) {
             SleepMode.AUTO -> methods.first { it.isSupported() }
@@ -60,7 +60,7 @@ class SleepGestureHandler(context: Context) : GestureHandler(context) {
 
     sealed class SleepMethod(protected val context: Context) {
         abstract suspend fun isSupported(): Boolean
-        abstract suspend fun sleep(launcher: LawnchairLauncher)
+        abstract suspend fun sleep(launcher: QQ LauncherLauncher)
     }
 }
 
@@ -68,7 +68,7 @@ class SleepMethodRoot(context: Context) : SleepGestureHandler.SleepMethod(contex
 
     override suspend fun isSupported() = Shell.getShell().isRoot
 
-    override suspend fun sleep(launcher: LawnchairLauncher) {
+    override suspend fun sleep(launcher: QQ LauncherLauncher) {
         Shell.cmd("input keyevent 26").exec()
     }
 }
@@ -77,7 +77,7 @@ class SleepMethodPieAccessibility(context: Context) : SleepGestureHandler.SleepM
     override suspend fun isSupported() = Utilities.ATLEAST_P
 
     @TargetApi(Build.VERSION_CODES.P)
-    override suspend fun sleep(launcher: LawnchairLauncher) {
+    override suspend fun sleep(launcher: QQ LauncherLauncher) {
         GestureWithAccessibilityHandler.onTrigger(
             launcher,
             R.string.sleep_a11y_hint,
@@ -89,7 +89,7 @@ class SleepMethodPieAccessibility(context: Context) : SleepGestureHandler.SleepM
 class SleepMethodDeviceAdmin(context: Context) : SleepGestureHandler.SleepMethod(context) {
     override suspend fun isSupported() = true
 
-    override suspend fun sleep(launcher: LawnchairLauncher) {
+    override suspend fun sleep(launcher: QQ LauncherLauncher) {
         val devicePolicyManager: DevicePolicyManager = context.requireSystemService()
         if (!devicePolicyManager.isAdminActive(ComponentName(context, SleepDeviceAdmin::class.java))) {
             val intent = Intent(DevicePolicyManager.ACTION_ADD_DEVICE_ADMIN)

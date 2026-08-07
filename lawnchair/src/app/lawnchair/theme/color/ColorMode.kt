@@ -1,15 +1,15 @@
-package app.lawnchair.theme.color
+package app.qqlauncher.theme.color
 
 import androidx.annotation.StringRes
 import androidx.compose.ui.res.stringResource
-import app.lawnchair.ui.preferences.components.controls.ListPreferenceEntry
+import app.qqlauncher.ui.preferences.components.controls.ListPreferenceEntry
 import com.android.launcher3.R
 
 enum class ColorMode(
     @StringRes val labelResourceId: Int,
 ) {
     AUTO(
-        labelResourceId = R.string.managed_by_lawnchair,
+        labelResourceId = R.string.managed_by_qqlauncher,
     ),
     LIGHT(
         labelResourceId = R.string.color_light,

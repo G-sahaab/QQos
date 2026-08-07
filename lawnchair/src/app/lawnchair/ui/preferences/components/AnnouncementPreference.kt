@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components
+package app.qqlauncher.ui.preferences.components
 
 import android.content.Intent
 import android.net.Uri
@@ -49,12 +49,12 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.core.net.toUri
-import app.lawnchair.preferences2.asState
-import app.lawnchair.ui.preferences.components.layout.ExpandAndShrink
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.preferences.data.liveinfo.liveInformationManager
-import app.lawnchair.ui.preferences.data.liveinfo.model.Announcement
-import app.lawnchair.ui.util.addIf
+import app.qqlauncher.preferences2.asState
+import app.qqlauncher.ui.preferences.components.layout.ExpandAndShrink
+import app.qqlauncher.ui.preferences.components.layout.PreferenceTemplate
+import app.qqlauncher.ui.preferences.data.liveinfo.liveInformationManager
+import app.qqlauncher.ui.preferences.data.liveinfo.model.Announcement
+import app.qqlauncher.ui.util.addIf
 import com.android.launcher3.R
 import kotlinx.coroutines.launch
 
@@ -286,7 +286,7 @@ private fun InfoPreferenceWithoutLinkPreview() {
 private fun InfoPreferenceWithLinkPreview() {
     AnnouncementPreferenceItemContent(
         text = "Very important announcement with a very important link",
-        url = "https://lawnchair.app/",
+        url = "https://qqlauncher.app/",
         icon = Icons.Rounded.NewReleases,
     )
 }

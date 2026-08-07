@@ -1,12 +1,12 @@
-package app.lawnchair.smartspace.provider
+package app.qqlauncher.smartspace.provider
 
 import android.app.Activity
 import android.content.Context
-import app.lawnchair.smartspace.model.SmartspaceAction
-import app.lawnchair.smartspace.model.SmartspaceTarget
-import app.lawnchair.ui.preferences.PreferenceActivity
-import app.lawnchair.ui.preferences.navigation.Smartspace
-import app.lawnchair.util.dropWhileBusy
+import app.qqlauncher.smartspace.model.SmartspaceAction
+import app.qqlauncher.smartspace.model.SmartspaceTarget
+import app.qqlauncher.ui.preferences.PreferenceActivity
+import app.qqlauncher.ui.preferences.navigation.Smartspace
+import app.qqlauncher.util.dropWhileBusy
 import com.android.launcher3.R
 import com.android.launcher3.dagger.ApplicationContext
 import com.android.launcher3.dagger.LauncherAppComponent

@@ -1,6 +1,6 @@
-package app.lawnchair.qsb.providers
+package app.qqlauncher.qsb.providers
 
-import app.lawnchair.qsb.ThemingMethod
+import app.qqlauncher.qsb.ThemingMethod
 import com.android.launcher3.R
 
 data object DuckDuckGo : QsbSearchProvider(

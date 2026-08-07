@@ -1,4 +1,4 @@
-package app.lawnchair.ui.popup
+package app.qqlauncher.ui.popup
 
 import android.annotation.SuppressLint
 import android.app.AlertDialog
@@ -18,11 +18,11 @@ import android.view.View
 import android.widget.Toast
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.ui.unit.dp
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.override.CustomizeAppDialog
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.preferences2.firstCached
-import app.lawnchair.views.ComposeBottomSheet
+import app.qqlauncher.QQ LauncherLauncher
+import app.qqlauncher.override.CustomizeAppDialog
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.preferences2.firstCached
+import app.qqlauncher.views.ComposeBottomSheet
 import com.android.launcher3.AbstractFloatingView
 import com.android.launcher3.LauncherSettings.Favorites.ITEM_TYPE_APPLICATION
 import com.android.launcher3.LauncherSettings.Favorites.ITEM_TYPE_TASK
@@ -39,12 +39,12 @@ import com.android.launcher3.util.PackageManagerHelper
 import com.android.launcher3.views.ActivityContext
 import java.net.URISyntaxException
 
-class LawnchairShortcut {
+class QQ LauncherShortcut {
 
     companion object {
 
         val CUSTOMIZE =
-            SystemShortcut.Factory { activity: LawnchairLauncher, itemInfo, originalView ->
+            SystemShortcut.Factory { activity: QQ LauncherLauncher, itemInfo, originalView ->
                 val prefs2 = PreferenceManager2.getInstance(activity)
                 if (prefs2.lockHomeScreen.firstCached()) {
                     null
@@ -53,7 +53,7 @@ class LawnchairShortcut {
                 }
             }
 
-        private fun getAppInfo(launcher: LawnchairLauncher, itemInfo: ItemInfo): ModelAppInfo? {
+        private fun getAppInfo(launcher: QQ LauncherLauncher, itemInfo: ItemInfo): ModelAppInfo? {
             if (itemInfo is ModelAppInfo) return itemInfo
             if (itemInfo.itemType != ITEM_TYPE_APPLICATION) return null
             val key = ComponentKey(itemInfo.targetComponent, itemInfo.user)
@@ -100,7 +100,7 @@ class LawnchairShortcut {
                 OpenInStore(activity, itemInfo, originalView, packageName, installer)
             }
 
-        val PAUSE_APPS = SystemShortcut.Factory { activity: LawnchairLauncher, itemInfo: ItemInfo, originalView: View ->
+        val PAUSE_APPS = SystemShortcut.Factory { activity: QQ LauncherLauncher, itemInfo: ItemInfo, originalView: View ->
             val targetCmp = itemInfo.targetComponent
             val packageName = targetCmp?.packageName ?: return@Factory null
 
@@ -118,11 +118,11 @@ class LawnchairShortcut {
     }
 
     class Customize(
-        private val launcher: LawnchairLauncher,
+        private val launcher: QQ LauncherLauncher,
         private val appInfo: ModelAppInfo,
         itemInfo: ItemInfo,
         originalView: View,
-    ) : SystemShortcut<LawnchairLauncher>(R.drawable.ic_edit, R.string.action_customize, launcher, itemInfo, originalView) {
+    ) : SystemShortcut<QQ LauncherLauncher>(R.drawable.ic_edit, R.string.action_customize, launcher, itemInfo, originalView) {
 
         override fun onClick(v: View) {
             val outObj = Array<Any?>(1) { null }
@@ -164,10 +164,10 @@ class LawnchairShortcut {
     }
 
     class PauseApps(
-        target: LawnchairLauncher,
+        target: QQ LauncherLauncher,
         itemInfo: ItemInfo,
         originalView: View,
-    ) : SystemShortcut<LawnchairLauncher>(
+    ) : SystemShortcut<QQ LauncherLauncher>(
         R.drawable.ic_hourglass_top,
         R.string.paused_apps_drop_target_label,
         target,
@@ -204,7 +204,7 @@ class LawnchairShortcut {
                             mItemInfo.user.identifier,
                         )
                     } catch (e: Throwable) {
-                        Log.e("LawnchairShortcut", "Failed to pause app", e)
+                        Log.e("QQ LauncherShortcut", "Failed to pause app", e)
                     }
                 }
                 .show()

@@ -1,10 +1,10 @@
-package app.lawnchair.smartspace.model
+package app.qqlauncher.smartspace.model
 
 import android.content.Context
 import android.os.Build
 import androidx.annotation.LayoutRes
 import androidx.annotation.StringRes
-import app.lawnchair.util.isPackageInstalledAndEnabled
+import app.qqlauncher.util.isPackageInstalledAndEnabled
 import com.android.launcher3.R
 
 sealed class SmartspaceMode(
@@ -16,14 +16,14 @@ sealed class SmartspaceMode(
             "google" -> GoogleSmartspace
             "google_search" -> GoogleSearchSmartspace
             "smartspacer" -> Smartspacer
-            else -> LawnchairSmartspace
+            else -> QQ LauncherSmartspace
         }
 
         /**
          * @return The list of all smartspace options
          */
         fun values() = listOf(
-            LawnchairSmartspace,
+            QQ LauncherSmartspace,
             GoogleSmartspace,
             GoogleSearchSmartspace,
             Smartspacer,
@@ -33,11 +33,11 @@ sealed class SmartspaceMode(
     abstract fun isAvailable(context: Context): Boolean
 }
 
-object LawnchairSmartspace : SmartspaceMode(
-    nameResourceId = R.string.smartspace_mode_lawnchair,
+object QQ LauncherSmartspace : SmartspaceMode(
+    nameResourceId = R.string.smartspace_mode_qqlauncher,
     layoutResourceId = R.layout.smartspace_container,
 ) {
-    override fun toString() = "lawnchair"
+    override fun toString() = "qqlauncher"
     override fun isAvailable(context: Context): Boolean = true
 }
 

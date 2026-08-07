@@ -1,14 +1,14 @@
-package app.lawnchair.gestures.handlers
+package app.qqlauncher.gestures.handlers
 
 import android.content.Context
 import android.content.Intent
 import android.content.pm.LauncherApps
 import android.os.UserHandle
 import androidx.core.content.getSystemService
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.util.ComponentKeySerializer
-import app.lawnchair.util.IntentSerializer
-import app.lawnchair.util.UserHandlerSerializer
+import app.qqlauncher.QQ LauncherLauncher
+import app.qqlauncher.util.ComponentKeySerializer
+import app.qqlauncher.util.IntentSerializer
+import app.qqlauncher.util.UserHandlerSerializer
 import com.android.launcher3.util.ComponentKey
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
@@ -18,7 +18,7 @@ class OpenAppGestureHandler(
     private val target: OpenAppTarget,
 ) : GestureHandler(context) {
 
-    override suspend fun onTrigger(launcher: LawnchairLauncher) {
+    override suspend fun onTrigger(launcher: QQ LauncherLauncher) {
         when (target) {
             is OpenAppTarget.App -> {
                 val key = target.key

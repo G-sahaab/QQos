@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Lawnchair
+ * Copyright 2022, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair
+package app.qqlauncher
 
 import android.animation.AnimatorSet
 import android.app.ActivityOptions
@@ -31,26 +31,26 @@ import android.window.SplashScreen
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.lifecycleScope
-import app.lawnchair.LawnchairApp.Companion.showQuickstepWarningIfNecessary
-import app.lawnchair.compat.LawnchairQuickstepCompat
-import app.lawnchair.data.AppDatabase
-import app.lawnchair.data.wallpaper.service.WallpaperService
-import app.lawnchair.gestures.GestureController
-import app.lawnchair.gestures.VerticalSwipeTouchController
-import app.lawnchair.gestures.config.GestureHandlerConfig
-import app.lawnchair.gestures.ui.LawnchairShortcutActivity
-import app.lawnchair.nexuslauncher.OverlayCallbackImpl
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.preferences2.firstCached
-import app.lawnchair.root.RootHelperManager
-import app.lawnchair.root.RootNotAvailableException
-import app.lawnchair.theme.ThemeProvider
-import app.lawnchair.ui.popup.LauncherOptionsPopup
-import app.lawnchair.ui.popup.LawnchairShortcut
-import app.lawnchair.util.getThemedIconPacksInstalled
-import app.lawnchair.util.unsafeLazy
-import app.lawnchair.views.LawnchairFloatingSurfaceView
+import app.qqlauncher.QQ LauncherApp.Companion.showQuickstepWarningIfNecessary
+import app.qqlauncher.compat.QQ LauncherQuickstepCompat
+import app.qqlauncher.data.AppDatabase
+import app.qqlauncher.data.wallpaper.service.WallpaperService
+import app.qqlauncher.gestures.GestureController
+import app.qqlauncher.gestures.VerticalSwipeTouchController
+import app.qqlauncher.gestures.config.GestureHandlerConfig
+import app.qqlauncher.gestures.ui.QQ LauncherShortcutActivity
+import app.qqlauncher.nexuslauncher.OverlayCallbackImpl
+import app.qqlauncher.preferences.PreferenceManager
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.preferences2.firstCached
+import app.qqlauncher.root.RootHelperManager
+import app.qqlauncher.root.RootNotAvailableException
+import app.qqlauncher.theme.ThemeProvider
+import app.qqlauncher.ui.popup.LauncherOptionsPopup
+import app.qqlauncher.ui.popup.QQ LauncherShortcut
+import app.qqlauncher.util.getThemedIconPacksInstalled
+import app.qqlauncher.util.unsafeLazy
+import app.qqlauncher.views.QQ LauncherFloatingSurfaceView
 import com.android.launcher3.AbstractFloatingView
 import com.android.launcher3.BaseActivity
 import com.android.launcher3.BubbleTextView
@@ -90,7 +90,7 @@ import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
 
-class LawnchairLauncher : QuickstepLauncher() {
+class QQ LauncherLauncher : QuickstepLauncher() {
     private val defaultOverlay by unsafeLazy { OverlayCallbackImpl(this) }
     private val prefs by unsafeLazy { PreferenceManager.getInstance(this) }
     private val preferenceManager2 by unsafeLazy { PreferenceManager2.getInstance(this) }
@@ -127,7 +127,7 @@ class LawnchairLauncher : QuickstepLauncher() {
                 is OverviewState,
                 is AllAppsState,
                 -> {
-                    LawnchairApp.instance.restoreClockInStatusBar()
+                    QQ LauncherApp.instance.restoreClockInStatusBar()
                 }
 
                 else -> {
@@ -153,7 +153,7 @@ class LawnchairLauncher : QuickstepLauncher() {
     val gestureController by unsafeLazy { GestureController(this) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        layoutInflater.factory2 = LawnchairLayoutFactory(this)
+        layoutInflater.factory2 = QQ LauncherLayoutFactory(this)
         super.onCreate(savedInstanceState)
 
         prefs.launcherTheme.subscribeChanges(this, ::updateTheme)
@@ -166,7 +166,7 @@ class LawnchairLauncher : QuickstepLauncher() {
         if (prefs.autoLaunchRoot.get()) {
             lifecycleScope.launch {
                 try {
-                    RootHelperManager.INSTANCE.get(this@LawnchairLauncher)
+                    RootHelperManager.INSTANCE.get(this@QQ LauncherLauncher)
                 } catch (_: RootNotAvailableException) {
                 }
             }
@@ -196,7 +196,7 @@ class LawnchairLauncher : QuickstepLauncher() {
                 } else {
                     removeStateListener(statusBarClockListener)
                     // Make sure status bar clock is restored when the preference is toggled off
-                    LawnchairApp.instance.restoreClockInStatusBar()
+                    QQ LauncherApp.instance.restoreClockInStatusBar()
                 }
             }
         }
@@ -248,8 +248,8 @@ class LawnchairLauncher : QuickstepLauncher() {
     }
 
     override fun onNewIntent(intent: Intent?) {
-        if (intent != null && intent.action == LawnchairShortcutActivity.START_ACTION) {
-            val handlerString = intent.getStringExtra(LawnchairShortcutActivity.EXTRA_HANDLER)
+        if (intent != null && intent.action == QQ LauncherShortcutActivity.START_ACTION) {
+            val handlerString = intent.getStringExtra(QQ LauncherShortcutActivity.EXTRA_HANDLER)
             val config = handlerString?.let { GestureHandlerConfig.fromString(it) }
             if (config != null && config.isExternallyInvokable()) {
                 gestureController.handle(config)
@@ -267,8 +267,8 @@ class LawnchairLauncher : QuickstepLauncher() {
     override fun getSupportedShortcuts(container: Int): Stream<SystemShortcut.Factory<*>> = Stream.concat(
         super.getSupportedShortcuts(container),
         Stream.concat(
-            Stream.of(LawnchairShortcut.UNINSTALL, LawnchairShortcut.CUSTOMIZE, LawnchairShortcut.OPEN_IN_STORE),
-            if (LawnchairApp.isRecentsEnabled) Stream.of(LawnchairShortcut.PAUSE_APPS) else Stream.empty(),
+            Stream.of(QQ LauncherShortcut.UNINSTALL, QQ LauncherShortcut.CUSTOMIZE, QQ LauncherShortcut.OPEN_IN_STORE),
+            if (QQ LauncherApp.isRecentsEnabled) Stream.of(QQ LauncherShortcut.PAUSE_APPS) else Stream.empty(),
         ),
     )
 
@@ -315,7 +315,7 @@ class LawnchairLauncher : QuickstepLauncher() {
     }
 
     override fun handleGestureContract(intent: Intent) {
-        if (!LawnchairApp.isRecentsEnabled && prefs.enableGnc.get()) {
+        if (!QQ LauncherApp.isRecentsEnabled && prefs.enableGnc.get()) {
             val gnc = GestureNavContract.fromIntent(intent)
             if (gnc != null) {
                 AbstractFloatingView.closeOpenViews(
@@ -323,7 +323,7 @@ class LawnchairLauncher : QuickstepLauncher() {
                     false,
                     AbstractFloatingView.TYPE_ICON_SURFACE,
                 )
-                LawnchairFloatingSurfaceView.show(this, gnc)
+                QQ LauncherFloatingSurfaceView.show(this, gnc)
             }
         }
     }
@@ -338,7 +338,7 @@ class LawnchairLauncher : QuickstepLauncher() {
         val showWallpaperCarousel = "+carousel" in preferenceManager2.launcherPopupOrder.firstCached()
 
         if (showWallpaperCarousel) {
-            show<LawnchairLauncher>(
+            show<QQ LauncherLauncher>(
                 this,
                 getPopupTarget(x, y),
                 OptionsPopupView.getOptions(this),
@@ -391,7 +391,7 @@ class LawnchairLauncher : QuickstepLauncher() {
     override fun makeDefaultActivityOptions(splashScreenStyle: Int): ActivityOptionsWrapper {
         val callbacks = RunnableList()
         val options = if (Utilities.ATLEAST_Q) {
-            LawnchairQuickstepCompat.activityOptionsCompat.makeCustomAnimation(
+            QQ LauncherQuickstepCompat.activityOptionsCompat.makeCustomAnimation(
                 this,
                 0,
                 0,
@@ -492,7 +492,7 @@ class LawnchairLauncher : QuickstepLauncher() {
 
     private fun restartIfPending() {
         when {
-            sRestartFlags and FLAG_RESTART != 0 -> lawnchairApp.restart(false)
+            sRestartFlags and FLAG_RESTART != 0 -> qqlauncherApp.restart(false)
 
             sRestartFlags and FLAG_RECREATE != 0 -> {
                 sRestartFlags = 0
@@ -518,14 +518,14 @@ class LawnchairLauncher : QuickstepLauncher() {
 
         var sRestartFlags = 0
 
-        val instance get() = LawnchairApp.launcher
+        val instance get() = QQ LauncherApp.launcher
     }
 }
 
-val Context.launcher: LawnchairLauncher
+val Context.launcher: QQ LauncherLauncher
     get() = BaseActivity.fromContext(this)
 
-val Context.launcherNullable: LawnchairLauncher? get() = try {
+val Context.launcherNullable: QQ LauncherLauncher? get() = try {
     launcher
 } catch (_: IllegalArgumentException) {
     null

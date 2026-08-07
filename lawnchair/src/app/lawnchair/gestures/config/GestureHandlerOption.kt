@@ -1,11 +1,11 @@
-package app.lawnchair.gestures.config
+package app.qqlauncher.gestures.config
 
 import android.app.Activity
 import android.content.Context
-import app.lawnchair.BlankActivity
-import app.lawnchair.ui.preferences.PreferenceActivity
-import app.lawnchair.ui.preferences.navigation.GesturesPickApp
-import app.lawnchair.util.kotlinxJson
+import app.qqlauncher.BlankActivity
+import app.qqlauncher.ui.preferences.PreferenceActivity
+import app.qqlauncher.ui.preferences.navigation.GesturesPickApp
+import app.qqlauncher.util.kotlinxJson
 import com.android.launcher3.R
 
 sealed class GestureHandlerOption(

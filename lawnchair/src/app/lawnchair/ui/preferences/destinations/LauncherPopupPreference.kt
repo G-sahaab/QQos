@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.destinations
+package app.qqlauncher.ui.preferences.destinations
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.background
@@ -31,22 +31,22 @@ import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.ui.popup.LauncherOptionPopupItem
-import app.lawnchair.ui.popup.LauncherOptionsPopup
-import app.lawnchair.ui.popup.toLauncherOptions
-import app.lawnchair.ui.popup.toOptionOrderString
-import app.lawnchair.ui.preferences.LocalIsExpandedScreen
-import app.lawnchair.ui.preferences.LocalNavController
-import app.lawnchair.ui.preferences.components.controls.ClickablePreference
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroupHeading
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
-import app.lawnchair.ui.preferences.components.reorderable.ReorderableDragHandle
-import app.lawnchair.ui.preferences.components.reorderable.ReorderablePreferenceGroup
-import app.lawnchair.ui.preferences.components.reorderable.ReorderableSwitchPreference
-import app.lawnchair.ui.preferences.navigation.HomeScreenPopupEditor
-import app.lawnchair.ui.theme.isSelectedThemeDark
+import app.qqlauncher.preferences.getAdapter
+import app.qqlauncher.preferences2.preferenceManager2
+import app.qqlauncher.ui.popup.LauncherOptionPopupItem
+import app.qqlauncher.ui.popup.LauncherOptionsPopup
+import app.qqlauncher.ui.popup.toLauncherOptions
+import app.qqlauncher.ui.popup.toOptionOrderString
+import app.qqlauncher.ui.preferences.LocalIsExpandedScreen
+import app.qqlauncher.ui.preferences.LocalNavController
+import app.qqlauncher.ui.preferences.components.controls.ClickablePreference
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroupHeading
+import app.qqlauncher.ui.preferences.components.layout.PreferenceLayout
+import app.qqlauncher.ui.preferences.components.reorderable.ReorderableDragHandle
+import app.qqlauncher.ui.preferences.components.reorderable.ReorderablePreferenceGroup
+import app.qqlauncher.ui.preferences.components.reorderable.ReorderableSwitchPreference
+import app.qqlauncher.ui.preferences.navigation.HomeScreenPopupEditor
+import app.qqlauncher.ui.theme.isSelectedThemeDark
 import com.android.launcher3.R
 
 @Composable

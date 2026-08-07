@@ -1,4 +1,4 @@
-﻿package app.lawnchair.data.folder
+﻿package app.qqlauncher.data.folder
 
 import androidx.compose.runtime.Immutable
 import androidx.room.ColumnInfo

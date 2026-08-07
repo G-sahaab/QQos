@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components
+package app.qqlauncher.ui.preferences.components
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -6,11 +6,11 @@ import android.content.pm.PackageManager
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
-import app.lawnchair.LawnchairApp
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.ui.preferences.components.controls.ClickablePreference
-import app.lawnchair.ui.preferences.components.controls.SwitchPreference
+import app.qqlauncher.QQ LauncherApp
+import app.qqlauncher.preferences.getAdapter
+import app.qqlauncher.preferences2.preferenceManager2
+import app.qqlauncher.ui.preferences.components.controls.ClickablePreference
+import app.qqlauncher.ui.preferences.components.controls.SwitchPreference
 import com.android.launcher3.R
 
 @SuppressLint("WrongConstant")
@@ -29,7 +29,7 @@ fun SuggestionsPreference() {
                 context.startActivity(intent)
             },
         )
-    } else if (suggestionSettingsAvailable || LawnchairApp.isRecentsEnabled) {
+    } else if (suggestionSettingsAvailable || QQ LauncherApp.isRecentsEnabled) {
         /* On some devices, the Suggestions activity could not be found or PACKAGE_USAGE_STATS is
           not granted. And on some devices (non-Google especially), the suggestions preference shows
           nothing at all */

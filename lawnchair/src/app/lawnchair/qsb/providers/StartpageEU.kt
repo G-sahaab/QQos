@@ -1,8 +1,8 @@
-package app.lawnchair.qsb.providers
+package app.qqlauncher.qsb.providers
 
-import app.lawnchair.animateToAllApps
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.qsb.ThemingMethod
+import app.qqlauncher.animateToAllApps
+import app.qqlauncher.preferences.PreferenceManager
+import app.qqlauncher.qsb.ThemingMethod
 import com.android.launcher3.Launcher
 import com.android.launcher3.R
 
@@ -12,7 +12,7 @@ data object StartpageEU : QsbSearchProvider(
     icon = R.drawable.ic_startpage,
     themingMethod = ThemingMethod.TINT,
     packageName = "",
-    website = "https://eu.startpage.com/?segment=startpage.lawnchair",
+    website = "https://eu.startpage.com/?segment=startpage.qqlauncher",
     type = QsbSearchProviderType.LOCAL,
     sponsored = false,
 ) {

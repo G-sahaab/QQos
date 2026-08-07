@@ -1,5 +1,5 @@
 /*
- * Copyright 2026, Lawnchair
+ * Copyright 2026, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui
+package app.qqlauncher.ui
 
 import android.graphics.drawable.Drawable
 import android.os.Bundle
@@ -43,13 +43,13 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.icons.CustomAdaptiveIconDrawable
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.preferences.iconPackIntents
-import app.lawnchair.ui.theme.EdgeToEdge
-import app.lawnchair.ui.theme.LawnchairTheme
+import app.qqlauncher.icons.CustomAdaptiveIconDrawable
+import app.qqlauncher.preferences.PreferenceManager
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroup
+import app.qqlauncher.ui.preferences.components.layout.PreferenceTemplate
+import app.qqlauncher.ui.preferences.iconPackIntents
+import app.qqlauncher.ui.theme.EdgeToEdge
+import app.qqlauncher.ui.theme.QQ LauncherTheme
 import com.android.launcher3.R
 import com.google.accompanist.drawablepainter.rememberDrawablePainter
 import kotlinx.coroutines.Dispatchers
@@ -87,7 +87,7 @@ class ApplyIconPackActivity : ComponentActivity() {
 
             val info = packInfo
             if (resolved && info != null) {
-                LawnchairTheme {
+                QQ LauncherTheme {
                     EdgeToEdge()
                     ApplyIconPackSheet(
                         packName = info.first,

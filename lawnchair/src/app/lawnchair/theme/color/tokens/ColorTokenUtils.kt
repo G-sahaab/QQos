@@ -1,7 +1,7 @@
-package app.lawnchair.theme.color.tokens
+package app.qqlauncher.theme.color.tokens
 
 import android.content.Context
-import app.lawnchair.preferences.PreferenceManager
+import app.qqlauncher.preferences.PreferenceManager
 
 fun ColorToken.setAlpha(alpha: Float) = SetAlphaColorToken(this, alpha)
 fun ColorToken.setLStar(lStar: Double) = SetLStarColorToken(this, lStar)

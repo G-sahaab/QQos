@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.reorderable
+package app.qqlauncher.ui.preferences.components.reorderable
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember

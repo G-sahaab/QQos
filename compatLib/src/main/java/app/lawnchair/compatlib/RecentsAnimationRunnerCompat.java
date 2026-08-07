@@ -1,4 +1,4 @@
-package app.lawnchair.compatlib;
+package app.qqlauncher.compatlib;
 
 import android.graphics.Rect;
 import com.android.wm.shell.recents.IRecentsAnimationController;

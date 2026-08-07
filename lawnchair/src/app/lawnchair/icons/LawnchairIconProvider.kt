@@ -1,4 +1,4 @@
-package app.lawnchair.icons
+package app.qqlauncher.icons
 
 import android.annotation.SuppressLint
 import android.content.BroadcastReceiver
@@ -26,15 +26,15 @@ import android.util.ArrayMap
 import android.util.Log
 import androidx.core.content.getSystemService
 import androidx.core.graphics.drawable.toDrawable
-import app.lawnchair.data.iconoverride.IconOverrideRepository
-import app.lawnchair.icons.iconpack.IconPack
-import app.lawnchair.icons.iconpack.IconPackProvider
-import app.lawnchair.icons.picker.IconEntry
-import app.lawnchair.icons.picker.IconType
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.util.MultiSafeCloseable
-import app.lawnchair.util.isPackageInstalled
-import app.lawnchair.util.requireSystemService
+import app.qqlauncher.data.iconoverride.IconOverrideRepository
+import app.qqlauncher.icons.iconpack.IconPack
+import app.qqlauncher.icons.iconpack.IconPackProvider
+import app.qqlauncher.icons.picker.IconEntry
+import app.qqlauncher.icons.picker.IconType
+import app.qqlauncher.preferences.PreferenceManager
+import app.qqlauncher.util.MultiSafeCloseable
+import app.qqlauncher.util.isPackageInstalled
+import app.qqlauncher.util.requireSystemService
 import com.android.launcher3.R
 import com.android.launcher3.dagger.ApplicationContext
 import com.android.launcher3.dagger.LauncherAppSingleton
@@ -48,7 +48,7 @@ import javax.inject.Inject
 import org.xmlpull.v1.XmlPullParser
 
 @LauncherAppSingleton
-class LawnchairIconProvider @Inject constructor(
+class QQ LauncherIconProvider @Inject constructor(
     @ApplicationContext private val context: Context,
     val themeManager: ThemeManager,
 ) : LauncherIconProvider(
@@ -271,7 +271,7 @@ class LawnchairIconProvider @Inject constructor(
             }
         }
 
-        // first, get Lawnchair's internal grayscale icon map
+        // first, get QQ Launcher's internal grayscale icon map
         themedIconMap.updateFromResources(
             resources = context.resources,
             packageName = context.packageName,
@@ -420,6 +420,6 @@ class LawnchairIconProvider @Inject constructor(
     }
 
     companion object {
-        const val TAG = "LawnchairIconProvider"
+        const val TAG = "QQ LauncherIconProvider"
     }
 }

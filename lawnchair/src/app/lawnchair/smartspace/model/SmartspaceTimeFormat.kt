@@ -1,4 +1,4 @@
-package app.lawnchair.smartspace.model
+package app.qqlauncher.smartspace.model
 
 import androidx.annotation.StringRes
 import com.android.launcher3.R

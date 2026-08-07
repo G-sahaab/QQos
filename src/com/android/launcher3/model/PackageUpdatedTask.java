@@ -69,10 +69,10 @@ import java.util.Objects;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-import app.lawnchair.deck.LawndeckManager;
-import app.lawnchair.preferences.PreferenceManager;
-import app.lawnchair.preferences2.PreferenceManager2;
-import app.lawnchair.preferences2.PreferenceCacheExtensionsKt;
+import app.qqlauncher.deck.LawndeckManager;
+import app.qqlauncher.preferences.PreferenceManager;
+import app.qqlauncher.preferences2.PreferenceManager2;
+import app.qqlauncher.preferences2.PreferenceCacheExtensionsKt;
 
 /**
  * Handles updates due to changes in package manager (app installed/updated/removed)

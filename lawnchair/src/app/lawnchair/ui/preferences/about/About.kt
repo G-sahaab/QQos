@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Lawnchair
+ * Copyright 2022, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.about
+package app.qqlauncher.ui.preferences.about
 
 import android.content.Intent
 import androidx.compose.foundation.Image
@@ -48,16 +48,16 @@ import androidx.compose.ui.unit.dp
 import androidx.core.net.toUri
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.ui.preferences.LocalIsExpandedScreen
-import app.lawnchair.ui.preferences.components.NavigationActionPreference
-import app.lawnchair.ui.preferences.components.controls.ClickablePreference
-import app.lawnchair.ui.preferences.components.layout.PreferenceDivider
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroupHeading
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroupItem
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayoutLazyColumn
-import app.lawnchair.ui.preferences.components.layout.preferenceGroupItems
-import app.lawnchair.ui.preferences.navigation.AboutLicenses
+import app.qqlauncher.preferences.PreferenceManager
+import app.qqlauncher.ui.preferences.LocalIsExpandedScreen
+import app.qqlauncher.ui.preferences.components.NavigationActionPreference
+import app.qqlauncher.ui.preferences.components.controls.ClickablePreference
+import app.qqlauncher.ui.preferences.components.layout.PreferenceDivider
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroupHeading
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroupItem
+import app.qqlauncher.ui.preferences.components.layout.PreferenceLayoutLazyColumn
+import app.qqlauncher.ui.preferences.components.layout.preferenceGroupItems
+import app.qqlauncher.ui.preferences.navigation.AboutLicenses
 import com.android.launcher3.BuildConfig
 import com.android.launcher3.R
 import kotlinx.coroutines.launch
@@ -151,7 +151,7 @@ fun About(
                             onClick = {},
                             onLongClick = {
                                 val commitUrl =
-                                    "https://github.com/LawnchairLauncher/lawnchair/commit/${BuildConfig.COMMIT_HASH}"
+                                    "https://github.com/QQ LauncherLauncher/qqlauncher/commit/${BuildConfig.COMMIT_HASH}"
                                 context.startActivity(Intent(Intent.ACTION_VIEW, commitUrl.toUri()))
                             },
                         ),
@@ -191,7 +191,7 @@ fun About(
                     .padding(horizontal = 16.dp),
             ) {
                 uiState.topLinks.forEach { link ->
-                    LawnchairLink(
+                    QQ LauncherLink(
                         iconResId = link.iconResId,
                         label = stringResource(id = link.labelResId),
                         modifier = Modifier.weight(weight = 1f),
@@ -226,7 +226,7 @@ fun About(
             heading = { stringResource(id = R.string.community) },
             key = { _, it -> it.labelResId },
         ) { _, it ->
-            HorizontalLawnchairLink(
+            HorizontalQQ LauncherLink(
                 iconResId = it.iconResId,
                 label = stringResource(id = it.labelResId),
                 url = it.url,
@@ -271,4 +271,4 @@ fun About(
     }
 }
 
-private const val PRIVACY_POLICY = "https://lawnchair.app/privacy_policy"
+private const val PRIVACY_POLICY = "https://qqlauncher.app/privacy_policy"

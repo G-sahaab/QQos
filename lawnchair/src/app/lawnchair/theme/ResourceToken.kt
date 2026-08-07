@@ -1,4 +1,4 @@
-package app.lawnchair.theme
+package app.qqlauncher.theme
 
 import android.content.Context
 import com.android.launcher3.R

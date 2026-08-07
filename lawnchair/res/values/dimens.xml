@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2025, Lawnchair
+  ~ Copyright 2025, QQ Launcher
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@
     <dimen name="noqsb_hotseat_bottom_non_tall_padding">0dp</dimen>
     <dimen name="noqsb_hotseat_extra_vertical_size">34dp</dimen>
 
-    <dimen name="lawnchair_dialog_corner_radius">24dp</dimen>
+    <dimen name="qqlauncher_dialog_corner_radius">24dp</dimen>
 
     <!-- Edit Mode page strip (bottom of DragLayer) -->
     <dimen name="edit_mode_page_strip_height">88dp</dimen>
@@ -70,7 +70,7 @@
     <!-- Header is aligned to the search container top with this margin. 60dp search
          container + a small gap; keep in sync with search_box_container_height. -->
     <dimen name="all_apps_header_top_margin">64dp</dimen>
-    <!-- AOSP uses 36dp to clear an overlapping search bar; Lawnchair's larger
+    <!-- AOSP uses 36dp to clear an overlapping search bar; QQ Launcher's larger
          top_margin already clears the search, so keep this tight. -->
     <dimen name="all_apps_header_top_padding">4dp</dimen>
     <dimen name="all_apps_tabs_margin_top">4dp</dimen>

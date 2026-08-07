@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.destinations
+package app.qqlauncher.ui.preferences.destinations
 
 import android.Manifest
 import android.content.Intent
@@ -10,22 +10,22 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.datastore.preferences.core.Preferences
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.ui.preferences.LocalIsExpandedScreen
-import app.lawnchair.ui.preferences.LocalNavController
-import app.lawnchair.ui.preferences.components.controls.ClickablePreference
-import app.lawnchair.ui.preferences.components.controls.MainSwitchPreference
-import app.lawnchair.ui.preferences.components.controls.SwitchPreference
-import app.lawnchair.ui.preferences.components.controls.TextPreference
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
-import app.lawnchair.ui.preferences.data.liveinfo.liveInformationManager
-import app.lawnchair.ui.preferences.data.liveinfo.model.LiveInformation
-import app.lawnchair.ui.preferences.navigation.FeatureFlags
+import app.qqlauncher.preferences.PreferenceManager
+import app.qqlauncher.preferences.getAdapter
+import app.qqlauncher.preferences.preferenceManager
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.preferences2.preferenceManager2
+import app.qqlauncher.ui.preferences.LocalIsExpandedScreen
+import app.qqlauncher.ui.preferences.LocalNavController
+import app.qqlauncher.ui.preferences.components.controls.ClickablePreference
+import app.qqlauncher.ui.preferences.components.controls.MainSwitchPreference
+import app.qqlauncher.ui.preferences.components.controls.SwitchPreference
+import app.qqlauncher.ui.preferences.components.controls.TextPreference
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroup
+import app.qqlauncher.ui.preferences.components.layout.PreferenceLayout
+import app.qqlauncher.ui.preferences.data.liveinfo.liveInformationManager
+import app.qqlauncher.ui.preferences.data.liveinfo.model.LiveInformation
+import app.qqlauncher.ui.preferences.navigation.FeatureFlags
 import com.android.launcher3.settings.SettingsActivity
 import com.android.launcher3.settings.SettingsActivity.DEVELOPER_OPTIONS_KEY
 import com.android.launcher3.settings.SettingsActivity.EXTRA_FRAGMENT_HIGHLIGHT_KEY
@@ -70,7 +70,7 @@ fun DebugMenuPreferences(
                                 .also { context.startActivity(it) }
                         } catch (e: Exception) {
                             /* This is really unlikely, we are just highlighting the option,
-                                not directly opening like Lawnchair 14 and older unless they
+                                not directly opening like QQ Launcher 14 and older unless they
                                 changed the entire preferences system */
                             Toast.makeText(context, "Failed to open developer settings!", Toast.LENGTH_SHORT)
                                 .show()
@@ -126,7 +126,7 @@ fun DebugMenuPreferences(
                         label = it.key.name,
                     )
                 }
-                // Codename for Lawnchair to intentionally omit version number from the public,
+                // Codename for QQ Launcher to intentionally omit version number from the public,
                 // Crash log will continue to show them normally.
                 TextPreference(
                     label = "Custom version info",

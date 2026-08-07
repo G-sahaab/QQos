@@ -1,4 +1,4 @@
-package app.lawnchair.views
+package app.qqlauncher.views
 
 import android.content.Context
 import android.util.FloatProperty
@@ -32,10 +32,10 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.dp
-import app.lawnchair.theme.color.tokens.ColorTokens
-import app.lawnchair.ui.theme.LawnchairTheme
-import app.lawnchair.util.ProvideLifecycleState
-import app.lawnchair.util.minus
+import app.qqlauncher.theme.color.tokens.ColorTokens
+import app.qqlauncher.ui.theme.QQ LauncherTheme
+import app.qqlauncher.util.ProvideLifecycleState
+import app.qqlauncher.util.minus
 import com.android.launcher3.Launcher
 import com.android.launcher3.anim.PendingAnimation
 import com.android.launcher3.util.SystemUiController
@@ -186,7 +186,7 @@ class ComposeBottomSheet<T>(context: Context) : AbstractSlideInView<T>(context, 
     private fun Providers(
         content: @Composable () -> Unit,
     ) {
-        LawnchairTheme {
+        QQ LauncherTheme {
             ProvideLifecycleState {
                 CompositionLocalProvider(
                     LocalContentColor provides MaterialTheme.colorScheme.onSurface,

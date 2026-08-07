@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Modifications copyright 2025, Lawnchair
+ * Modifications copyright 2025, QQ Launcher
  */
 package com.android.launcher3.graphics;
 
@@ -45,8 +45,8 @@ import com.android.launcher3.util.Themes;
 import com.android.launcher3.views.ActivityContext;
 
 import com.patrykmichalik.opto.core.PreferenceExtensionsKt;
-import app.lawnchair.preferences2.PreferenceManager2;
-import app.lawnchair.util.ViewExtensionsKt;
+import app.qqlauncher.preferences2.PreferenceManager2;
+import app.qqlauncher.util.ViewExtensionsKt;
 
 /**
  * View scrim which draws behind hotseat and workspace

@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Lawnchair
+ * Copyright 2022, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package app.lawnchair.preferences2
+package app.qqlauncher.preferences2
 
 import android.content.Context
-import app.lawnchair.LawnchairLauncher
+import app.qqlauncher.QQ LauncherLauncher
 import com.android.launcher3.InvariantDeviceProfile
 import com.android.launcher3.LauncherAppState
 import com.android.launcher3.graphics.ThemeManager
@@ -37,7 +37,7 @@ class ReloadHelper(private val context: Context) {
     }
 
     fun recreate() {
-        LawnchairLauncher.instance?.recreateIfNotScheduled()
+        QQ LauncherLauncher.instance?.recreateIfNotScheduled()
     }
 
     fun restart() {

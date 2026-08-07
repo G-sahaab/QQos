@@ -1,11 +1,11 @@
-package app.lawnchair.ui.popup
+package app.qqlauncher.ui.popup
 
 import android.view.View
 import android.widget.Toast
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import app.lawnchair.preferences2.PreferenceManager2.Companion.getInstance
-import app.lawnchair.preferences2.firstCached
+import app.qqlauncher.preferences2.PreferenceManager2.Companion.getInstance
+import app.qqlauncher.preferences2.firstCached
 import com.android.launcher3.Launcher
 import com.android.launcher3.R
 import com.android.launcher3.Utilities

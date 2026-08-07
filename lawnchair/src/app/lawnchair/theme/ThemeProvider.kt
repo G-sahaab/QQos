@@ -1,4 +1,4 @@
-package app.lawnchair.theme
+package app.qqlauncher.theme
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -8,15 +8,15 @@ import android.os.Handler
 import android.os.Looper
 import android.os.PatternMatcher
 import androidx.core.graphics.ColorUtils
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.preferences2.firstCached
-import app.lawnchair.theme.color.AndroidColor
-import app.lawnchair.theme.color.ColorOption
-import app.lawnchair.theme.color.ColorStyle
-import app.lawnchair.theme.color.MonetColorSchemeCompat
-import app.lawnchair.theme.color.SystemColorScheme
-import app.lawnchair.ui.theme.getSystemAccent
-import app.lawnchair.wallpaper.WallpaperManagerCompat
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.preferences2.firstCached
+import app.qqlauncher.theme.color.AndroidColor
+import app.qqlauncher.theme.color.ColorOption
+import app.qqlauncher.theme.color.ColorStyle
+import app.qqlauncher.theme.color.MonetColorSchemeCompat
+import app.qqlauncher.theme.color.SystemColorScheme
+import app.qqlauncher.ui.theme.getSystemAccent
+import app.qqlauncher.wallpaper.WallpaperManagerCompat
 import com.android.launcher3.Utilities
 import com.android.launcher3.dagger.ApplicationContext
 import com.android.launcher3.dagger.LauncherAppComponent
@@ -93,12 +93,12 @@ class ThemeProvider @Inject constructor(
 
         is ColorOption.WallpaperPrimary -> {
             val wallpaperPrimary = wallpaperManager.wallpaperColors?.primaryColor
-            getColorScheme(wallpaperPrimary ?: ColorOption.LawnchairBlue.color, colorStyle.style)
+            getColorScheme(wallpaperPrimary ?: ColorOption.QQ LauncherBlue.color, colorStyle.style)
         }
 
         is ColorOption.CustomColor -> getColorScheme(accentColor.color, colorStyle.style)
 
-        else -> getColorScheme(ColorOption.LawnchairBlue.color, colorStyle.style)
+        else -> getColorScheme(ColorOption.QQ LauncherBlue.color, colorStyle.style)
     }
 
     private val systemColorScheme get() = when {

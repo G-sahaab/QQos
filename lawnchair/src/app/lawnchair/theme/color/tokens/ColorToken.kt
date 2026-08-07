@@ -1,13 +1,13 @@
-package app.lawnchair.theme.color.tokens
+package app.qqlauncher.theme.color.tokens
 
 import android.content.Context
 import android.util.Log
 import androidx.core.graphics.ColorUtils
-import app.lawnchair.theme.ResourceToken
-import app.lawnchair.theme.ThemeProvider
-import app.lawnchair.theme.UiColorMode
-import app.lawnchair.theme.color.AndroidColor
-import app.lawnchair.theme.toAndroidColor
+import app.qqlauncher.theme.ResourceToken
+import app.qqlauncher.theme.ThemeProvider
+import app.qqlauncher.theme.UiColorMode
+import app.qqlauncher.theme.color.AndroidColor
+import app.qqlauncher.theme.toAndroidColor
 import com.android.launcher3.R
 import com.android.launcher3.util.Themes
 import com.androidinternal.graphics.cam.Cam

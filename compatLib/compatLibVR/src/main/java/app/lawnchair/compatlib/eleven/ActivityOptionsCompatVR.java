@@ -1,4 +1,4 @@
-package app.lawnchair.compatlib.eleven;
+package app.qqlauncher.compatlib.eleven;
 
 import android.app.ActivityOptions;
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.os.Handler;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
-import app.lawnchair.compatlib.ten.ActivityOptionsCompatVQ;
+import app.qqlauncher.compatlib.ten.ActivityOptionsCompatVQ;
 
 @RequiresApi(30)
 public class ActivityOptionsCompatVR extends ActivityOptionsCompatVQ {

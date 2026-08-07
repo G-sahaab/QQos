@@ -1,8 +1,8 @@
-package app.lawnchair.ui.preferences.data.liveinfo
+package app.qqlauncher.ui.preferences.data.liveinfo
 
 import android.util.Log
-import app.lawnchair.ui.preferences.data.liveinfo.model.LiveInformation
-import app.lawnchair.util.kotlinxJson
+import app.qqlauncher.ui.preferences.data.liveinfo.model.LiveInformation
+import app.qqlauncher.util.kotlinxJson
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -16,7 +16,7 @@ import retrofit2.create
 private const val TAG = "LiveInformationRequest"
 
 private val retrofit = Retrofit.Builder()
-    .baseUrl("https://lawnchair.app/")
+    .baseUrl("https://qqlauncher.app/")
     .addConverterFactory(kotlinxJson.asConverterFactory("application/json".toMediaType()))
     .build()
 

@@ -1,14 +1,14 @@
-package app.lawnchair.compatlib.twelve;
+package app.qqlauncher.compatlib.twelve;
 
 import android.app.IApplicationThread;
 import android.window.IRemoteTransition;
 import android.window.RemoteTransition;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
-import app.lawnchair.compatlib.ActivityManagerCompat;
-import app.lawnchair.compatlib.ActivityOptionsCompat;
-import app.lawnchair.compatlib.RemoteTransitionCompat;
-import app.lawnchair.compatlib.eleven.QuickstepCompatFactoryVR;
+import app.qqlauncher.compatlib.ActivityManagerCompat;
+import app.qqlauncher.compatlib.ActivityOptionsCompat;
+import app.qqlauncher.compatlib.RemoteTransitionCompat;
+import app.qqlauncher.compatlib.eleven.QuickstepCompatFactoryVR;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 

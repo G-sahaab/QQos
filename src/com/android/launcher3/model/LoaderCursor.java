@@ -80,9 +80,9 @@ import dagger.assisted.AssistedInject;
 import java.net.URISyntaxException;
 import java.security.InvalidParameterException;
 
-import app.lawnchair.preferences2.PreferenceCacheExtensionsKt;
-import app.lawnchair.LawnchairApp;
-import app.lawnchair.preferences2.PreferenceManager2;
+import app.qqlauncher.preferences2.PreferenceCacheExtensionsKt;
+import app.qqlauncher.QQ LauncherApp;
+import app.qqlauncher.preferences2.PreferenceManager2;
 
 /**
  * Extension of {@link Cursor} with utility methods for workspace loading.

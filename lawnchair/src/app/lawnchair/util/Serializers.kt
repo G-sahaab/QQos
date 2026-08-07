@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalSerializationApi::class)
 
-package app.lawnchair.util
+package app.qqlauncher.util
 
 import android.content.Intent
 import android.os.UserHandle

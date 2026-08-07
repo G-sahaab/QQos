@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.search
+package app.qqlauncher.ui.preferences.components.search
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
@@ -23,12 +23,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
-import app.lawnchair.preferences.PreferenceAdapter
-import app.lawnchair.search.algorithms.engine.provider.web.WebSearchProvider
-import app.lawnchair.ui.preferences.components.controls.ListPreference
-import app.lawnchair.ui.preferences.components.controls.ListPreferenceEntry
-import app.lawnchair.ui.preferences.components.layout.DividerColumn
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
+import app.qqlauncher.preferences.PreferenceAdapter
+import app.qqlauncher.search.algorithms.engine.provider.web.WebSearchProvider
+import app.qqlauncher.ui.preferences.components.controls.ListPreference
+import app.qqlauncher.ui.preferences.components.controls.ListPreferenceEntry
+import app.qqlauncher.ui.preferences.components.layout.DividerColumn
+import app.qqlauncher.ui.preferences.components.layout.PreferenceTemplate
 import com.android.launcher3.R
 
 @Composable

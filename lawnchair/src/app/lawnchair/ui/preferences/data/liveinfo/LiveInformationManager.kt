@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.data.liveinfo
+package app.qqlauncher.ui.preferences.data.liveinfo
 
 import android.content.Context
 import androidx.compose.runtime.Composable
@@ -6,8 +6,8 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
-import app.lawnchair.ui.preferences.data.liveinfo.model.AnnouncementId
-import app.lawnchair.ui.preferences.data.liveinfo.model.LiveInformation
+import app.qqlauncher.ui.preferences.data.liveinfo.model.AnnouncementId
+import app.qqlauncher.ui.preferences.data.liveinfo.model.LiveInformation
 import com.android.launcher3.R
 import com.android.launcher3.dagger.ApplicationContext
 import com.android.launcher3.dagger.LauncherAppComponent

@@ -1,17 +1,17 @@
-package app.lawnchair.search.algorithms
+package app.qqlauncher.search.algorithms
 
 import android.content.Context
-import app.lawnchair.LawnchairApp
-import app.lawnchair.allapps.views.SearchItemBackground
-import app.lawnchair.allapps.views.SearchResultView.Companion.EXTRA_QUICK_LAUNCH
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.preferences2.firstCached
-import app.lawnchair.search.LawnchairSearchAdapterProvider
-import app.lawnchair.search.adapter.START_PAGE
-import app.lawnchair.search.adapter.SearchAdapterItem
-import app.lawnchair.search.adapter.SearchTargetCompat
-import app.lawnchair.search.adapter.SearchTargetCompat.Companion.RESULT_TYPE_APPLICATION
-import app.lawnchair.search.adapter.SearchTargetCompat.Companion.RESULT_TYPE_SHORTCUT
+import app.qqlauncher.QQ LauncherApp
+import app.qqlauncher.allapps.views.SearchItemBackground
+import app.qqlauncher.allapps.views.SearchResultView.Companion.EXTRA_QUICK_LAUNCH
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.preferences2.firstCached
+import app.qqlauncher.search.QQ LauncherSearchAdapterProvider
+import app.qqlauncher.search.adapter.START_PAGE
+import app.qqlauncher.search.adapter.SearchAdapterItem
+import app.qqlauncher.search.adapter.SearchTargetCompat
+import app.qqlauncher.search.adapter.SearchTargetCompat.Companion.RESULT_TYPE_APPLICATION
+import app.qqlauncher.search.adapter.SearchTargetCompat.Companion.RESULT_TYPE_SHORTCUT
 import com.android.app.search.LayoutType.CALCULATOR
 import com.android.app.search.LayoutType.EDUCARD
 import com.android.app.search.LayoutType.EMPTY_DIVIDER
@@ -33,7 +33,7 @@ import com.android.launcher3.allapps.BaseAllAppsAdapter
 import com.android.launcher3.search.SearchAlgorithm
 import com.android.launcher3.search.SearchCallback
 
-sealed class LawnchairSearchAlgorithm(
+sealed class QQ LauncherSearchAlgorithm(
     protected val context: Context,
 ) : SearchAlgorithm<BaseAllAppsAdapter.AdapterItem> {
 
@@ -78,7 +78,7 @@ sealed class LawnchairSearchAlgorithm(
         val filtered = results
             .asSequence()
             .filter { it.packageName != BuildConfig.APPLICATION_ID }
-            .filter { LawnchairSearchAdapterProvider.viewTypeMap[it.layoutType] != null }
+            .filter { QQ LauncherSearchAdapterProvider.viewTypeMap[it.layoutType] != null }
             .removeDuplicateDividers()
             .toList()
 
@@ -226,27 +226,27 @@ sealed class LawnchairSearchAlgorithm(
 
         fun isASISearchEnabled(context: Context): Boolean {
             if (!Utilities.ATLEAST_S) return false
-            if (!LawnchairApp.isRecentsEnabled) return false
+            if (!QQ LauncherApp.isRecentsEnabled) return false
 
             if (!ranCompatibilityCheck) {
                 ranCompatibilityCheck = true
-                LawnchairASISearchAlgorithm.checkSearchCompatibility(context)
+                QQ LauncherASISearchAlgorithm.checkSearchCompatibility(context)
             }
             return true
         }
 
-        fun create(context: Context): LawnchairSearchAlgorithm {
+        fun create(context: Context): QQ LauncherSearchAlgorithm {
             val prefs = PreferenceManager2.getInstance(context)
             val searchAlgorithm = prefs.searchAlgorithm.firstCached()
 
             return when {
-                searchAlgorithm == ASI_SEARCH && isASISearchEnabled(context) -> LawnchairASISearchAlgorithm(
+                searchAlgorithm == ASI_SEARCH && isASISearchEnabled(context) -> QQ LauncherASISearchAlgorithm(
                     context,
                 )
 
-                searchAlgorithm == LOCAL_SEARCH -> LawnchairLocalSearchAlgorithm(context)
+                searchAlgorithm == LOCAL_SEARCH -> QQ LauncherLocalSearchAlgorithm(context)
 
-                else -> LawnchairAppSearchAlgorithm(context)
+                else -> QQ LauncherAppSearchAlgorithm(context)
             }
         }
     }

@@ -1,4 +1,4 @@
-package app.lawnchair.search.algorithms.engine.provider
+package app.qqlauncher.search.algorithms.engine.provider
 
 import android.content.ContentResolver
 import android.content.Context
@@ -6,9 +6,9 @@ import android.database.Cursor
 import android.net.Uri
 import android.util.Log
 import androidx.core.net.toUri
-import app.lawnchair.search.LawnchairRecentSuggestionProvider
-import app.lawnchair.search.algorithms.data.RecentKeyword
-import app.lawnchair.search.algorithms.engine.SearchResult
+import app.qqlauncher.search.QQ LauncherRecentSuggestionProvider
+import app.qqlauncher.search.algorithms.data.RecentKeyword
+import app.qqlauncher.search.algorithms.engine.SearchResult
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
@@ -25,7 +25,7 @@ object HistorySearchProvider {
         return withContext(Dispatchers.IO) {
             try {
                 val contentResolver: ContentResolver = context.contentResolver
-                val uri: Uri = "content://${LawnchairRecentSuggestionProvider.AUTHORITY}/suggestions".toUri()
+                val uri: Uri = "content://${QQ LauncherRecentSuggestionProvider.AUTHORITY}/suggestions".toUri()
 
                 val cursor: Cursor? = contentResolver.query(uri, null, null, null, null)
                 val recentKeywords = mutableListOf<RecentKeyword>()

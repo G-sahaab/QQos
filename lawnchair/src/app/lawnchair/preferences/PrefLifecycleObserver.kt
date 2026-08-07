@@ -1,4 +1,4 @@
-package app.lawnchair.preferences
+package app.qqlauncher.preferences
 
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner

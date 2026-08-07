@@ -1,12 +1,12 @@
-package app.lawnchair.search.algorithms.data
+package app.qqlauncher.search.algorithms.data
 
 import android.annotation.DrawableRes
-import app.lawnchair.util.androidPkgTypes
-import app.lawnchair.util.archiveFileTypes
-import app.lawnchair.util.audioFileTypes
-import app.lawnchair.util.documentFileTypes
-import app.lawnchair.util.imageFileTypes
-import app.lawnchair.util.videoFileTypes
+import app.qqlauncher.util.androidPkgTypes
+import app.qqlauncher.util.archiveFileTypes
+import app.qqlauncher.util.audioFileTypes
+import app.qqlauncher.util.documentFileTypes
+import app.qqlauncher.util.imageFileTypes
+import app.qqlauncher.util.videoFileTypes
 import com.android.launcher3.R
 
 sealed interface IFileInfo {

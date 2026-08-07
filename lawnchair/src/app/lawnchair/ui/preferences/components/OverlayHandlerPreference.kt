@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components
+package app.qqlauncher.ui.preferences.components
 
 import android.R as AndroidR
 import androidx.compose.foundation.clickable
@@ -15,12 +15,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.preferences.PreferenceAdapter
-import app.lawnchair.ui.ModalBottomSheetContent
-import app.lawnchair.ui.preferences.components.layout.PreferenceDivider
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.util.LocalBottomSheetHandler
-import app.lawnchair.views.overlay.FullScreenOverlayMode
+import app.qqlauncher.preferences.PreferenceAdapter
+import app.qqlauncher.ui.ModalBottomSheetContent
+import app.qqlauncher.ui.preferences.components.layout.PreferenceDivider
+import app.qqlauncher.ui.preferences.components.layout.PreferenceTemplate
+import app.qqlauncher.ui.util.LocalBottomSheetHandler
+import app.qqlauncher.views.overlay.FullScreenOverlayMode
 import kotlinx.coroutines.launch
 
 val overlayOptions = listOf(

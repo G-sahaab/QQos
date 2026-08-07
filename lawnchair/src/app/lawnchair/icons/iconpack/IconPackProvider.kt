@@ -1,4 +1,4 @@
-package app.lawnchair.icons.iconpack
+package app.qqlauncher.icons.iconpack
 
 import android.content.Context
 import android.content.pm.PackageManager
@@ -6,10 +6,10 @@ import android.graphics.drawable.Drawable
 import android.os.Build
 import android.os.Process
 import android.os.UserHandle
-import app.lawnchair.icons.ClockMetadata
-import app.lawnchair.icons.CustomAdaptiveIconDrawable
-import app.lawnchair.icons.picker.IconEntry
-import app.lawnchair.icons.shouldTransparentBGIcons
+import app.qqlauncher.icons.ClockMetadata
+import app.qqlauncher.icons.CustomAdaptiveIconDrawable
+import app.qqlauncher.icons.picker.IconEntry
+import app.qqlauncher.icons.shouldTransparentBGIcons
 import com.android.launcher3.dagger.ApplicationContext
 import com.android.launcher3.dagger.LauncherAppComponent
 import com.android.launcher3.dagger.LauncherAppSingleton

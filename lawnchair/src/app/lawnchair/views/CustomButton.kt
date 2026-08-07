@@ -1,9 +1,9 @@
-package app.lawnchair.views
+package app.qqlauncher.views
 
 import android.content.Context
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatButton
-import app.lawnchair.font.FontManager
+import app.qqlauncher.font.FontManager
 
 class CustomButton @JvmOverloads constructor(
     context: Context,

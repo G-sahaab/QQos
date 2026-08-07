@@ -1,4 +1,4 @@
-package app.lawnchair.ui
+package app.qqlauncher.ui
 
 import android.content.Context
 import android.graphics.Canvas

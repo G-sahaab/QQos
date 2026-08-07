@@ -1,4 +1,4 @@
-package app.lawnchair.theme.color.tokens
+package app.qqlauncher.theme.color.tokens
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color

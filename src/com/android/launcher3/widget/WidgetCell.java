@@ -67,9 +67,9 @@ import com.android.launcher3.widget.util.WidgetSizes;
 
 import java.util.function.Consumer;
 
-import app.lawnchair.LawnchairAppWidgetHostView;
-import app.lawnchair.font.FontManager;
-import app.lawnchair.theme.drawable.DrawableTokens;
+import app.qqlauncher.QQ LauncherAppWidgetHostView;
+import app.qqlauncher.font.FontManager;
+import app.qqlauncher.theme.drawable.DrawableTokens;
 
 /**
  * Represents the individual cell of the widget inside the widget tray. The preview is drawn

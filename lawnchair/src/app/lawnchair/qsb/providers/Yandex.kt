@@ -1,4 +1,4 @@
-package app.lawnchair.qsb.providers
+package app.qqlauncher.qsb.providers
 
 import android.content.Intent
 import com.android.launcher3.R

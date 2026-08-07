@@ -1,4 +1,4 @@
-package app.lawnchair.qsb
+package app.qqlauncher.qsb
 
 import android.content.ComponentName
 import android.content.Context
@@ -14,23 +14,23 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.ViewCompositionStrategy
 import androidx.core.view.children
 import androidx.lifecycle.lifecycleScope
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.animateToAllApps
-import app.lawnchair.launcher
-import app.lawnchair.preferences.observeAsState
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.preferences2.asState
-import app.lawnchair.preferences2.firstCached
-import app.lawnchair.qsb.providers.AppSearch
-import app.lawnchair.qsb.providers.Google
-import app.lawnchair.qsb.providers.PixelSearch
-import app.lawnchair.qsb.providers.QsbSearchProvider
-import app.lawnchair.ui.preferences.PreferenceActivity
-import app.lawnchair.ui.preferences.navigation.Search
-import app.lawnchair.ui.theme.LawnchairTheme
-import app.lawnchair.util.ProvideLifecycleState
-import app.lawnchair.util.repeatOnAttached
+import app.qqlauncher.QQ LauncherLauncher
+import app.qqlauncher.animateToAllApps
+import app.qqlauncher.launcher
+import app.qqlauncher.preferences.observeAsState
+import app.qqlauncher.preferences.preferenceManager
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.preferences2.asState
+import app.qqlauncher.preferences2.firstCached
+import app.qqlauncher.qsb.providers.AppSearch
+import app.qqlauncher.qsb.providers.Google
+import app.qqlauncher.qsb.providers.PixelSearch
+import app.qqlauncher.qsb.providers.QsbSearchProvider
+import app.qqlauncher.ui.preferences.PreferenceActivity
+import app.qqlauncher.ui.preferences.navigation.Search
+import app.qqlauncher.ui.theme.QQ LauncherTheme
+import app.qqlauncher.util.ProvideLifecycleState
+import app.qqlauncher.util.repeatOnAttached
 import com.android.launcher3.BaseActivity
 import com.android.launcher3.DeviceProfile
 import com.android.launcher3.R
@@ -61,7 +61,7 @@ class LawnQsbLayout(context: Context, attrs: AttributeSet?) : FrameLayout(contex
         composeView.apply {
             setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnDetachedFromWindow)
             setContent {
-                LawnchairTheme {
+                QQ LauncherTheme {
                     ProvideLifecycleState {
                         val context = LocalContext.current
 
@@ -158,7 +158,7 @@ class LawnQsbLayout(context: Context, attrs: AttributeSet?) : FrameLayout(contex
         val launcher = context.launcher
         val pos = Rect()
         launcher.dragLayer.getDescendantRectRelativeToSelf(composeView, pos)
-        OptionsPopupView.show<LawnchairLauncher>(launcher, RectF(pos), listOf(getCustomizeOption()), true)
+        OptionsPopupView.show<QQ LauncherLauncher>(launcher, RectF(pos), listOf(getCustomizeOption()), true)
     }
 
     private fun getCustomizeOption() = OptionsPopupView.OptionItem(

@@ -1,4 +1,4 @@
-package app.lawnchair.theme.color
+package app.qqlauncher.theme.color
 
 import android.annotation.SuppressLint
 import android.content.Context

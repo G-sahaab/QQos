@@ -1,4 +1,4 @@
-package app.lawnchair.util
+package app.qqlauncher.util
 
 import android.content.Context
 import android.graphics.Canvas
@@ -7,7 +7,7 @@ import android.graphics.Path
 import android.graphics.RectF
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatImageView
-import app.lawnchair.theme.color.tokens.ColorTokens
+import app.qqlauncher.theme.color.tokens.ColorTokens
 import com.android.launcher3.R
 import com.android.systemui.shared.system.BlurUtils
 

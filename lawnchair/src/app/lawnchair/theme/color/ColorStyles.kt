@@ -1,4 +1,4 @@
-package app.lawnchair.theme.color
+package app.qqlauncher.theme.color
 
 import androidx.annotation.StringRes
 import com.android.launcher3.R

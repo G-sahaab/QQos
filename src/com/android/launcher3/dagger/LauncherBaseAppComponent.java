@@ -57,25 +57,25 @@ import com.android.launcher3.widget.util.WidgetSizeHandler;
 
 import javax.inject.Named;
 
-import app.lawnchair.DeviceProfileOverrides;
-import app.lawnchair.HeadlessWidgetsManager;
-import app.lawnchair.LawnchairActivityCachingLogic;
-import app.lawnchair.NotificationManager;
-import app.lawnchair.data.folder.service.FolderService;
-import app.lawnchair.data.iconoverride.IconOverrideRepository;
-import app.lawnchair.data.wallpaper.service.WallpaperService;
-import app.lawnchair.font.FontCache;
-import app.lawnchair.font.FontManager;
-import app.lawnchair.font.googlefonts.GoogleFontsListing;
-import app.lawnchair.icons.iconpack.IconPackProvider;
-import app.lawnchair.icons.shape.IconShapeManager;
-import app.lawnchair.preferences.PreferenceManager;
-import app.lawnchair.preferences2.PreferenceManager2;
-import app.lawnchair.smartspace.provider.SmartspaceProvider;
-import app.lawnchair.theme.ThemeProvider;
-import app.lawnchair.ui.preferences.components.colorpreference.ColorPreferenceModelList;
-import app.lawnchair.ui.preferences.data.liveinfo.LiveInformationManager;
-import app.lawnchair.util.LawnchairWindowManagerProxy;
+import app.qqlauncher.DeviceProfileOverrides;
+import app.qqlauncher.HeadlessWidgetsManager;
+import app.qqlauncher.QQ LauncherActivityCachingLogic;
+import app.qqlauncher.NotificationManager;
+import app.qqlauncher.data.folder.service.FolderService;
+import app.qqlauncher.data.iconoverride.IconOverrideRepository;
+import app.qqlauncher.data.wallpaper.service.WallpaperService;
+import app.qqlauncher.font.FontCache;
+import app.qqlauncher.font.FontManager;
+import app.qqlauncher.font.googlefonts.GoogleFontsListing;
+import app.qqlauncher.icons.iconpack.IconPackProvider;
+import app.qqlauncher.icons.shape.IconShapeManager;
+import app.qqlauncher.preferences.PreferenceManager;
+import app.qqlauncher.preferences2.PreferenceManager2;
+import app.qqlauncher.smartspace.provider.SmartspaceProvider;
+import app.qqlauncher.theme.ThemeProvider;
+import app.qqlauncher.ui.preferences.components.colorpreference.ColorPreferenceModelList;
+import app.qqlauncher.ui.preferences.data.liveinfo.LiveInformationManager;
+import app.qqlauncher.util.QQ LauncherWindowManagerProxy;
 import dagger.BindsInstance;
 
 /**
@@ -126,9 +126,9 @@ public interface LauncherBaseAppComponent {
     WidgetSizeHandler getWidgetSizeHandler();
 
 
-    // Lawnchair-specific
+    // QQ Launcher-specific
     
-    LawnchairWindowManagerProxy getLWMP();
+    QQ LauncherWindowManagerProxy getLWMP();
     DeviceProfileOverrides getDPO();
     ThemeProvider getThemeProvider();
     SmartspaceProvider getSmartspaceProvider();
@@ -146,7 +146,7 @@ public interface LauncherBaseAppComponent {
     WallpaperService getWallpaperService();
     IconOverrideRepository getIconOverrideRepository();
 
-    LawnchairActivityCachingLogic getLawnchairActivityCachingLogic();
+    QQ LauncherActivityCachingLogic getQQ LauncherActivityCachingLogic();
     FolderService getFolderService();
 
     /** Builder for LauncherBaseAppComponent. */

@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Lawnchair
+ * Copyright 2022, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.preferences2
+package app.qqlauncher.preferences2
 
 import android.content.Context
 import android.util.Log
@@ -28,31 +28,31 @@ import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.core.stringSetPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
-import app.lawnchair.data.Converters
-import app.lawnchair.font.FontCache
-import app.lawnchair.gestures.config.GestureHandlerConfig
-import app.lawnchair.gestures.handlers.SleepMode
-import app.lawnchair.gestures.type.GestureType
-import app.lawnchair.hotseat.HotseatMode
-import app.lawnchair.icons.CustomAdaptiveIconDrawable
-import app.lawnchair.icons.shape.IconShape
-import app.lawnchair.icons.shape.IconShapeManager
-import app.lawnchair.preferences.PreferenceManager as LawnchairPreferenceManager
-import app.lawnchair.qsb.providers.QsbSearchProvider
-import app.lawnchair.search.algorithms.LawnchairSearchAlgorithm
-import app.lawnchair.search.algorithms.engine.provider.web.WebSearchProvider
-import app.lawnchair.smartspace.model.SmartspaceCalendar
-import app.lawnchair.smartspace.model.SmartspaceMode
-import app.lawnchair.smartspace.model.SmartspaceTimeFormat
-import app.lawnchair.theme.color.ColorMode
-import app.lawnchair.theme.color.ColorOption
-import app.lawnchair.theme.color.ColorStyle
-import app.lawnchair.ui.popup.LauncherOptionsPopup
-import app.lawnchair.ui.popup.toOptionOrderString
-import app.lawnchair.ui.preferences.components.HiddenAppsInSearch
-import app.lawnchair.ui.preferences.data.liveinfo.LiveInformationManager
-import app.lawnchair.util.kotlinxJson
-import app.lawnchair.views.overlay.FullScreenOverlayMode
+import app.qqlauncher.data.Converters
+import app.qqlauncher.font.FontCache
+import app.qqlauncher.gestures.config.GestureHandlerConfig
+import app.qqlauncher.gestures.handlers.SleepMode
+import app.qqlauncher.gestures.type.GestureType
+import app.qqlauncher.hotseat.HotseatMode
+import app.qqlauncher.icons.CustomAdaptiveIconDrawable
+import app.qqlauncher.icons.shape.IconShape
+import app.qqlauncher.icons.shape.IconShapeManager
+import app.qqlauncher.preferences.PreferenceManager as QQ LauncherPreferenceManager
+import app.qqlauncher.qsb.providers.QsbSearchProvider
+import app.qqlauncher.search.algorithms.QQ LauncherSearchAlgorithm
+import app.qqlauncher.search.algorithms.engine.provider.web.WebSearchProvider
+import app.qqlauncher.smartspace.model.SmartspaceCalendar
+import app.qqlauncher.smartspace.model.SmartspaceMode
+import app.qqlauncher.smartspace.model.SmartspaceTimeFormat
+import app.qqlauncher.theme.color.ColorMode
+import app.qqlauncher.theme.color.ColorOption
+import app.qqlauncher.theme.color.ColorStyle
+import app.qqlauncher.ui.popup.LauncherOptionsPopup
+import app.qqlauncher.ui.popup.toOptionOrderString
+import app.qqlauncher.ui.preferences.components.HiddenAppsInSearch
+import app.qqlauncher.ui.preferences.data.liveinfo.LiveInformationManager
+import app.qqlauncher.util.kotlinxJson
+import app.qqlauncher.views.overlay.FullScreenOverlayMode
 import com.android.launcher3.BuildConfig
 import com.android.launcher3.InvariantDeviceProfile
 import com.android.launcher3.InvariantDeviceProfile.INDEX_DEFAULT
@@ -427,7 +427,7 @@ class PreferenceManager2 @Inject constructor(
 
     val searchAlgorithm = preference(
         key = stringPreferencesKey(name = "search_algorithm"),
-        defaultValue = LawnchairSearchAlgorithm.LOCAL_SEARCH,
+        defaultValue = QQ LauncherSearchAlgorithm.LOCAL_SEARCH,
         onSet = { reloadHelper.recreate() },
     )
 
@@ -443,7 +443,7 @@ class PreferenceManager2 @Inject constructor(
         onSet = { newValue ->
             if (!newValue) {
                 val fontCache = FontCache.INSTANCE.get(context)
-                LawnchairPreferenceManager.getInstance(context).fontWorkspace.set(newValue = fontCache.uiText)
+                QQ LauncherPreferenceManager.getInstance(context).fontWorkspace.set(newValue = fontCache.uiText)
             }
         },
     )

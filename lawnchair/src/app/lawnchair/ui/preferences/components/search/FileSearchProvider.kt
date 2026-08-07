@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.search
+package app.qqlauncher.ui.preferences.components.search
 
 import android.Manifest
 import android.app.Application
@@ -27,23 +27,23 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.compose.LifecycleResumeEffect
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
-import app.lawnchair.preferences.PreferenceAdapter
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.ui.preferences.components.PermissionDialog
-import app.lawnchair.ui.preferences.components.controls.MainSwitchPreference
-import app.lawnchair.ui.preferences.components.controls.SliderPreference
-import app.lawnchair.ui.preferences.components.controls.SwitchPreference
-import app.lawnchair.ui.preferences.components.controls.TwoTargetSwitchPreference
-import app.lawnchair.ui.preferences.components.layout.ExpandAndShrink
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.theme.LawnchairTheme
-import app.lawnchair.ui.util.isPlayStoreFlavor
-import app.lawnchair.util.FileAccessManager
-import app.lawnchair.util.FileAccessState
-import app.lawnchair.util.openAppPermissionSettings
-import app.lawnchair.util.requestManageAllFilesAccessPermission
+import app.qqlauncher.preferences.PreferenceAdapter
+import app.qqlauncher.preferences.getAdapter
+import app.qqlauncher.preferences.preferenceManager
+import app.qqlauncher.preferences2.preferenceManager2
+import app.qqlauncher.ui.preferences.components.PermissionDialog
+import app.qqlauncher.ui.preferences.components.controls.MainSwitchPreference
+import app.qqlauncher.ui.preferences.components.controls.SliderPreference
+import app.qqlauncher.ui.preferences.components.controls.SwitchPreference
+import app.qqlauncher.ui.preferences.components.controls.TwoTargetSwitchPreference
+import app.qqlauncher.ui.preferences.components.layout.ExpandAndShrink
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroup
+import app.qqlauncher.ui.theme.QQ LauncherTheme
+import app.qqlauncher.ui.util.isPlayStoreFlavor
+import app.qqlauncher.util.FileAccessManager
+import app.qqlauncher.util.FileAccessState
+import app.qqlauncher.util.openAppPermissionSettings
+import app.qqlauncher.util.requestManageAllFilesAccessPermission
 import com.android.launcher3.R
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.PermissionState
@@ -423,7 +423,7 @@ private fun FileAccessPermissionDialog(
 @Preview(showBackground = true)
 @Composable
 private fun TwoTargetSwitchPreferencePreview() {
-    LawnchairTheme {
+    QQ LauncherTheme {
         Column {
             var checked1 by remember { mutableStateOf(false) }
             TwoTargetSwitchPreference(

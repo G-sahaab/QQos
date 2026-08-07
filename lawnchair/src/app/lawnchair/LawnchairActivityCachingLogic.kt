@@ -1,4 +1,4 @@
-package app.lawnchair
+package app.qqlauncher
 
 import android.content.ComponentName
 import android.content.Context
@@ -7,8 +7,8 @@ import android.os.Build
 import android.os.Build.VERSION
 import android.os.UserHandle
 import android.util.Log
-import app.lawnchair.icons.getCustomAppNameForComponent
-import app.lawnchair.preferences.PreferenceManager
+import app.qqlauncher.icons.getCustomAppNameForComponent
+import app.qqlauncher.preferences.PreferenceManager
 import com.android.launcher3.Flags.useNewIconForArchivedApps
 import com.android.launcher3.dagger.ApplicationContext
 import com.android.launcher3.dagger.LauncherAppComponent
@@ -23,10 +23,10 @@ import com.android.launcher3.util.DaggerSingletonObject
 import com.android.launcher3.util.SafeCloseable
 import javax.inject.Inject
 
-private const val TAG = "LawnchairActivityCachingLogic"
+private const val TAG = "QQ LauncherActivityCachingLogic"
 
 @LauncherAppSingleton
-class LawnchairActivityCachingLogic @Inject constructor(
+class QQ LauncherActivityCachingLogic @Inject constructor(
     @ApplicationContext private val context: Context,
 ) : SafeCloseable,
     CachingLogic<LauncherActivityInfo> {
@@ -97,6 +97,6 @@ class LawnchairActivityCachingLogic @Inject constructor(
 
     companion object {
         @JvmField
-        val INSTANCE = DaggerSingletonObject(LauncherAppComponent::getLawnchairActivityCachingLogic)
+        val INSTANCE = DaggerSingletonObject(LauncherAppComponent::getQQ LauncherActivityCachingLogic)
     }
 }

@@ -1,34 +1,34 @@
-package app.lawnchair.search.algorithms
+package app.qqlauncher.search.algorithms
 
 import android.content.Context
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.preferences2.firstCached
-import app.lawnchair.search.adapter.SearchLinksTarget
-import app.lawnchair.search.adapter.SearchTargetCompat
-import app.lawnchair.search.adapter.SearchTargetFactory
-import app.lawnchair.search.algorithms.engine.ActionsSectionBuilder
-import app.lawnchair.search.algorithms.engine.AppsAndShortcutsSectionBuilder
-import app.lawnchair.search.algorithms.engine.CalculationSectionBuilder
-import app.lawnchair.search.algorithms.engine.ContactsSectionBuilder
-import app.lawnchair.search.algorithms.engine.EmptyStateSectionBuilder
-import app.lawnchair.search.algorithms.engine.FilesSectionBuilder
-import app.lawnchair.search.algorithms.engine.HistorySectionBuilder
-import app.lawnchair.search.algorithms.engine.SearchProvider
-import app.lawnchair.search.algorithms.engine.SearchResult
-import app.lawnchair.search.algorithms.engine.SearchSettingsSectionBuilder
-import app.lawnchair.search.algorithms.engine.SectionBuilder
-import app.lawnchair.search.algorithms.engine.SettingsSectionBuilder
-import app.lawnchair.search.algorithms.engine.WebSuggestionsSectionBuilder
-import app.lawnchair.search.algorithms.engine.provider.CalculatorSearchProvider
-import app.lawnchair.search.algorithms.engine.provider.ContactsSearchProvider
-import app.lawnchair.search.algorithms.engine.provider.FileSearchProvider
-import app.lawnchair.search.algorithms.engine.provider.HistorySearchProvider
-import app.lawnchair.search.algorithms.engine.provider.SettingsSearchProvider
-import app.lawnchair.search.algorithms.engine.provider.ShortcutSearchProvider
-import app.lawnchair.search.algorithms.engine.provider.apps.AppSearchProvider
-import app.lawnchair.search.algorithms.engine.provider.web.CustomWebSearchProvider
-import app.lawnchair.search.algorithms.engine.provider.web.WebSuggestionProvider
+import app.qqlauncher.preferences.PreferenceManager
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.preferences2.firstCached
+import app.qqlauncher.search.adapter.SearchLinksTarget
+import app.qqlauncher.search.adapter.SearchTargetCompat
+import app.qqlauncher.search.adapter.SearchTargetFactory
+import app.qqlauncher.search.algorithms.engine.ActionsSectionBuilder
+import app.qqlauncher.search.algorithms.engine.AppsAndShortcutsSectionBuilder
+import app.qqlauncher.search.algorithms.engine.CalculationSectionBuilder
+import app.qqlauncher.search.algorithms.engine.ContactsSectionBuilder
+import app.qqlauncher.search.algorithms.engine.EmptyStateSectionBuilder
+import app.qqlauncher.search.algorithms.engine.FilesSectionBuilder
+import app.qqlauncher.search.algorithms.engine.HistorySectionBuilder
+import app.qqlauncher.search.algorithms.engine.SearchProvider
+import app.qqlauncher.search.algorithms.engine.SearchResult
+import app.qqlauncher.search.algorithms.engine.SearchSettingsSectionBuilder
+import app.qqlauncher.search.algorithms.engine.SectionBuilder
+import app.qqlauncher.search.algorithms.engine.SettingsSectionBuilder
+import app.qqlauncher.search.algorithms.engine.WebSuggestionsSectionBuilder
+import app.qqlauncher.search.algorithms.engine.provider.CalculatorSearchProvider
+import app.qqlauncher.search.algorithms.engine.provider.ContactsSearchProvider
+import app.qqlauncher.search.algorithms.engine.provider.FileSearchProvider
+import app.qqlauncher.search.algorithms.engine.provider.HistorySearchProvider
+import app.qqlauncher.search.algorithms.engine.provider.SettingsSearchProvider
+import app.qqlauncher.search.algorithms.engine.provider.ShortcutSearchProvider
+import app.qqlauncher.search.algorithms.engine.provider.apps.AppSearchProvider
+import app.qqlauncher.search.algorithms.engine.provider.web.CustomWebSearchProvider
+import app.qqlauncher.search.algorithms.engine.provider.web.WebSuggestionProvider
 import com.android.launcher3.LauncherAppState
 import com.android.launcher3.R
 import com.android.launcher3.allapps.BaseAllAppsAdapter
@@ -42,7 +42,7 @@ import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-class LawnchairLocalSearchAlgorithm(context: Context) : LawnchairSearchAlgorithm(context) {
+class QQ LauncherLocalSearchAlgorithm(context: Context) : QQ LauncherSearchAlgorithm(context) {
 
     private val appState = LauncherAppState.getInstance(context)
 

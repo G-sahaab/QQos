@@ -1,4 +1,4 @@
-package app.lawnchair.search.algorithms.engine
+package app.qqlauncher.search.algorithms.engine
 
 import android.content.Context
 

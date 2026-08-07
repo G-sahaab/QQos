@@ -1,13 +1,13 @@
-package app.lawnchair.nexuslauncher
+package app.qqlauncher.nexuslauncher
 
 import android.app.Activity
 import android.content.Context
 import android.content.pm.ApplicationInfo
 import android.os.Bundle
-import app.lawnchair.FeedBridge
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.preferences2.firstCached
+import app.qqlauncher.FeedBridge
+import app.qqlauncher.QQ LauncherLauncher
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.preferences2.firstCached
 import com.android.launcher3.Launcher
 import com.android.launcher3.LauncherPrefs
 import com.android.systemui.plugins.shared.LauncherOverlayManager
@@ -25,7 +25,7 @@ import com.google.android.libraries.launcherclient.StaticInteger
  *
  * Implements [LauncherClientCallbacks] and sends all the corresponding callbacks to [Launcher].
  */
-class OverlayCallbackImpl(private val mLauncher: LawnchairLauncher) :
+class OverlayCallbackImpl(private val mLauncher: QQ LauncherLauncher) :
     LauncherOverlay,
     LauncherClientCallbacks,
     LauncherOverlayManager,

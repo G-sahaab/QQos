@@ -1,6 +1,6 @@
-package app.lawnchair.qsb.providers
+package app.qqlauncher.qsb.providers
 
-import app.lawnchair.qsb.ThemingMethod
+import app.qqlauncher.qsb.ThemingMethod
 import com.android.launcher3.R
 
 data object Startpage : QsbSearchProvider(
@@ -10,6 +10,6 @@ data object Startpage : QsbSearchProvider(
     themingMethod = ThemingMethod.TINT,
     packageName = "com.startpage.app",
     className = "org.chromium.chrome.browser.searchwidget.SearchActivity",
-    website = "https://startpage.com/?segment=startpage.lawnchair",
+    website = "https://startpage.com/?segment=startpage.qqlauncher",
     sponsored = false,
 )

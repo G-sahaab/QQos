@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.theme
+package app.qqlauncher.ui.theme
 
 import android.graphics.Color
 import androidx.activity.ComponentActivity
@@ -38,19 +38,19 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalInspectionMode
-import app.lawnchair.preferences.observeAsState
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.preferences2.asState
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.theme.ThemeProvider
-import app.lawnchair.theme.toComposeColorScheme
-import app.lawnchair.ui.preferences.components.ThemeChoice
-import app.lawnchair.wallpaper.WallpaperManagerCompat
+import app.qqlauncher.preferences.observeAsState
+import app.qqlauncher.preferences.preferenceManager
+import app.qqlauncher.preferences2.asState
+import app.qqlauncher.preferences2.preferenceManager2
+import app.qqlauncher.theme.ThemeProvider
+import app.qqlauncher.theme.toComposeColorScheme
+import app.qqlauncher.ui.preferences.components.ThemeChoice
+import app.qqlauncher.wallpaper.WallpaperManagerCompat
 import com.android.launcher3.Utilities
 
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable
-fun LawnchairTheme(
+fun QQ LauncherTheme(
     darkTheme: Boolean = isSelectedThemeDark,
     content: @Composable () -> Unit,
 ) {

@@ -1,4 +1,4 @@
-﻿package app.lawnchair.ui.preferences.destinations
+﻿package app.qqlauncher.ui.preferences.destinations
 
 import androidx.activity.compose.LocalOnBackPressedDispatcherOwner
 import androidx.compose.animation.Crossfade
@@ -22,20 +22,20 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
-import app.lawnchair.data.folder.FolderEntry
-import app.lawnchair.data.folder.model.FolderViewModel
-import app.lawnchair.ui.preferences.LocalIsExpandedScreen
-import app.lawnchair.ui.preferences.components.AppItem
-import app.lawnchair.ui.preferences.components.AppItemPlaceholder
-import app.lawnchair.ui.preferences.components.layout.PreferenceLazyColumn
-import app.lawnchair.ui.preferences.components.layout.PreferenceScaffold
-import app.lawnchair.ui.preferences.components.layout.preferenceGroupItems
-import app.lawnchair.ui.preferences.components.reorderable.PositionalList
-import app.lawnchair.ui.preferences.components.reorderable.PositionalListOverflowMenu
-import app.lawnchair.ui.preferences.components.reorderable.PositionalListState
-import app.lawnchair.ui.preferences.components.reorderable.rememberPositionalListState
-import app.lawnchair.util.App
-import app.lawnchair.util.appsState
+import app.qqlauncher.data.folder.FolderEntry
+import app.qqlauncher.data.folder.model.FolderViewModel
+import app.qqlauncher.ui.preferences.LocalIsExpandedScreen
+import app.qqlauncher.ui.preferences.components.AppItem
+import app.qqlauncher.ui.preferences.components.AppItemPlaceholder
+import app.qqlauncher.ui.preferences.components.layout.PreferenceLazyColumn
+import app.qqlauncher.ui.preferences.components.layout.PreferenceScaffold
+import app.qqlauncher.ui.preferences.components.layout.preferenceGroupItems
+import app.qqlauncher.ui.preferences.components.reorderable.PositionalList
+import app.qqlauncher.ui.preferences.components.reorderable.PositionalListOverflowMenu
+import app.qqlauncher.ui.preferences.components.reorderable.PositionalListState
+import app.qqlauncher.ui.preferences.components.reorderable.rememberPositionalListState
+import app.qqlauncher.util.App
+import app.qqlauncher.util.appsState
 import com.android.launcher3.R
 
 @Composable

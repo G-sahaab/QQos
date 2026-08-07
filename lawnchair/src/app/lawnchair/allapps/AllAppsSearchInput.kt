@@ -1,4 +1,4 @@
-package app.lawnchair.allapps
+package app.qqlauncher.allapps
 
 import android.animation.ValueAnimator
 import android.annotation.SuppressLint
@@ -35,26 +35,26 @@ import androidx.core.view.isVisible
 import androidx.core.widget.addTextChangedListener
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import androidx.lifecycle.lifecycleScope
-import app.lawnchair.launcher
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.preferences2.asState
-import app.lawnchair.preferences2.firstCached
-import app.lawnchair.qsb.LawnQsbLayout.Companion.getLensIntent
-import app.lawnchair.qsb.LawnQsbLayout.Companion.getSearchProvider
-import app.lawnchair.qsb.LawnQsbLayout.Companion.getVoiceIntent
-import app.lawnchair.qsb.LawnQsbUi
-import app.lawnchair.qsb.QsbActions
-import app.lawnchair.qsb.QsbIconId
-import app.lawnchair.qsb.buildQsbStyle
-import app.lawnchair.qsb.providers.Google
-import app.lawnchair.qsb.providers.PixelSearch
-import app.lawnchair.qsb.rememberAllAppsQsbState
-import app.lawnchair.search.LawnchairRecentSuggestionProvider
-import app.lawnchair.search.algorithms.LawnchairSearchAlgorithm
-import app.lawnchair.theme.color.tokens.ColorTokens
-import app.lawnchair.ui.theme.LawnchairTheme
-import app.lawnchair.util.ProvideLifecycleState
+import app.qqlauncher.launcher
+import app.qqlauncher.preferences.PreferenceManager
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.preferences2.asState
+import app.qqlauncher.preferences2.firstCached
+import app.qqlauncher.qsb.LawnQsbLayout.Companion.getLensIntent
+import app.qqlauncher.qsb.LawnQsbLayout.Companion.getSearchProvider
+import app.qqlauncher.qsb.LawnQsbLayout.Companion.getVoiceIntent
+import app.qqlauncher.qsb.LawnQsbUi
+import app.qqlauncher.qsb.QsbActions
+import app.qqlauncher.qsb.QsbIconId
+import app.qqlauncher.qsb.buildQsbStyle
+import app.qqlauncher.qsb.providers.Google
+import app.qqlauncher.qsb.providers.PixelSearch
+import app.qqlauncher.qsb.rememberAllAppsQsbState
+import app.qqlauncher.search.QQ LauncherRecentSuggestionProvider
+import app.qqlauncher.search.algorithms.QQ LauncherSearchAlgorithm
+import app.qqlauncher.theme.color.tokens.ColorTokens
+import app.qqlauncher.ui.theme.QQ LauncherTheme
+import app.qqlauncher.util.ProvideLifecycleState
 import com.android.launcher3.Insettable
 import com.android.launcher3.InvariantDeviceProfile.OnIDPChangeListener
 import com.android.launcher3.LauncherState
@@ -94,9 +94,9 @@ class AllAppsSearchInput(context: Context, attrs: AttributeSet?) :
         Selection.setSelection(this, 0)
     }
 
-    private lateinit var apps: LawnchairAlphabeticalAppsList<*>
+    private lateinit var apps: QQ LauncherAlphabeticalAppsList<*>
     private lateinit var appsView: ActivityAllAppsContainerView<*>
-    private var searchAlgorithm: LawnchairSearchAlgorithm? = null
+    private var searchAlgorithm: QQ LauncherSearchAlgorithm? = null
 
     private var isDirectFocus = false
     private var focusedResultTitle = ""
@@ -111,7 +111,7 @@ class AllAppsSearchInput(context: Context, attrs: AttributeSet?) :
     }
     private var bgVisible = true
     private var bgAlpha = 1f
-    private val suggestionsRecent = SearchRecentSuggestions(launcher, LawnchairRecentSuggestionProvider.AUTHORITY, LawnchairRecentSuggestionProvider.MODE)
+    private val suggestionsRecent = SearchRecentSuggestions(launcher, QQ LauncherRecentSuggestionProvider.AUTHORITY, QQ LauncherRecentSuggestionProvider.MODE)
     private val prefs = PreferenceManager.getInstance(launcher)
     private val prefs2 = PreferenceManager2.getInstance(launcher)
 
@@ -235,7 +235,7 @@ class AllAppsSearchInput(context: Context, attrs: AttributeSet?) :
                     },
                 )
 
-                LawnchairTheme {
+                QQ LauncherTheme {
                     ProvideLifecycleState {
                         LawnQsbUi(
                             state = state,
@@ -261,7 +261,7 @@ class AllAppsSearchInput(context: Context, attrs: AttributeSet?) :
 
         input.onFocusChangeListener = { _, hasFocus ->
             if (hasFocus) {
-                if (prefs2.searchAlgorithm.firstCached() != LawnchairSearchAlgorithm.APP_SEARCH) {
+                if (prefs2.searchAlgorithm.firstCached() != QQ LauncherSearchAlgorithm.APP_SEARCH) {
                     input.setHint(R.string.all_apps_device_search_hint)
                 } else {
                     input.setHint(R.string.all_apps_search_bar_hint)
@@ -305,7 +305,7 @@ class AllAppsSearchInput(context: Context, attrs: AttributeSet?) :
                 if (input.text.isNullOrEmpty() && input.hasFocus() && !input.isResetting) {
                     searchAlgorithm?.doZeroStateSearch(this)
                 }
-                if (input.text.toString() == "/lawnchairdebug") {
+                if (input.text.toString() == "/qqlauncherdebug") {
                     val enableDebugMenu = prefs.enableDebugMenu
                     enableDebugMenu.set(!enableDebugMenu.get())
                     launcher.stateManager.goToState(LauncherState.NORMAL)
@@ -429,9 +429,9 @@ class AllAppsSearchInput(context: Context, attrs: AttributeSet?) :
     }
 
     override fun initializeSearch(appsView: ActivityAllAppsContainerView<*>) {
-        apps = appsView.searchResultList as LawnchairAlphabeticalAppsList<*>
+        apps = appsView.searchResultList as QQ LauncherAlphabeticalAppsList<*>
         this.appsView = appsView
-        val algorithm = LawnchairSearchAlgorithm.create(context)
+        val algorithm = QQ LauncherSearchAlgorithm.create(context)
         this.searchAlgorithm = algorithm
         searchBarController.initialize(
             algorithm,

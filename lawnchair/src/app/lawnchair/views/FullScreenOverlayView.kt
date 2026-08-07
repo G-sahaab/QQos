@@ -1,4 +1,4 @@
-package app.lawnchair.views
+package app.qqlauncher.views
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
@@ -18,10 +18,10 @@ import android.view.animation.AccelerateInterpolator
 import android.view.animation.DecelerateInterpolator
 import android.view.animation.PathInterpolator
 import android.widget.FrameLayout
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.preferences2.firstCached
-import app.lawnchair.theme.color.tokens.ColorTokens
-import app.lawnchair.views.overlay.FullScreenOverlayMode
+import app.qqlauncher.preferences2.PreferenceManager2
+import app.qqlauncher.preferences2.firstCached
+import app.qqlauncher.theme.color.tokens.ColorTokens
+import app.qqlauncher.views.overlay.FullScreenOverlayMode
 
 class FullScreenOverlayView @JvmOverloads constructor(
     context: Context,

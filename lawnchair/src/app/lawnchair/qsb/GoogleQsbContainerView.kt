@@ -1,4 +1,4 @@
-package app.lawnchair.qsb
+package app.qqlauncher.qsb
 
 import android.content.Context
 import android.util.AttributeSet

@@ -1,11 +1,11 @@
-package app.lawnchair.gestures
+package app.qqlauncher.gestures
 
 import android.graphics.PointF
 import android.view.MotionEvent
 import androidx.lifecycle.lifecycleScope
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.gestures.config.GestureHandlerConfig
-import app.lawnchair.preferences2.PreferenceManager2
+import app.qqlauncher.QQ LauncherLauncher
+import app.qqlauncher.gestures.config.GestureHandlerConfig
+import app.qqlauncher.preferences2.PreferenceManager2
 import com.android.launcher3.AbstractFloatingView
 import com.android.launcher3.LauncherState
 import com.android.launcher3.Utilities
@@ -17,7 +17,7 @@ import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
 
 class VerticalSwipeTouchController(
-    private val launcher: LawnchairLauncher,
+    private val launcher: QQ LauncherLauncher,
     private val gestureController: GestureController,
 ) : TouchController,
     BothAxesSwipeDetector.Listener {

@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.destinations
+package app.qqlauncher.ui.preferences.destinations
 
 import android.app.Activity
 import android.content.Intent
@@ -44,19 +44,19 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import app.lawnchair.font.FontCache
-import app.lawnchair.font.googlefonts.GoogleFontsListing
-import app.lawnchair.preferences.BasePreferenceManager
-import app.lawnchair.preferences.PreferenceAdapter
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.ui.AndroidText
-import app.lawnchair.ui.OverflowMenu
-import app.lawnchair.ui.preferences.components.layout.PreferenceDivider
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroupItem
-import app.lawnchair.ui.preferences.components.layout.PreferenceLazyColumn
-import app.lawnchair.ui.preferences.components.layout.PreferenceSearchScaffold
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.preferences.components.layout.preferenceGroupItems
+import app.qqlauncher.font.FontCache
+import app.qqlauncher.font.googlefonts.GoogleFontsListing
+import app.qqlauncher.preferences.BasePreferenceManager
+import app.qqlauncher.preferences.PreferenceAdapter
+import app.qqlauncher.preferences.getAdapter
+import app.qqlauncher.ui.AndroidText
+import app.qqlauncher.ui.OverflowMenu
+import app.qqlauncher.ui.preferences.components.layout.PreferenceDivider
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroupItem
+import app.qqlauncher.ui.preferences.components.layout.PreferenceLazyColumn
+import app.qqlauncher.ui.preferences.components.layout.PreferenceSearchScaffold
+import app.qqlauncher.ui.preferences.components.layout.PreferenceTemplate
+import app.qqlauncher.ui.preferences.components.layout.preferenceGroupItems
 import com.android.launcher3.R
 
 private enum class ContentType {

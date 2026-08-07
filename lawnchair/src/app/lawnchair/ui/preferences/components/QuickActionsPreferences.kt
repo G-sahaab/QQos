@@ -1,14 +1,14 @@
-package app.lawnchair.ui.preferences.components
+package app.qqlauncher.ui.preferences.components
 
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import app.lawnchair.preferences.PreferenceAdapter
-import app.lawnchair.ui.preferences.components.reorderable.ReorderableDragHandle
-import app.lawnchair.ui.preferences.components.reorderable.ReorderablePreferenceGroup
-import app.lawnchair.ui.preferences.components.reorderable.ReorderableSwitchPreference
+import app.qqlauncher.preferences.PreferenceAdapter
+import app.qqlauncher.ui.preferences.components.reorderable.ReorderableDragHandle
+import app.qqlauncher.ui.preferences.components.reorderable.ReorderablePreferenceGroup
+import app.qqlauncher.ui.preferences.components.reorderable.ReorderableSwitchPreference
 import com.android.launcher3.R
 
 data class RecentsQuickAction(

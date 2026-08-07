@@ -1,4 +1,4 @@
-package app.lawnchair.baseline
+package app.qqlauncher.baseline
 
 import androidx.benchmark.macro.BaselineProfileMode
 import androidx.benchmark.macro.CompilationMode

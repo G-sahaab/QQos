@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Lawnchair
+ * Copyright 2022, QQ Launcher
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.destinations
+package app.qqlauncher.ui.preferences.destinations
 
 import android.content.Context
 import android.widget.Toast
@@ -25,28 +25,28 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
-import app.lawnchair.LawnchairApp
-import app.lawnchair.data.iconoverride.IconOverrideRepository
-import app.lawnchair.nexuslauncher.OverlayCallbackImpl
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.theme.color.ColorMode
-import app.lawnchair.ui.preferences.LocalIsExpandedScreen
-import app.lawnchair.ui.preferences.components.FeedPreference
-import app.lawnchair.ui.preferences.components.GestureHandlerPreference
-import app.lawnchair.ui.preferences.components.HomeLayoutSettings
-import app.lawnchair.ui.preferences.components.NavigationActionPreference
-import app.lawnchair.ui.preferences.components.OverlayHandlerPreference
-import app.lawnchair.ui.preferences.components.controls.ClickablePreference
-import app.lawnchair.ui.preferences.components.controls.ListPreference
-import app.lawnchair.ui.preferences.components.controls.SliderPreference
-import app.lawnchair.ui.preferences.components.controls.SwitchPreference
-import app.lawnchair.ui.preferences.components.layout.ExpandAndShrink
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
-import app.lawnchair.ui.preferences.navigation.HomeScreenGrid
-import app.lawnchair.util.collectAsStateBlocking
+import app.qqlauncher.QQ LauncherApp
+import app.qqlauncher.data.iconoverride.IconOverrideRepository
+import app.qqlauncher.nexuslauncher.OverlayCallbackImpl
+import app.qqlauncher.preferences.getAdapter
+import app.qqlauncher.preferences.preferenceManager
+import app.qqlauncher.preferences2.preferenceManager2
+import app.qqlauncher.theme.color.ColorMode
+import app.qqlauncher.ui.preferences.LocalIsExpandedScreen
+import app.qqlauncher.ui.preferences.components.FeedPreference
+import app.qqlauncher.ui.preferences.components.GestureHandlerPreference
+import app.qqlauncher.ui.preferences.components.HomeLayoutSettings
+import app.qqlauncher.ui.preferences.components.NavigationActionPreference
+import app.qqlauncher.ui.preferences.components.OverlayHandlerPreference
+import app.qqlauncher.ui.preferences.components.controls.ClickablePreference
+import app.qqlauncher.ui.preferences.components.controls.ListPreference
+import app.qqlauncher.ui.preferences.components.controls.SliderPreference
+import app.qqlauncher.ui.preferences.components.controls.SwitchPreference
+import app.qqlauncher.ui.preferences.components.layout.ExpandAndShrink
+import app.qqlauncher.ui.preferences.components.layout.PreferenceGroup
+import app.qqlauncher.ui.preferences.components.layout.PreferenceLayout
+import app.qqlauncher.ui.preferences.navigation.HomeScreenGrid
+import app.qqlauncher.util.collectAsStateBlocking
 import com.android.launcher3.LauncherAppState
 import com.android.launcher3.LauncherSettings
 import com.android.launcher3.R
@@ -192,7 +192,7 @@ fun HomeScreenPreferences(
                     label = stringResource(id = R.string.dark_status_bar_label),
                 )
             }
-            ExpandAndShrink(visible = showStatusBarAdapter.state.value && LawnchairApp.isRecentsEnabled) {
+            ExpandAndShrink(visible = showStatusBarAdapter.state.value && QQ LauncherApp.isRecentsEnabled) {
                 SwitchPreference(
                     adapter = prefs2.statusBarClock.getAdapter(),
                     label = stringResource(id = R.string.status_bar_clock_label),

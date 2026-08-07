@@ -1,13 +1,13 @@
-﻿package app.lawnchair.data.wallpaper.service
+﻿package app.qqlauncher.data.wallpaper.service
 
 import android.app.WallpaperManager
 import android.content.Context
 import android.graphics.drawable.BitmapDrawable
 import android.util.Log
 import androidx.core.graphics.drawable.toBitmap
-import app.lawnchair.data.AppDatabase
-import app.lawnchair.data.wallpaper.Wallpaper
-import app.lawnchair.util.bitmapToByteArray
+import app.qqlauncher.data.AppDatabase
+import app.qqlauncher.data.wallpaper.Wallpaper
+import app.qqlauncher.util.bitmapToByteArray
 import com.android.launcher3.dagger.ApplicationContext
 import com.android.launcher3.dagger.LauncherAppComponent
 import com.android.launcher3.dagger.LauncherAppSingleton

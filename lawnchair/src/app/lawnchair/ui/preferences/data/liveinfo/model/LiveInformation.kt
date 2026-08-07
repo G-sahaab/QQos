@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.data.liveinfo.model
+package app.qqlauncher.ui.preferences.data.liveinfo.model
 
 import kotlinx.serialization.Serializable
 

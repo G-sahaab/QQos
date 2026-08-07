@@ -1,12 +1,12 @@
-package app.lawnchair.backup.ui
+package app.qqlauncher.backup.ui
 
 import android.app.Application
 import android.net.Uri
 import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import app.lawnchair.backup.NovaBackupConverter
-import app.lawnchair.backup.NovaBackupConverter.NovaBackupInfo
+import app.qqlauncher.backup.NovaBackupConverter
+import app.qqlauncher.backup.NovaBackupConverter.NovaBackupInfo
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

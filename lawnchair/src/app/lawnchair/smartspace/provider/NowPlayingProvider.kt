@@ -1,17 +1,17 @@
-package app.lawnchair.smartspace.provider
+package app.qqlauncher.smartspace.provider
 
 import android.app.Activity
 import android.content.Context
 import android.graphics.drawable.Icon
-import app.lawnchair.BlankActivity
-import app.lawnchair.getAppName
-import app.lawnchair.smartspace.model.SmartspaceAction
-import app.lawnchair.smartspace.model.SmartspaceScores
-import app.lawnchair.smartspace.model.SmartspaceTarget
-import app.lawnchair.ui.preferences.PreferenceActivity
-import app.lawnchair.ui.preferences.components.isNotificationServiceEnabled
-import app.lawnchair.ui.preferences.components.notificationDotsEnabled
-import app.lawnchair.ui.preferences.navigation.General
+import app.qqlauncher.BlankActivity
+import app.qqlauncher.getAppName
+import app.qqlauncher.smartspace.model.SmartspaceAction
+import app.qqlauncher.smartspace.model.SmartspaceScores
+import app.qqlauncher.smartspace.model.SmartspaceTarget
+import app.qqlauncher.ui.preferences.PreferenceActivity
+import app.qqlauncher.ui.preferences.components.isNotificationServiceEnabled
+import app.qqlauncher.ui.preferences.components.notificationDotsEnabled
+import app.qqlauncher.ui.preferences.navigation.General
 import com.android.launcher3.R
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.callbackFlow

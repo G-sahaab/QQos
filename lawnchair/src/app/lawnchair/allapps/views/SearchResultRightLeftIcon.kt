@@ -1,4 +1,4 @@
-package app.lawnchair.allapps.views
+package app.qqlauncher.allapps.views
 
 import android.content.Context
 import android.content.Intent
@@ -9,12 +9,12 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.view.ViewCompat
-import app.lawnchair.font.FontManager
-import app.lawnchair.launcher
-import app.lawnchair.search.adapter.SearchTargetCompat
-import app.lawnchair.util.AppInfo
-import app.lawnchair.util.AppInfoHelper
-import app.lawnchair.util.ImageViewWrapper
+import app.qqlauncher.font.FontManager
+import app.qqlauncher.launcher
+import app.qqlauncher.search.adapter.SearchTargetCompat
+import app.qqlauncher.util.AppInfo
+import app.qqlauncher.util.AppInfoHelper
+import app.qqlauncher.util.ImageViewWrapper
 import com.android.app.search.LayoutType
 import com.android.launcher3.DeviceProfile
 import com.android.launcher3.R

@@ -1,13 +1,13 @@
-package app.lawnchair.search
+package app.qqlauncher.search
 
 import android.util.SparseIntArray
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.util.contains
-import app.lawnchair.allapps.views.SearchItemDecorator
-import app.lawnchair.allapps.views.SearchResultView
-import app.lawnchair.search.adapter.SearchAdapterItem
+import app.qqlauncher.allapps.views.SearchItemDecorator
+import app.qqlauncher.allapps.views.SearchResultView
+import app.qqlauncher.search.adapter.SearchAdapterItem
 import com.android.app.search.LayoutType
 import com.android.launcher3.DeviceProfile
 import com.android.launcher3.R
@@ -17,7 +17,7 @@ import com.android.launcher3.allapps.BaseAllAppsAdapter
 import com.android.launcher3.allapps.search.DefaultSearchAdapterProvider
 import com.android.launcher3.views.ActivityContext
 
-class LawnchairSearchAdapterProvider(
+class QQ LauncherSearchAdapterProvider(
     launcher: ActivityContext,
     private val appsView: ActivityAllAppsContainerView<*>,
 ) : DefaultSearchAdapterProvider(launcher) {
