@@ -1,0 +1,11 @@
+*.apk
+*.ap_
+*.img
+*.zip
+*.tar
+*.gz
+*.log
+out/
+build/output/
+.idea/
+.gradle/
